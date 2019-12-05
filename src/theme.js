@@ -61,57 +61,8 @@ export const eceAdmin = {
   shadows: {
     card: '0 0 4px rgba(0, 0, 0, .125)',
   },
-  // rebass variants
-  text: {
-    heading: {
-      fontFamily: 'heading',
-      lineHeight: 'heading',
-      fontWeight: 'heading',
-    },
-    display: {
-      fontFamily: 'heading',
-      fontWeight: 'heading',
-      lineHeight: 'heading',
-      fontSize: [ 5, 6, 7 ],
-    },
-    caps: {
-      textTransform: 'uppercase',
-      letterSpacing: '0.1em',
-    },
-  },
-  variants: {
-    avatar: {
-      width: 'avatar',
-      height: 'avatar',
-      borderRadius: 'circle',
-    },
-    card: {
-      p: 2,
-      bg: 'background',
-      boxShadow: 'card',
-    },
-    link: {
-      color: 'primary',
-    },
-    nav: {
-      fontSize: 1,
-      fontWeight: 'bold',
-      display: 'inline-block',
-      p: 2,
-      color: 'inherit',
-      textDecoration: 'none',
-      ':hover,:focus,.active': {
-        color: 'primary',
-      }
-    },
-  },
-  styles: {
-    root: {
-      fontFamily: 'body',
-      fontWeight: 'body',
-      lineHeight: 'body',
-    },
-  },
+
+
 }
 
 export default eceAdmin
