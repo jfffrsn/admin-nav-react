@@ -1,2 +1,2 @@
 # admin-nav-react
-admin nav in react
+converting the html and js version into a react version
