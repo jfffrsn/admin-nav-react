@@ -14,7 +14,6 @@ const AppGuideContainer = styled.div`
 
 const AppGuideSpacer = styled.div`
   margin-top: ${props => props.theme.heights.appTopbarHeight};
-  background-color: red;
   xxxdisplay: none;
 
   &[visible] {
@@ -54,6 +53,10 @@ const AppGuideNavicon = styled.button`
     display: block;
     width: 100%;
     height: 100%;
+  }
+  &:hover,
+  &:focus {
+    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
   }
 `;
 

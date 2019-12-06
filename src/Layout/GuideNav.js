@@ -41,13 +41,20 @@ const AppGuideNavLink = styled.a`
   &:focus svg {
     fill: currentColor;
   }
-
 `;
 const AppGuideNavIcon = styled.span`
   margin-right: ${props => props.theme.space[3]};
   display: flex;
   height: ${props => props.theme.space[4]};
   width: ${props => props.theme.space[4]};
+
+  > svg {
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: ${props => props.theme.colors.appIconInactive};
+  }
 `;
 
 const AppGuideNavTxt = styled.span`

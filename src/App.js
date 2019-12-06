@@ -6,7 +6,6 @@ import { GlobalStyle } from "@echo360/ui-lib";
 
 import { ThemeProvider } from "styled-components";
 
-
 import theme from "./theme";
 
 import Header from "./Layout/Header";
@@ -15,14 +14,14 @@ import Sidebar from "./Layout/Sidebar";
 
 import Main from "./Layout/Main";
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyleAdmin = createGlobalStyle`
   body {
     background-color: ${props => props.theme.colors.appMainBg};
     height: auto;
   }
-`
+`;
 
 function App() {
   return (
