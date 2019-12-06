@@ -4,6 +4,9 @@ import { ReactComponent as NavIcon } from "../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../assets/icon-alerts.svg";
 
+
+import TopbarBtn from "./TopbarBtn";
+
 import styled from "styled-components/macro";
 
 const AppTopbar = styled.header`
@@ -15,34 +18,6 @@ const AppTopbar = styled.header`
   z-index: 1;
   transform: translateY(0);
   transition: transform 0.3s ease;
-`;
-
-const SkipNav = styled.a`
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  position: fixed;
-  height: 1px;
-  width: 1px;
-  z-index: 3;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: #000;
-    border-radius: 3px;
-    clip: auto !important;
-    color: #fff;
-    outline: none;
-    display: block;
-    font-size: 1rem;
-    font-weight: 600;
-    height: auto;
-    left: 8px;
-    top: 8px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    width: auto;
-  }
 `;
 
 const AppTopHeader = styled.div`
@@ -97,58 +72,8 @@ const AppTopbarSearch = styled.div`
   display: inline-flex;
 `;
 
-const AppTopbarSearchBtn = styled.button`
-  background-color: ${props => props.theme.colors.appTopbarBtnBg};
-  height: 40px;
-  width: 40px;
-  padding: ${props => props.theme.space[2]};
-  margin: 0 ${props => props.theme.space[1]} 0 0;
-  border: 0;
-  cursor: pointer;
-  border-radius: 50%;
-  color: ${props => props.theme.colors.appNaviconInactive};
-
-  &:hover,
-  &:focus {
-    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
-  }
-
-  > svg {
-    fill: currentColor;
-    pointer-events: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-`;
-
 const AppTopbarAlerts = styled.div`
   display: inline-flex;
-`;
-const AppTopbarAlertsBtn = styled.button`
-  background-color: ${props => props.theme.colors.appTopbarBtnBg};
-  height: 40px;
-  width: 40px;
-  padding: ${props => props.theme.space[2]};
-  margin: 0 ${props => props.theme.space[1]} 0 0;
-  border: 0;
-  cursor: pointer;
-  position: relative;
-  border-radius: 50%;
-  color: ${props => props.theme.colors.appNaviconInactive};
-
-  &:hover,
-  &:focus {
-    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
-  }
-
-  > svg {
-    fill: currentColor;
-    pointer-events: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 const AppTopbarUser = styled.div`
@@ -178,9 +103,7 @@ class Header extends Component {
   render() {
     return (
       <AppTopbar role="banner">
-        <SkipNav id="skip-navigation" href="#content">
-          Skip Navigation
-        </SkipNav>
+
 
         <AppTopHeader>
           <AppTopbarNavicon aria-label="Guide" aria-pressed="false">
@@ -193,16 +116,16 @@ class Header extends Component {
 
           <AppTopbarMenu>
             <AppTopbarSearch>
-              <AppTopbarSearchBtn aria-label="Search" aria-pressed="false">
+              <TopbarBtn label="ARIA LABEL" aria-pressed="false">
                 <SearchIcon />
-              </AppTopbarSearchBtn>
+              </TopbarBtn>
             </AppTopbarSearch>
 
             <AppTopbarAlerts>
-              <AppTopbarAlertsBtn aria-label="Alerts" aria-pressed="false">
+              <TopbarBtn label="ARIA LABEL" aria-pressed="false">
                 <span className="app-topbar-alerts-counter"></span>
                 <AlertIcon />
-              </AppTopbarAlertsBtn>
+              </TopbarBtn>
             </AppTopbarAlerts>
 
             <AppTopbarUser>

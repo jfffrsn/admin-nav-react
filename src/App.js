@@ -1,5 +1,7 @@
 import React from "react";
 
+import SkipNav from "./Layout/SkipNav";
+
 import { GlobalStyle } from "@echo360/ui-lib";
 
 import { ThemeProvider } from "styled-components";
@@ -28,6 +30,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <GlobalStyleAdmin />
+        <SkipNav />
         <Header />
         <Sidebar />
         <MiniGuide />
