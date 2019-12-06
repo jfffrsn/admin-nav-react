@@ -48,7 +48,7 @@ class Sidebar extends Component {
   render() {
     return (
       <AppSidebar>
-        <Scrim />
+        <Scrim visibility="visible"/>
 
         <AppSidebarContainer>
           <Guide />

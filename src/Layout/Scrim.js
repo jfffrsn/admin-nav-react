@@ -13,6 +13,11 @@ const AppScrim = styled.div`
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
 
+  &[data-visibility="hidden"] {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   &[data-visibility="visible"] {
     opacity: 1;
     visibility: visible;
@@ -22,7 +27,7 @@ const AppScrim = styled.div`
 
 class Scrim extends Component {
   render() {
-    return <AppScrim data-visibility="hidden" />;
+    return <AppScrim data-visibility={this.props.visibility} />;
   }
 }
 
