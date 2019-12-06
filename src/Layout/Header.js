@@ -4,7 +4,6 @@ import { ReactComponent as NavIcon } from "../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../assets/icon-alerts.svg";
 
-
 import TopbarBtn from "./TopbarBtn";
 
 import styled from "styled-components/macro";
@@ -29,8 +28,8 @@ const AppTopHeader = styled.div`
 
 const AppTopbarNavicon = styled.button`
   background-color: ${props => props.theme.colors.appTopbarBtnBg};
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   padding: ${props => props.theme.space[2]};
   margin: 0 ${props => props.theme.space[1]} 0 0;
   border: 0;
@@ -52,9 +51,9 @@ const AppTopbarNavicon = styled.button`
 `;
 
 const AppTopbarLogoContainer = styled.div`
-  width: 80px;
-  height: 40px;
-  min-width: 80px;
+  width: 5rem;
+  height: 2.5rem;
+  min-width: 5rem;
   > svg {
     pointer-events: none;
     display: block;
@@ -66,6 +65,7 @@ const AppTopbarLogoContainer = styled.div`
 const AppTopbarMenu = styled.div`
   margin-left: auto;
   display: flex;
+  align-items: center;
 `;
 
 const AppTopbarSearch = styled.div`
@@ -84,11 +84,20 @@ const AppTopbarAvatarBtn = styled.button`
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  padding: ${props => props.theme.space[1]};
+  display: flex;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
+  }
+
 `;
 
 const AppTopbarAvatar = styled.span`
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
@@ -103,8 +112,6 @@ class Header extends Component {
   render() {
     return (
       <AppTopbar role="banner">
-
-
         <AppTopHeader>
           <AppTopbarNavicon aria-label="Guide" aria-pressed="false">
             <NavIcon />
