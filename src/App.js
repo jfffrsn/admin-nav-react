@@ -1,9 +1,7 @@
 import React from "react";
-
 import { GlobalStyle } from "@echo360/ui-lib";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
-
 import SkipNav from "./Layout/SkipNav";
 import Header from "./Layout/Header";
 import MiniGuide from "./Layout/MiniGuide";

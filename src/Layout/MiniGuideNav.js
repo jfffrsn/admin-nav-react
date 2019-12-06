@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-
 import { ReactComponent as HomeIcon } from "../assets/icon-home.svg";
 import { ReactComponent as PresentationIcon } from "../assets/icon-presentation.svg";
 import { ReactComponent as CollectionIcon } from "../assets/icon-collection.svg";
 import { ReactComponent as CourseIcon } from "../assets/icon-course.svg";
-
 import styled from "styled-components/macro";
 
 const AppMiniGuideNav = styled.nav`
@@ -69,7 +67,7 @@ class MiniGuideNav extends Component {
     return (
       <AppMiniGuideNav role="navigation" aria-label="Navigation">
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="http://google.com">
+          <AppMiniGuideNavLink href="1">
             <AppMiniGuideNavIcon>
               <HomeIcon />
             </AppMiniGuideNavIcon>
@@ -78,7 +76,7 @@ class MiniGuideNav extends Component {
         </AppMiniGuideNavItem>
 
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="http://google.com">
+          <AppMiniGuideNavLink href="2">
             <AppMiniGuideNavIcon>
               <PresentationIcon />
             </AppMiniGuideNavIcon>
@@ -87,7 +85,7 @@ class MiniGuideNav extends Component {
         </AppMiniGuideNavItem>
 
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="http://google.com">
+          <AppMiniGuideNavLink href="3">
             <AppMiniGuideNavIcon>
               <CollectionIcon />
             </AppMiniGuideNavIcon>
@@ -96,7 +94,7 @@ class MiniGuideNav extends Component {
         </AppMiniGuideNavItem>
 
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="http://google.com">
+          <AppMiniGuideNavLink href="4">
             <AppMiniGuideNavIcon>
               <CourseIcon />
             </AppMiniGuideNavIcon>

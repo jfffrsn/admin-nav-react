@@ -67,7 +67,7 @@ class GuideNav extends Component {
       <AppGuideNav role="navigation" aria-label="Main">
 
         <AppGuideNavItem>
-          <AppGuideNavLink href="http://google.com">
+          <AppGuideNavLink href="1">
             <AppGuideNavIcon>
               <HomeIcon />
             </AppGuideNavIcon>
@@ -76,7 +76,7 @@ class GuideNav extends Component {
         </AppGuideNavItem>
 
         <AppGuideNavItem>
-          <AppGuideNavLink href="http://google.com">
+          <AppGuideNavLink href="2">
             <AppGuideNavIcon>
               <PresentationIcon />
             </AppGuideNavIcon>
@@ -85,7 +85,7 @@ class GuideNav extends Component {
         </AppGuideNavItem>
 
         <AppGuideNavItem>
-          <AppGuideNavLink href="http://google.com">
+          <AppGuideNavLink href="3">
             <AppGuideNavIcon>
               <CollectionIcon />
             </AppGuideNavIcon>
@@ -94,7 +94,7 @@ class GuideNav extends Component {
         </AppGuideNavItem>
 
         <AppGuideNavItem>
-          <AppGuideNavLink href="http://google.com">
+          <AppGuideNavLink href="4">
             <AppGuideNavIcon>
               <CourseIcon />
             </AppGuideNavIcon>
