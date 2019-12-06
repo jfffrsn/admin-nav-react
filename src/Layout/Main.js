@@ -15,11 +15,11 @@ const AppMainContent = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  &[guide-persistent-and-visible] {
+  &[data-guide="guide-persistent-and-visible"] {
     margin-left: ${props => props.theme.widths.appSidebarWidth};
   }
 
-  &[mini-guide-visible] {
+  &[data-guide="mini-guide-visible"] {
     margin-left: ${props => props.theme.widths.appMiniGuideWidth};
   }
 
