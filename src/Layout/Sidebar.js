@@ -13,21 +13,18 @@ const AppSidebar = styled.div`
   left: 0;
   width: 0;
 
-  &[opened]:not([persistent]) {
+  &[data-open="opened"]:not([data-persistent="persistent"]) {
     z-index: 2;
     width: 100%;
   }
 
-  &[persistent] {
-    width: var(--app-sidebar-width);
+  &[data-persistent="persistent"] {
+    width: ${props => props.theme.widths.appSidebarWidth};
   }
 
-  &[persistent]:not([opened]) {
-    width: var(--app-mini-guide-width);
+  &[data-persistent="persistent"]:not([data-open="opened"]) {
+    width: ${props => props.theme.widths.appMiniGuideWidth};
   }
-
-
-
 `;
 
 const AppSidebarContainer = styled.div`
@@ -37,15 +34,14 @@ const AppSidebarContainer = styled.div`
   bottom: 0;
   left: 0;
   transition-property: transform;
-  xxtransform: translate3d(-100%, 0, 0);
-  xxvisibility: hidden;
+  transform: translate3d(-100%, 0, 0);
+  visibility: hidden;
   transition-duration: 200ms;
 
-  &[opened] {
+  &[data-open="opened"] {
     transform: translate3d(0, 0, 0);
     visibility: visible;
   }
-
 `;
 
 class Sidebar extends Component {
