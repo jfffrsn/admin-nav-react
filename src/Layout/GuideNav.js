@@ -21,7 +21,7 @@ const AppGuideNavLink = styled.a`
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 48px;
+  min-height: 3rem;
   padding: 0 ${props => props.theme.space[3]};
   text-decoration: none;
 
