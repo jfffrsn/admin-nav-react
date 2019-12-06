@@ -96,13 +96,13 @@ class Header extends Component {
 
           <AppTopbarMenu>
             <AppTopbarSearch>
-              <TopbarBtn label="ARIA LABEL" aria-pressed="false">
+              <TopbarBtn label="Search" aria-pressed="false">
                 <SearchIcon />
               </TopbarBtn>
             </AppTopbarSearch>
 
             <AppTopbarAlerts>
-              <TopbarBtn label="ARIA LABEL" aria-pressed="false">
+              <TopbarBtn label="Notifications" aria-pressed="false">
                 <span className="app-topbar-alerts-counter"></span>
                 <AlertIcon />
               </TopbarBtn>
