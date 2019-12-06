@@ -69,7 +69,7 @@ class MiniGuideNav extends Component {
     return (
       <AppMiniGuideNav role="navigation" aria-label="Navigation">
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="google.com">
+          <AppMiniGuideNavLink href="http://google.com">
             <AppMiniGuideNavIcon>
               <HomeIcon />
             </AppMiniGuideNavIcon>
@@ -78,7 +78,7 @@ class MiniGuideNav extends Component {
         </AppMiniGuideNavItem>
 
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="google.com">
+          <AppMiniGuideNavLink href="http://google.com">
             <AppMiniGuideNavIcon>
               <PresentationIcon />
             </AppMiniGuideNavIcon>
@@ -87,7 +87,7 @@ class MiniGuideNav extends Component {
         </AppMiniGuideNavItem>
 
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="google.com">
+          <AppMiniGuideNavLink href="http://google.com">
             <AppMiniGuideNavIcon>
               <CollectionIcon />
             </AppMiniGuideNavIcon>
@@ -96,7 +96,7 @@ class MiniGuideNav extends Component {
         </AppMiniGuideNavItem>
 
         <AppMiniGuideNavItem>
-          <AppMiniGuideNavLink href="google.com">
+          <AppMiniGuideNavLink href="http://google.com">
             <AppMiniGuideNavIcon>
               <CourseIcon />
             </AppMiniGuideNavIcon>

@@ -11,6 +11,7 @@ const AppTopbarBtn = styled.button`
   cursor: pointer;
   border-radius: 50%;
   color: ${props => props.theme.colors.appNaviconInactive};
+  position: relative;
 
   &:hover,
   &:focus {

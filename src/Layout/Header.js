@@ -69,15 +69,7 @@ const AppTopbarMenu = styled.div`
   align-items: center;
 `;
 
-const AppTopbarSearch = styled.div`
-  display: inline-flex;
-`;
-
-const AppTopbarAlerts = styled.div`
-  display: inline-flex;
-`;
-
-const AppTopbarUser = styled.div`
+const AppTopbarBtnHolder = styled.div`
   display: inline-flex;
 `;
 
@@ -91,29 +83,28 @@ class Header extends Component {
           </AppTopbarNavicon>
 
           <AppTopbarLogoContainer>
-            <AppLogo title="Admin title" />
+            <AppLogo title="Admin Name" />
           </AppTopbarLogoContainer>
 
           <AppTopbarMenu>
-            <AppTopbarSearch>
+            <AppTopbarBtnHolder>
               <TopbarBtn label="Search" aria-pressed="false">
                 <SearchIcon />
               </TopbarBtn>
-            </AppTopbarSearch>
+            </AppTopbarBtnHolder>
 
-            <AppTopbarAlerts>
+            <AppTopbarBtnHolder>
               <TopbarBtn label="Notifications" aria-pressed="false">
-                <span className="app-topbar-alerts-counter"></span>
                 <AlertIcon />
               </TopbarBtn>
-            </AppTopbarAlerts>
+            </AppTopbarBtnHolder>
 
-            <AppTopbarUser>
+            <AppTopbarBtnHolder>
               <TopbarAvatarBtn
                 imgsrc="https://i.pravatar.cc/300"
                 imgalt="Username"
               ></TopbarAvatarBtn>
-            </AppTopbarUser>
+            </AppTopbarBtnHolder>
           </AppTopbarMenu>
         </AppTopHeader>
       </AppTopbar>
