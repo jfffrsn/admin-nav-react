@@ -65,7 +65,6 @@ class GuideNav extends Component {
   render() {
     return (
       <AppGuideNav role="navigation" aria-label="Main">
-
         <AppGuideNavItem>
           <AppGuideNavLink href="1">
             <AppGuideNavIcon>
