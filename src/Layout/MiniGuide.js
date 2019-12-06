@@ -11,6 +11,10 @@ const AppMiniGuide = styled.div`
   background-color: ${props => props.theme.colors.appMiniGuideBg};
   z-index: 1;
   width: ${props => props.theme.widths.appMiniGuideWidth};
+
+  &[data-visibility="hidden"] {
+    display: none;
+  }
 `;
 
 const AppMiniGuideNavSection = styled.div`

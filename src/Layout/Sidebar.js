@@ -12,6 +12,22 @@ const AppSidebar = styled.div`
   bottom: 0;
   left: 0;
   width: 0;
+
+  &[opened]:not([persistent]) {
+    z-index: 2;
+    width: 100%;
+  }
+
+  &[persistent] {
+    width: var(--app-sidebar-width);
+  }
+
+  &[persistent]:not([opened]) {
+    width: var(--app-mini-guide-width);
+  }
+
+
+
 `;
 
 const AppSidebarContainer = styled.div`
@@ -24,6 +40,12 @@ const AppSidebarContainer = styled.div`
   xxtransform: translate3d(-100%, 0, 0);
   xxvisibility: hidden;
   transition-duration: 200ms;
+
+  &[opened] {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
 `;
 
 class Sidebar extends Component {

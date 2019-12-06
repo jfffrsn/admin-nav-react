@@ -14,9 +14,9 @@ const AppGuideContainer = styled.div`
 
 const AppGuideSpacer = styled.div`
   margin-top: ${props => props.theme.heights.appTopbarHeight};
-  xxxdisplay: none;
+  display: none;
 
-  &[visible] {
+  &[data-visibility="visible"] {
     display: block;
   }
 `;
@@ -29,9 +29,9 @@ const AppGuideHeader = styled.div`
   background-color: ${props => props.theme.colors.appGuideHeaderBg};
   height: ${props => props.theme.heights.appTopbarHeight};
   padding: ${props => props.theme.space[2]};
-  display: flex;
+  display: none;
 
-  &[visible] {
+  &[data-visibility="visible"] {
     display: flex;
   }
 `;
