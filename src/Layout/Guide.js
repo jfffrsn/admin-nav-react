@@ -16,6 +16,10 @@ const AppGuideSpacer = styled.div`
   margin-top: ${props => props.theme.heights.appTopbarHeight};
   display: none;
 
+  &[data-visibility="hidden"] {
+    display: none;
+  }
+
   &[data-visibility="visible"] {
     display: block;
   }
@@ -30,6 +34,10 @@ const AppGuideHeader = styled.div`
   height: ${props => props.theme.heights.appTopbarHeight};
   padding: ${props => props.theme.space[2]};
   display: none;
+
+  &[data-visibility="hidden"] {
+    display: none;
+  }
 
   &[data-visibility="visible"] {
     display: flex;

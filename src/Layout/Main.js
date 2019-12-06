@@ -22,7 +22,6 @@ const AppMainContent = styled.div`
   &[data-guide="mini-guide-visible"] {
     margin-left: ${props => props.theme.widths.appMiniGuideWidth};
   }
-
 `;
 
 class Main extends Component {

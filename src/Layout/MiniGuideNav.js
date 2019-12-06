@@ -40,7 +40,6 @@ const AppMiniGuideNavLink = styled.a`
   &:focus svg {
     fill: currentColor;
   }
-
 `;
 
 const AppMiniGuideNavIcon = styled.span`
