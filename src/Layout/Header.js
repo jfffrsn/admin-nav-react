@@ -5,6 +5,7 @@ import { ReactComponent as SearchIcon } from "../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../assets/icon-alerts.svg";
 
 import TopbarBtn from "./TopbarBtn";
+import TopbarAvatarBtn from "./TopbarAvatarBtn";
 
 import styled from "styled-components/macro";
 
@@ -80,34 +81,6 @@ const AppTopbarUser = styled.div`
   display: inline-flex;
 `;
 
-const AppTopbarAvatarBtn = styled.button`
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  padding: ${props => props.theme.space[1]};
-  display: flex;
-  border-radius: 50%;
-
-  &:hover,
-  &:focus {
-    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
-  }
-
-`;
-
-const AppTopbarAvatar = styled.span`
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  overflow: hidden;
-  display: inline-block;
-`;
-
-const AppTopbarAvatarImg = styled.img`
-  width: 100%;
-  height: auto;
-`;
-
 class Header extends Component {
   render() {
     return (
@@ -136,14 +109,10 @@ class Header extends Component {
             </AppTopbarAlerts>
 
             <AppTopbarUser>
-              <AppTopbarAvatarBtn>
-                <AppTopbarAvatar>
-                  <AppTopbarAvatarImg
-                    src="https://i.pravatar.cc/300"
-                    alt="Username"
-                  />
-                </AppTopbarAvatar>
-              </AppTopbarAvatarBtn>
+              <TopbarAvatarBtn
+                imgsrc="https://i.pravatar.cc/300"
+                imgalt="Username"
+              ></TopbarAvatarBtn>
             </AppTopbarUser>
           </AppTopbarMenu>
         </AppTopHeader>
