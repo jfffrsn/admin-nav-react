@@ -36,6 +36,12 @@ const AppGuideNavLink = styled.a`
     color: ${props => props.theme.colors.appNavLinkColorHover};
     text-decoration: none;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: currentColor;
+  }
+
 `;
 const AppGuideNavIcon = styled.span`
   margin-right: ${props => props.theme.space[3]};

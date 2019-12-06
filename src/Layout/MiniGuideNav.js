@@ -37,6 +37,12 @@ const AppMiniGuideNavLink = styled.a`
     color: ${props => props.theme.colors.appNavLinkColorHover};
     text-decoration: none;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: currentColor;
+  }
+
 `;
 
 const AppMiniGuideNavIcon = styled.span`
