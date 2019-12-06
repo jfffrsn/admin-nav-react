@@ -22,7 +22,7 @@ const AppScrim = styled.div`
 
 class Scrim extends Component {
   render() {
-    return <AppScrim data-visibility="" />;
+    return <AppScrim data-visibility="hidden" />;
   }
 }
 
