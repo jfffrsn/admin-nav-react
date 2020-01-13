@@ -33,10 +33,7 @@ class TopbarAvatarBtn extends Component {
     return (
       <AppTopbarAvatarBtn>
         <AppTopbarAvatar>
-          <AppTopbarAvatarImg
-            src={this.props.imgsrc}
-            alt={this.props.imgalt}
-          />
+          <AppTopbarAvatarImg src={this.props.imgsrc} alt={this.props.imgalt} />
         </AppTopbarAvatar>
       </AppTopbarAvatarBtn>
     );

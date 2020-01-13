@@ -2,7 +2,7 @@ import React from "react";
 import { GlobalStyle } from "@echo360/ui-lib";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
-import Layout from "./Layout/Layout";
+import Layout from "./components/Layout/Layout";
 
 import { createGlobalStyle } from "styled-components";
 
@@ -15,13 +15,11 @@ const GlobalStyleAdmin = createGlobalStyle`
 
 function App() {
   return (
-
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <GlobalStyleAdmin />
-        <Layout />
-      </ThemeProvider>
-
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <GlobalStyleAdmin />
+      <Layout />
+    </ThemeProvider>
   );
 }
 
