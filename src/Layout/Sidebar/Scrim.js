@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 
 const AppScrim = styled.div`
@@ -25,10 +25,8 @@ const AppScrim = styled.div`
   }
 `;
 
-class Scrim extends Component {
-  render() {
-    return <AppScrim data-visibility={this.props.visibility} />;
-  }
-}
+const Scrim = props => {
+  return <AppScrim data-visibility={props.visibility} />;
+};
 
 export default Scrim;

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { ReactComponent as AppLogo } from "../assets/admin-logo.svg";
-import { ReactComponent as NavIcon } from "../assets/icon-menu.svg";
-import { ReactComponent as SearchIcon } from "../assets/icon-search.svg";
-import { ReactComponent as AlertIcon } from "../assets/icon-alerts.svg";
+import { ReactComponent as AppLogo } from "../../assets/admin-logo.svg";
+import { ReactComponent as NavIcon } from "../../assets/icon-menu.svg";
+import { ReactComponent as SearchIcon } from "../../assets/icon-search.svg";
+import { ReactComponent as AlertIcon } from "../../assets/icon-alerts.svg";
 import TopbarBtn from "./TopbarBtn";
 import TopbarAvatarBtn from "./TopbarAvatarBtn";
 import styled from "styled-components/macro";

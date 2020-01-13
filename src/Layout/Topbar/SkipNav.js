@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 
 const AppSkipNav = styled.a`
@@ -29,14 +29,12 @@ const AppSkipNav = styled.a`
   }
 `;
 
-class SkipNav extends Component {
-  render() {
-    return (
-      <AppSkipNav id="skip-navigation" href="#content">
-        Skip Navigation
-      </AppSkipNav>
-    );
-  }
-}
+const SkipNav = props => {
+  return (
+    <AppSkipNav id="skip-navigation" href="#content">
+      Skip Navigation
+    </AppSkipNav>
+  );
+};
 
 export default SkipNav;

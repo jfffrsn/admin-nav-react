@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components/macro";
-import { ReactComponent as NavIcon } from "../assets/icon-menu.svg";
-import { ReactComponent as AppLogo } from "../assets/admin-logo.svg";
+import { ReactComponent as NavIcon } from "../../assets/icon-menu.svg";
+import { ReactComponent as AppLogo } from "../../assets/admin-logo.svg";
 
 import GuideNav from "./GuideNav";
 
