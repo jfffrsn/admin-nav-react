@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import MiniGuideNavLink from "./MiniGuideNavLink";
 import MiniGuideNavIcon from "./MiniGuideNavIcon";
 import MiniGuideNavItem from "./MiniGuideNavItem";
+import MiniGuideNavTxt from "./MiniGuideNavTxt";
 
 import { ReactComponent as HomeIcon } from "../../../assets/icon-home.svg";
 import { ReactComponent as PresentationIcon } from "../../../assets/icon-presentation.svg";
@@ -15,10 +16,6 @@ const AppMiniGuideNav = styled.nav`
   flex-direction: column;
 `;
 
-const AppMiniGuideNavTxt = styled.span`
-  display: block;
-`;
-
 class MiniGuideNav extends Component {
   render() {
     return (
@@ -28,7 +25,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <HomeIcon />
             </MiniGuideNavIcon>
-            <AppMiniGuideNavTxt>Home</AppMiniGuideNavTxt>
+            <MiniGuideNavTxt>Home</MiniGuideNavTxt>
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -37,7 +34,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <PresentationIcon />
             </MiniGuideNavIcon>
-            <AppMiniGuideNavTxt>Presentations</AppMiniGuideNavTxt>
+            <MiniGuideNavTxt>Presentations</MiniGuideNavTxt>
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -46,7 +43,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CollectionIcon />
             </MiniGuideNavIcon>
-            <AppMiniGuideNavTxt>Collections</AppMiniGuideNavTxt>
+            <MiniGuideNavTxt>Collections</MiniGuideNavTxt>
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -55,7 +52,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CourseIcon />
             </MiniGuideNavIcon>
-            <AppMiniGuideNavTxt>Courses</AppMiniGuideNavTxt>
+            <MiniGuideNavTxt>Courses</MiniGuideNavTxt>
           </MiniGuideNavLink>
         </MiniGuideNavItem>
       </AppMiniGuideNav>
