@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components/macro";
 
+import GuideNavIcon from "./GuideNavIcon";
+
 import { ReactComponent as HomeIcon } from "../../../assets/icon-home.svg";
 import { ReactComponent as PresentationIcon } from "../../../assets/icon-presentation.svg";
 import { ReactComponent as CollectionIcon } from "../../../assets/icon-collection.svg";
@@ -42,20 +44,6 @@ const AppGuideNavLink = styled.a`
     fill: currentColor;
   }
 `;
-const AppGuideNavIcon = styled.span`
-  margin-right: ${props => props.theme.space[3]};
-  display: flex;
-  height: ${props => props.theme.space[4]};
-  width: ${props => props.theme.space[4]};
-
-  > svg {
-    pointer-events: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    fill: ${props => props.theme.colors.appIconInactive};
-  }
-`;
 
 const AppGuideNavTxt = styled.span`
   display: block;
@@ -67,36 +55,36 @@ class GuideNav extends Component {
       <AppGuideNav role="navigation" aria-label="Main">
         <AppGuideNavItem>
           <AppGuideNavLink href="1">
-            <AppGuideNavIcon>
+            <GuideNavIcon>
               <HomeIcon />
-            </AppGuideNavIcon>
+            </GuideNavIcon>
             <AppGuideNavTxt>Home</AppGuideNavTxt>
           </AppGuideNavLink>
         </AppGuideNavItem>
 
         <AppGuideNavItem>
           <AppGuideNavLink href="2">
-            <AppGuideNavIcon>
+            <GuideNavIcon>
               <PresentationIcon />
-            </AppGuideNavIcon>
+            </GuideNavIcon>
             <AppGuideNavTxt>Presentations</AppGuideNavTxt>
           </AppGuideNavLink>
         </AppGuideNavItem>
 
         <AppGuideNavItem>
           <AppGuideNavLink href="3">
-            <AppGuideNavIcon>
+            <GuideNavIcon>
               <CollectionIcon />
-            </AppGuideNavIcon>
+            </GuideNavIcon>
             <AppGuideNavTxt>Collections</AppGuideNavTxt>
           </AppGuideNavLink>
         </AppGuideNavItem>
 
         <AppGuideNavItem>
           <AppGuideNavLink href="4">
-            <AppGuideNavIcon>
+            <GuideNavIcon>
               <CourseIcon />
-            </AppGuideNavIcon>
+            </GuideNavIcon>
             <AppGuideNavTxt>Courses</AppGuideNavTxt>
           </AppGuideNavLink>
         </AppGuideNavItem>
