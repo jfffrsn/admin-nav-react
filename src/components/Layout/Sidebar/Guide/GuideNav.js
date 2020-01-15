@@ -3,10 +3,10 @@ import styled from "styled-components/macro";
 
 import GuideNavIcon from "./GuideNavIcon";
 
-import { ReactComponent as HomeIcon } from "../../../assets/icon-home.svg";
-import { ReactComponent as PresentationIcon } from "../../../assets/icon-presentation.svg";
-import { ReactComponent as CollectionIcon } from "../../../assets/icon-collection.svg";
-import { ReactComponent as CourseIcon } from "../../../assets/icon-course.svg";
+import { ReactComponent as HomeIcon } from "../../../../assets/icon-home.svg";
+import { ReactComponent as PresentationIcon } from "../../../../assets/icon-presentation.svg";
+import { ReactComponent as CollectionIcon } from "../../../../assets/icon-collection.svg";
+import { ReactComponent as CourseIcon } from "../../../../assets/icon-course.svg";
 
 const AppGuideNav = styled.nav`
   display: flex;

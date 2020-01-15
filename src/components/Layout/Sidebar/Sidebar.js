@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Scrim from "./Scrim";
-import Guide from "./Guide";
+import Guide from "./Guide/Guide";
 
 import styled from "styled-components/macro";
 
