@@ -5,7 +5,7 @@ const AppMiniGuideNavTxt = styled.span`
   display: block;
 `;
 const MiniGuideNavTxt = props => {
-  return <AppMiniGuideNavTxt>{props.children}</AppMiniGuideNavTxt>;
+  return <AppMiniGuideNavTxt>{props.text}</AppMiniGuideNavTxt>;
 };
 
 export default MiniGuideNavTxt;

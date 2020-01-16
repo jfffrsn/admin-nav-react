@@ -25,7 +25,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <HomeIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt>Home</MiniGuideNavTxt>
+            <MiniGuideNavTxt text="Home" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -34,7 +34,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <PresentationIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt>Presentations</MiniGuideNavTxt>
+            <MiniGuideNavTxt text="Presentations" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -43,7 +43,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CollectionIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt>Collections</MiniGuideNavTxt>
+            <MiniGuideNavTxt text="Collections" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -52,7 +52,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CourseIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt>Courses</MiniGuideNavTxt>
+            <MiniGuideNavTxt text="Courses"/>
           </MiniGuideNavLink>
         </MiniGuideNavItem>
       </AppMiniGuideNav>
