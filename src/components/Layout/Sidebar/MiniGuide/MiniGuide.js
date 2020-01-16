@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import MiniGuideNav from "./MiniGuideNav";
 import styled from "styled-components/macro";
+
+import MiniGuideNavSection from "./MiniGuideNavSection";
+import MiniGuideNav from "./MiniGuideNav";
 
 const AppMiniGuide = styled.div`
   position: fixed;
@@ -20,17 +22,13 @@ const AppMiniGuide = styled.div`
   }
 `;
 
-const AppMiniGuideNavSection = styled.div`
-  display: block;
-`;
-
 class MiniGuide extends Component {
   render() {
     return (
       <AppMiniGuide>
-        <AppMiniGuideNavSection>
+        <MiniGuideNavSection>
           <MiniGuideNav />
-        </AppMiniGuideNavSection>
+        </MiniGuideNavSection>
       </AppMiniGuide>
     );
   }
