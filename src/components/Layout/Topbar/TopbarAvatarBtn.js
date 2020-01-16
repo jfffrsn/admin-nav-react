@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 
 const AppTopbarAvatarBtn = styled.button`
@@ -28,16 +28,14 @@ const AppTopbarAvatarImg = styled.img`
   height: auto;
 `;
 
-class TopbarAvatarBtn extends Component {
-  render() {
-    return (
-      <AppTopbarAvatarBtn>
-        <AppTopbarAvatar>
-          <AppTopbarAvatarImg src={this.props.imgsrc} alt={this.props.imgalt} />
-        </AppTopbarAvatar>
-      </AppTopbarAvatarBtn>
-    );
-  }
-}
+const TopbarAvatarBtn = props => {
+  return (
+    <AppTopbarAvatarBtn>
+      <AppTopbarAvatar>
+        <AppTopbarAvatarImg src={props.imgsrc} alt={props.imgalt} />
+      </AppTopbarAvatar>
+    </AppTopbarAvatarBtn>
+  );
+};
 
 export default TopbarAvatarBtn;

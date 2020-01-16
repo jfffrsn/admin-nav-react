@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 
 const AppTopbarBtn = styled.button`
@@ -39,20 +39,8 @@ const AppTopbarBtn = styled.button`
   }
 `;
 
-class TopbarBtn extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <AppTopbarBtn aria-label={this.props.label}>
-        {this.props.children}
-      </AppTopbarBtn>
-    );
-  }
-}
+const TopbarBtn = props => {
+  return <AppTopbarBtn aria-label={props.label}>{props.children}</AppTopbarBtn>;
+};
 
 export default TopbarBtn;
