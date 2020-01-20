@@ -14,7 +14,7 @@ function Layout() {
       <Header />
       <Sidebar />
       <MiniGuide />
-      <Main />
+      <Main guide="guide-persistent-and-visible" />
     </>
   );
 }

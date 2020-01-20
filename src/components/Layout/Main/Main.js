@@ -27,7 +27,7 @@ const Content = styled.div`
 function Main(props) {
   return (
     <Wrapper role="main" id="content">
-      <Content>
+      <Content data-guide={props.guide}>
         <p>
           <a href="http://google.com">link</a>
           1Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sint?
