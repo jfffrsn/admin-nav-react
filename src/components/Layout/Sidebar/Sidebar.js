@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Scrim from "./Scrim";
 import Guide from "./Guide/Guide";
@@ -44,17 +44,15 @@ const AppSidebarContainer = styled.div`
   }
 `;
 
-class Sidebar extends Component {
-  render() {
-    return (
-      <AppSidebar>
-        <Scrim visibility="visible" />
-        <AppSidebarContainer>
-          <Guide />
-        </AppSidebarContainer>
-      </AppSidebar>
-    );
-  }
+function Sidebar(props) {
+  return (
+    <AppSidebar>
+      <Scrim visibility="visible" />
+      <AppSidebarContainer>
+        <Guide />
+      </AppSidebarContainer>
+    </AppSidebar>
+  );
 }
 
 export default Sidebar;

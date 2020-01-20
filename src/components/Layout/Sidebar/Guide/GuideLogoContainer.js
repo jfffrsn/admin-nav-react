@@ -7,8 +7,8 @@ const AppGuideLogoContainer = styled.div`
   min-width: 5rem;
 `;
 
-const GuideLogoContainer = props => {
+function GuideLogoContainer(props) {
   return <AppGuideLogoContainer>{props.children}</AppGuideLogoContainer>;
-};
+}
 
 export default GuideLogoContainer;

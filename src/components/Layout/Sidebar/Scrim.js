@@ -25,8 +25,8 @@ const AppScrim = styled.div`
   }
 `;
 
-const Scrim = props => {
+function Scrim(props) {
   return <AppScrim data-visibility={props.visibility} />;
-};
+}
 
 export default Scrim;

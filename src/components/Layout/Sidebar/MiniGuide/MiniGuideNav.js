@@ -52,7 +52,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CourseIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt text="Courses"/>
+            <MiniGuideNavTxt text="Courses" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
       </AppMiniGuideNav>

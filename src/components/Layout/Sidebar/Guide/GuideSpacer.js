@@ -14,8 +14,8 @@ const AppGuideSpacer = styled.div`
   }
 `;
 
-const GuideSpacer = props => {
+function GuideSpacer(props) {
   return <AppGuideSpacer></AppGuideSpacer>;
-};
+}
 
 export default GuideSpacer;

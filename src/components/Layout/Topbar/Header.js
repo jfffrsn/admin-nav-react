@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { ReactComponent as AppLogo } from "../../../assets/admin-logo.svg";
 import { ReactComponent as NavIcon } from "../../../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../../../assets/icon-search.svg";
@@ -71,43 +71,41 @@ const AppTopbarBtnHolder = styled.div`
   display: inline-flex;
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <AppTopbar role="banner">
-        <AppTopHeader>
-          <AppTopbarNavicon aria-label="Guide" aria-pressed="false">
-            <NavIcon />
-          </AppTopbarNavicon>
+function Header(props) {
+  return (
+    <AppTopbar role="banner">
+      <AppTopHeader>
+        <AppTopbarNavicon aria-label="Guide" aria-pressed="false">
+          <NavIcon />
+        </AppTopbarNavicon>
 
-          <AppTopbarLogoContainer>
-            <AppLogo title="Admin Name" />
-          </AppTopbarLogoContainer>
+        <AppTopbarLogoContainer>
+          <AppLogo title="Admin Name" />
+        </AppTopbarLogoContainer>
 
-          <AppTopbarMenu>
-            <AppTopbarBtnHolder>
-              <TopbarBtn label="Search" aria-pressed="false">
-                <SearchIcon />
-              </TopbarBtn>
-            </AppTopbarBtnHolder>
+        <AppTopbarMenu>
+          <AppTopbarBtnHolder>
+            <TopbarBtn label="Search" aria-pressed="false">
+              <SearchIcon />
+            </TopbarBtn>
+          </AppTopbarBtnHolder>
 
-            <AppTopbarBtnHolder>
-              <TopbarBtn label="Notifications" aria-pressed="false">
-                <AlertIcon />
-              </TopbarBtn>
-            </AppTopbarBtnHolder>
+          <AppTopbarBtnHolder>
+            <TopbarBtn label="Notifications" aria-pressed="false">
+              <AlertIcon />
+            </TopbarBtn>
+          </AppTopbarBtnHolder>
 
-            <AppTopbarBtnHolder>
-              <TopbarAvatarBtn
-                imgsrc="https://i.pravatar.cc/300"
-                imgalt="Username"
-              ></TopbarAvatarBtn>
-            </AppTopbarBtnHolder>
-          </AppTopbarMenu>
-        </AppTopHeader>
-      </AppTopbar>
-    );
-  }
+          <AppTopbarBtnHolder>
+            <TopbarAvatarBtn
+              imgsrc="https://i.pravatar.cc/300"
+              imgalt="Username"
+            ></TopbarAvatarBtn>
+          </AppTopbarBtnHolder>
+        </AppTopbarMenu>
+      </AppTopHeader>
+    </AppTopbar>
+  );
 }
 
 export default Header;

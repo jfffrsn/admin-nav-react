@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 
 import GuideNavIcon from "./GuideNavIcon";
@@ -49,48 +49,46 @@ const AppGuideNavTxt = styled.span`
   display: block;
 `;
 
-class GuideNav extends Component {
-  render() {
-    return (
-      <AppGuideNav role="navigation" aria-label="Main">
-        <AppGuideNavItem>
-          <AppGuideNavLink href="1">
-            <GuideNavIcon>
-              <HomeIcon />
-            </GuideNavIcon>
-            <AppGuideNavTxt>Home</AppGuideNavTxt>
-          </AppGuideNavLink>
-        </AppGuideNavItem>
+function GuideNav(props) {
+  return (
+    <AppGuideNav role="navigation" aria-label="Main">
+      <AppGuideNavItem>
+        <AppGuideNavLink href="1">
+          <GuideNavIcon>
+            <HomeIcon />
+          </GuideNavIcon>
+          <AppGuideNavTxt>Home</AppGuideNavTxt>
+        </AppGuideNavLink>
+      </AppGuideNavItem>
 
-        <AppGuideNavItem>
-          <AppGuideNavLink href="2">
-            <GuideNavIcon>
-              <PresentationIcon />
-            </GuideNavIcon>
-            <AppGuideNavTxt>Presentations</AppGuideNavTxt>
-          </AppGuideNavLink>
-        </AppGuideNavItem>
+      <AppGuideNavItem>
+        <AppGuideNavLink href="2">
+          <GuideNavIcon>
+            <PresentationIcon />
+          </GuideNavIcon>
+          <AppGuideNavTxt>Presentations</AppGuideNavTxt>
+        </AppGuideNavLink>
+      </AppGuideNavItem>
 
-        <AppGuideNavItem>
-          <AppGuideNavLink href="3">
-            <GuideNavIcon>
-              <CollectionIcon />
-            </GuideNavIcon>
-            <AppGuideNavTxt>Collections</AppGuideNavTxt>
-          </AppGuideNavLink>
-        </AppGuideNavItem>
+      <AppGuideNavItem>
+        <AppGuideNavLink href="3">
+          <GuideNavIcon>
+            <CollectionIcon />
+          </GuideNavIcon>
+          <AppGuideNavTxt>Collections</AppGuideNavTxt>
+        </AppGuideNavLink>
+      </AppGuideNavItem>
 
-        <AppGuideNavItem>
-          <AppGuideNavLink href="4">
-            <GuideNavIcon>
-              <CourseIcon />
-            </GuideNavIcon>
-            <AppGuideNavTxt>Courses</AppGuideNavTxt>
-          </AppGuideNavLink>
-        </AppGuideNavItem>
-      </AppGuideNav>
-    );
-  }
+      <AppGuideNavItem>
+        <AppGuideNavLink href="4">
+          <GuideNavIcon>
+            <CourseIcon />
+          </GuideNavIcon>
+          <AppGuideNavTxt>Courses</AppGuideNavTxt>
+        </AppGuideNavLink>
+      </AppGuideNavItem>
+    </AppGuideNav>
+  );
 }
 
 export default GuideNav;

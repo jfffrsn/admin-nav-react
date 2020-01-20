@@ -5,8 +5,8 @@ const AppGuideContent = styled.div`
   display: block;
 `;
 
-const GuideContent = props => {
+function GuideContent(props) {
   return <AppGuideContent>{props.children}</AppGuideContent>;
-};
+}
 
 export default GuideContent;

@@ -29,8 +29,8 @@ const AppMiniGuideNavLink = styled.a`
   }
 `;
 
-const MiniGuideNavLink = props => {
+function MiniGuideNavLink(props) {
   return <AppMiniGuideNavLink>{props.children}</AppMiniGuideNavLink>;
-};
+}
 
 export default MiniGuideNavLink;

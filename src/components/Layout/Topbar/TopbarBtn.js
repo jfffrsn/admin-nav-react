@@ -39,8 +39,8 @@ const AppTopbarBtn = styled.button`
   }
 `;
 
-const TopbarBtn = props => {
+function TopbarBtn(props) {
   return <AppTopbarBtn aria-label={props.label}>{props.children}</AppTopbarBtn>;
-};
+}
 
 export default TopbarBtn;

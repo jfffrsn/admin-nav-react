@@ -16,8 +16,8 @@ const AppGuideNavIcon = styled.span`
   }
 `;
 
-const GuideNavIcon = props => {
+function GuideNavIcon(props) {
   return <AppGuideNavIcon>{props.children}</AppGuideNavIcon>;
-};
+}
 
 export default GuideNavIcon;

@@ -28,7 +28,7 @@ const AppTopbarAvatarImg = styled.img`
   height: auto;
 `;
 
-const TopbarAvatarBtn = props => {
+function TopbarAvatarBtn(props) {
   return (
     <AppTopbarAvatarBtn>
       <AppTopbarAvatar>
@@ -36,6 +36,6 @@ const TopbarAvatarBtn = props => {
       </AppTopbarAvatar>
     </AppTopbarAvatarBtn>
   );
-};
+}
 
 export default TopbarAvatarBtn;

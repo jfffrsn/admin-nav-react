@@ -29,12 +29,12 @@ const AppSkipNav = styled.a`
   }
 `;
 
-const SkipNav = props => {
+function SkipNav() {
   return (
     <AppSkipNav id="skip-navigation" href="#content">
       Skip Navigation
     </AppSkipNav>
   );
-};
+}
 
 export default SkipNav;

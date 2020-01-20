@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { ReactComponent as NavIcon } from "../../../../assets/icon-menu.svg";
 import { ReactComponent as AppLogo } from "../../../../assets/admin-logo.svg";
@@ -14,28 +14,26 @@ import GuideSpacer from "./GuideSpacer";
 import GuideNavSection from "./GuideNavSection";
 import GuideNav from "./GuideNav";
 
-class Guide extends Component {
-  render() {
-    return (
-      <GuideContainer>
-        <GuideSpacer />
+function Guide(props) {
+  return (
+    <GuideContainer>
+      <GuideSpacer />
 
-        <GuideContent>
-          <GuideHeader>
-            <GuideNavIcon aria-label="Guide" aria-pressed="true">
-              <NavIcon />
-            </GuideNavIcon>
-            <GuideLogoContainer>
-              <AppLogo />
-            </GuideLogoContainer>
-          </GuideHeader>
-          <GuideNavSection>
-            <GuideNav />
-          </GuideNavSection>
-        </GuideContent>
-      </GuideContainer>
-    );
-  }
+      <GuideContent>
+        <GuideHeader>
+          <GuideNavIcon aria-label="Guide" aria-pressed="true">
+            <NavIcon />
+          </GuideNavIcon>
+          <GuideLogoContainer>
+            <AppLogo />
+          </GuideLogoContainer>
+        </GuideHeader>
+        <GuideNavSection>
+          <GuideNav />
+        </GuideNavSection>
+      </GuideContent>
+    </GuideContainer>
+  );
 }
 
 export default Guide;

@@ -5,8 +5,8 @@ const AppGuideNavSection = styled.div`
   display: block;
 `;
 
-const GuideNavSection = props => {
+function GuideNavSection(props) {
   return <AppGuideNavSection>{props.children}</AppGuideNavSection>;
-};
+}
 
 export default GuideNavSection;

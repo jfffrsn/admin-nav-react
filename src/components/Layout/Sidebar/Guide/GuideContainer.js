@@ -8,8 +8,8 @@ const AppGuideContainer = styled.div`
   background-color: ${props => props.theme.colors.appGuideBg};
 `;
 
-const GuideContainer = props => {
+function GuideContainer(props) {
   return <AppGuideContainer>{props.children}</AppGuideContainer>;
-};
+}
 
 export default GuideContainer;

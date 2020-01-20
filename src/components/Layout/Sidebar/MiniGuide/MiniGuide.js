@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components/macro";
 
 import MiniGuideNavSection from "./MiniGuideNavSection";
@@ -22,16 +22,14 @@ const AppMiniGuide = styled.div`
   }
 `;
 
-class MiniGuide extends Component {
-  render() {
-    return (
-      <AppMiniGuide>
-        <MiniGuideNavSection>
-          <MiniGuideNav />
-        </MiniGuideNavSection>
-      </AppMiniGuide>
-    );
-  }
+function MiniGuide(props) {
+  return (
+    <AppMiniGuide>
+      <MiniGuideNavSection>
+        <MiniGuideNav />
+      </MiniGuideNavSection>
+    </AppMiniGuide>
+  );
 }
 
 export default MiniGuide;

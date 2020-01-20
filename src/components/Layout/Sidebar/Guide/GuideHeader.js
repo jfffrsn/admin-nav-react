@@ -16,8 +16,8 @@ const AppGuideHeader = styled.div`
   }
 `;
 
-const GuideHeader = props => {
+function GuideHeader(props) {
   return <AppGuideHeader>{props.children}</AppGuideHeader>;
-};
+}
 
 export default GuideHeader;
