@@ -27,24 +27,7 @@ const Content = styled.div`
 function Main(props) {
   return (
     <Wrapper role="main" id="content">
-      <Content data-guide={props.guide}>
-        <p>
-          <a href="http://google.com">link</a>
-          1Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sint?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, esse
-          eveniet odio dolorem voluptas illo consequuntur modi corporis, veniam
-          tenetur, suscipit qui doloribus temporibus atque voluptatum! Dolore ad
-          numquam tempore repellendus laudantium iure consequatur iusto quas
-          doloremque corrupti doloribus, quod corporis pariatur temporibus sed
-          cupiditate repellat accusamus incidunt excepturi. Corporis, itaque
-          repellat nostrum ipsa vel quae velit reiciendis aliquid in. Optio,
-          dicta? Explicabo illum rem, temporibus quod quae ad. Unde repellat
-          eligendi nulla quidem nobis id, dolorem quas possimus ratione quos
-          nemo nihil commodi similique blanditiis sed facere veniam sequi
-          aperiam, alias dolore. Mollitia aliquam nihil dolorem aut esse
-          inventore.
-        </p>
-      </Content>
+      <Content data-guide={props.guide}>{props.children}</Content>
     </Wrapper>
   );
 }
