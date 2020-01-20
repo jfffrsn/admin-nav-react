@@ -15,7 +15,7 @@ import TopbarAvatar from "./TopbarAvatar";
 
 import styled from "styled-components/macro";
 
-const Topbar = styled.header`
+const Header = styled.header`
   background-color: ${props => props.theme.colors.appTopbarBg};
   height: ${props => props.theme.heights.appTopbarHeight};
   position: fixed;
@@ -26,17 +26,17 @@ const Topbar = styled.header`
   transition: transform 0.3s ease;
 `;
 
-const TopHeader = styled.div`
+const Content = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
   padding: ${props => props.theme.space[2]};
 `;
 
-function Header(props) {
+function Topbar(props) {
   return (
-    <Topbar role="banner">
-      <TopHeader>
+    <Header role="banner">
+      <Content>
         <TopbarMenuBtn label="Guide">
           <MenuIcon />
         </TopbarMenuBtn>
@@ -65,9 +65,9 @@ function Header(props) {
             </TopbarAvatarBtn>
           </TopbarBtnHolder>
         </TopbarMenu>
-      </TopHeader>
-    </Topbar>
+      </Content>
+    </Header>
   );
 }
 
-export default Header;
+export default Topbar;

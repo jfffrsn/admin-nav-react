@@ -1,7 +1,7 @@
 import React from "react";
 
 import SkipNav from "./Topbar/SkipNav";
-import Header from "./Topbar/Header";
+import Topbar from "./Topbar/Topbar";
 import MiniGuide from "./Sidebar/MiniGuide/MiniGuide";
 
 import Sidebar from "./Sidebar/Sidebar";
@@ -11,7 +11,7 @@ function Layout() {
   return (
     <>
       <SkipNav />
-      <Header />
+      <Topbar />
       <Sidebar />
       <MiniGuide />
       <Main guide="guide-persistent-and-visible" />
