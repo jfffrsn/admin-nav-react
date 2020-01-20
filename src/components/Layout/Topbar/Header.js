@@ -7,7 +7,7 @@ import { ReactComponent as AlertIcon } from "../../../assets/icon-alerts.svg";
 import TopbarMenu from "./TopbarMenu";
 import TopbarLogo from "./TopbarLogo";
 
-import TopbarNavIcon from "./TopbarNavIcon";
+import TopbarMenuBtn from "./TopbarMenuBtn";
 import TopbarBtnHolder from "./TopbarBtnHolder";
 import TopbarBtn from "./TopbarBtn";
 import TopbarAvatarBtn from "./TopbarAvatarBtn";
@@ -37,9 +37,9 @@ function Header(props) {
   return (
     <Topbar role="banner">
       <TopHeader>
-        <TopbarNavIcon label="Guide">
+        <TopbarMenuBtn label="Guide">
           <MenuIcon />
-        </TopbarNavIcon>
+        </TopbarMenuBtn>
 
         <TopbarLogo />
 

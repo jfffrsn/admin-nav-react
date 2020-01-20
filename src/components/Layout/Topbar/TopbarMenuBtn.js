@@ -25,8 +25,8 @@ const Button = styled.button`
   }
 `;
 
-function TopbarNavIcon(props) {
+function TopbarMenuBtn(props) {
   return <Button aria-label="{props.label}">{props.children}</Button>;
 }
 
-export default TopbarNavIcon;
+export default TopbarMenuBtn;
