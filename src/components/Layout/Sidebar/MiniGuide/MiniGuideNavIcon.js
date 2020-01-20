@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const NavIcon = styled.span`
+const Icon = styled.span`
   display: flex;
   height: ${props => props.theme.space[4]};
   width: ${props => props.theme.space[4]};
@@ -17,7 +17,7 @@ const NavIcon = styled.span`
 `;
 
 function MiniGuideNavIcon(props) {
-  return <NavIcon>{props.children}</NavIcon>;
+  return <Icon>{props.children}</Icon>;
 }
 
 export default MiniGuideNavIcon;

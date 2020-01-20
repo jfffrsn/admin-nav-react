@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const NavIcon = styled.span`
+const Icon = styled.span`
   margin-right: ${props => props.theme.space[3]};
   display: flex;
   height: ${props => props.theme.space[4]};
@@ -17,7 +17,7 @@ const NavIcon = styled.span`
 `;
 
 function GuideNavIcon(props) {
-  return <NavIcon aria-label="{props.label}">{props.children}</NavIcon>;
+  return <Icon aria-label="{props.label}">{props.children}</Icon>;
 }
 
 export default GuideNavIcon;
