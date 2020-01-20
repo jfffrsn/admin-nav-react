@@ -5,10 +5,10 @@ const Link = styled.a`
   background-color: ${props => props.theme.colors.appNavLinkBg};
   color: ${props => props.theme.colors.appNavLinkColor};
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: ${props => props.theme.space[3]};
+  min-height: 3rem;
+  padding: 0 ${props => props.theme.space[3]};
   text-decoration: none;
 
   &:active,
@@ -29,8 +29,8 @@ const Link = styled.a`
   }
 `;
 
-function MiniGuideNavLink(props) {
+function GuideNavLink(props) {
   return <Link>{props.children}</Link>;
 }
 
-export default MiniGuideNavLink;
+export default GuideNavLink;

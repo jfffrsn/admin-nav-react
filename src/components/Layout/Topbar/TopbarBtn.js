@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppTopbarBtn = styled.button`
+const Button = styled.button`
   background-color: ${props => props.theme.colors.appTopbarBtnBg};
   height: 2.5rem;
   width: 2.5rem;
@@ -40,7 +40,7 @@ const AppTopbarBtn = styled.button`
 `;
 
 function TopbarBtn(props) {
-  return <AppTopbarBtn aria-label={props.label}>{props.children}</AppTopbarBtn>;
+  return <Button aria-label={props.label}>{props.children}</Button>;
 }
 
 export default TopbarBtn;

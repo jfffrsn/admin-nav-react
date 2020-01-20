@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 import MiniGuideNavSection from "./MiniGuideNavSection";
 import MiniGuideNav from "./MiniGuideNav";
 
-const AppMiniGuide = styled.div`
+const Wrapper = styled.div`
   position: fixed;
   left: 0;
   top: ${props => props.theme.heights.appTopbarHeight};
@@ -24,11 +24,11 @@ const AppMiniGuide = styled.div`
 
 function MiniGuide(props) {
   return (
-    <AppMiniGuide>
+    <Wrapper>
       <MiniGuideNavSection>
         <MiniGuideNav />
       </MiniGuideNavSection>
-    </AppMiniGuide>
+    </Wrapper>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppTopbarNavicon = styled.button`
+const Navicon = styled.button`
   background-color: ${props => props.theme.colors.appTopbarBtnBg};
   height: 2.5rem;
   width: 2.5rem;
@@ -26,11 +26,7 @@ const AppTopbarNavicon = styled.button`
 `;
 
 function TopbarNavicon(props) {
-  return (
-    <AppTopbarNavicon aria-label="{props.label}">
-      {props.children}
-    </AppTopbarNavicon>
-  );
+  return <Navicon aria-label="{props.label}">{props.children}</Navicon>;
 }
 
 export default TopbarNavicon;

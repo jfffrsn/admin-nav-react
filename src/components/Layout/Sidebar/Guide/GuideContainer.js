@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppGuideContainer = styled.div`
+const Wrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@ const AppGuideContainer = styled.div`
 `;
 
 function GuideContainer(props) {
-  return <AppGuideContainer>{props.children}</AppGuideContainer>;
+  return <Wrapper>{props.children}</Wrapper>;
 }
 
 export default GuideContainer;

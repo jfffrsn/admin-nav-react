@@ -5,7 +5,7 @@ import { ReactComponent as SearchIcon } from "../../../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../../../assets/icon-alerts.svg";
 
 import TopbarMenu from "./TopbarMenu";
-import TopbarLogoContainer from "./TopbarLogoContainer";
+import TopbarLogo from "./TopbarLogo";
 
 import TopbarNavicon from "./TopbarNavicon";
 import TopbarBtnHolder from "./TopbarBtnHolder";
@@ -15,7 +15,7 @@ import TopbarAvatar from "./TopbarAvatar";
 
 import styled from "styled-components/macro";
 
-const AppTopbar = styled.header`
+const Topbar = styled.header`
   background-color: ${props => props.theme.colors.appTopbarBg};
   height: ${props => props.theme.heights.appTopbarHeight};
   position: fixed;
@@ -26,7 +26,7 @@ const AppTopbar = styled.header`
   transition: transform 0.3s ease;
 `;
 
-const AppTopHeader = styled.div`
+const TopHeader = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
@@ -35,13 +35,13 @@ const AppTopHeader = styled.div`
 
 function Header(props) {
   return (
-    <AppTopbar role="banner">
-      <AppTopHeader>
+    <Topbar role="banner">
+      <TopHeader>
         <TopbarNavicon label="Guide">
           <NavIcon />
         </TopbarNavicon>
 
-        <TopbarLogoContainer />
+        <TopbarLogo />
 
         <TopbarMenu>
           <TopbarBtnHolder>
@@ -65,8 +65,8 @@ function Header(props) {
             </TopbarAvatarBtn>
           </TopbarBtnHolder>
         </TopbarMenu>
-      </AppTopHeader>
-    </AppTopbar>
+      </TopHeader>
+    </Topbar>
   );
 }
 

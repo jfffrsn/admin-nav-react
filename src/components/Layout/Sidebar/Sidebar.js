@@ -6,7 +6,7 @@ import SidebarContainer from "./SidebarContainer";
 
 import styled from "styled-components/macro";
 
-const AppSidebar = styled.div`
+const Wrapper = styled.div`
   position: fixed;
   top: 0;
   right: 0;
@@ -30,12 +30,12 @@ const AppSidebar = styled.div`
 
 function Sidebar(props) {
   return (
-    <AppSidebar>
+    <Wrapper>
       <Scrim visibility="visible" />
       <SidebarContainer>
         <Guide />
       </SidebarContainer>
-    </AppSidebar>
+    </Wrapper>
   );
 }
 

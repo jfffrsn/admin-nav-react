@@ -1,93 +1,60 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import GuideNavItem from "./GuideNavItem";
 import GuideNavIcon from "./GuideNavIcon";
+import GuideNavTxt from "./GuideNavTxt";
+import GuideNavLink from "./GuideNavLink";
 
 import { ReactComponent as HomeIcon } from "../../../../assets/icon-home.svg";
 import { ReactComponent as PresentationIcon } from "../../../../assets/icon-presentation.svg";
 import { ReactComponent as CollectionIcon } from "../../../../assets/icon-collection.svg";
 import { ReactComponent as CourseIcon } from "../../../../assets/icon-course.svg";
 
-const AppGuideNav = styled.nav`
+const Nav = styled.nav`
   display: flex;
   flex-direction: column;
 `;
 
-const AppGuideNavItem = styled.div`
-  font-size: 0.875rem;
-`;
-
-const AppGuideNavLink = styled.a`
-  background-color: ${props => props.theme.colors.appNavLinkBg};
-  color: ${props => props.theme.colors.appNavLinkColor};
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-height: 3rem;
-  padding: 0 ${props => props.theme.space[3]};
-  text-decoration: none;
-
-  &:active,
-  &:visited {
-    color: ${props => props.theme.colors.appNavLinkColor};
-  }
-
-  &:hover,
-  &:focus {
-    background-color: ${props => props.theme.colors.appNavLinkBgHover};
-    color: ${props => props.theme.colors.appNavLinkColorHover};
-    text-decoration: none;
-  }
-
-  &:hover svg,
-  &:focus svg {
-    fill: currentColor;
-  }
-`;
-
-const AppGuideNavTxt = styled.span`
-  display: block;
-`;
-
 function GuideNav(props) {
   return (
-    <AppGuideNav role="navigation" aria-label="Main">
-      <AppGuideNavItem>
-        <AppGuideNavLink href="1">
+    <Nav role="navigation" aria-label="Main">
+      <GuideNavItem>
+        <GuideNavLink href="1">
           <GuideNavIcon>
             <HomeIcon />
           </GuideNavIcon>
-          <AppGuideNavTxt>Home</AppGuideNavTxt>
-        </AppGuideNavLink>
-      </AppGuideNavItem>
+          <GuideNavTxt text="Home" />
+        </GuideNavLink>
+      </GuideNavItem>
 
-      <AppGuideNavItem>
-        <AppGuideNavLink href="2">
+      <GuideNavItem>
+        <GuideNavLink href="2">
           <GuideNavIcon>
             <PresentationIcon />
           </GuideNavIcon>
-          <AppGuideNavTxt>Presentations</AppGuideNavTxt>
-        </AppGuideNavLink>
-      </AppGuideNavItem>
+          <GuideNavTxt text="Presentations" />
+        </GuideNavLink>
+      </GuideNavItem>
 
-      <AppGuideNavItem>
-        <AppGuideNavLink href="3">
+      <GuideNavItem>
+        <GuideNavLink href="3">
           <GuideNavIcon>
             <CollectionIcon />
           </GuideNavIcon>
-          <AppGuideNavTxt>Collections</AppGuideNavTxt>
-        </AppGuideNavLink>
-      </AppGuideNavItem>
+          <GuideNavTxt text="Collections" />
+        </GuideNavLink>
+      </GuideNavItem>
 
-      <AppGuideNavItem>
-        <AppGuideNavLink href="4">
+      <GuideNavItem>
+        <GuideNavLink href="4">
           <GuideNavIcon>
             <CourseIcon />
           </GuideNavIcon>
-          <AppGuideNavTxt>Courses</AppGuideNavTxt>
-        </AppGuideNavLink>
-      </AppGuideNavItem>
-    </AppGuideNav>
+          <GuideNavTxt text="Courses" />
+        </GuideNavLink>
+      </GuideNavItem>
+    </Nav>
   );
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppGuideContent = styled.div`
+const Wrapper = styled.div`
   display: block;
 `;
 
 function GuideContent(props) {
-  return <AppGuideContent>{props.children}</AppGuideContent>;
+  return <Wrapper>{props.children}</Wrapper>;
 }
 
 export default GuideContent;

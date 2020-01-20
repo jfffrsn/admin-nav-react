@@ -5,8 +5,8 @@ const Text = styled.span`
   display: block;
 `;
 
-function MiniGuideNavTxt(props) {
+function GuideNavTxt(props) {
   return <Text>{props.text}</Text>;
 }
 
-export default MiniGuideNavTxt;
+export default GuideNavTxt;

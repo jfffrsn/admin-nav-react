@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppSkipNav = styled.a`
+const Wrapper = styled.a`
   clip: rect(0 0 0 0);
   overflow: hidden;
   position: fixed;
@@ -31,9 +31,9 @@ const AppSkipNav = styled.a`
 
 function SkipNav() {
   return (
-    <AppSkipNav id="skip-navigation" href="#content">
+    <Wrapper id="skip-navigation" href="#content">
       Skip Navigation
-    </AppSkipNav>
+    </Wrapper>
   );
 }
 

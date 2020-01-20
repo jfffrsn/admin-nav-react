@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppMiniGuideNavSection = styled.div`
+const Section = styled.div`
   display: block;
 `;
 
 function MiniGuideNavSection(props) {
-  return <AppMiniGuideNavSection>{props.children}</AppMiniGuideNavSection>;
+  return <Section>{props.children}</Section>;
 }
 
 export default MiniGuideNavSection;

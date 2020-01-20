@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppTopbarAvatar = styled.span`
+const Wrapper = styled.span`
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -9,16 +9,16 @@ const AppTopbarAvatar = styled.span`
   display: inline-block;
 `;
 
-const AppTopbarAvatarImg = styled.img`
+const Image = styled.img`
   width: 100%;
   height: auto;
 `;
 
 function TopbarAvatar(props) {
   return (
-    <AppTopbarAvatar>
-      <AppTopbarAvatarImg src={props.imgSrc} alt={props.imgAlt} />
-    </AppTopbarAvatar>
+    <Wrapper>
+      <Image src={props.imgSrc} alt={props.imgAlt} />
+    </Wrapper>
   );
 }
 

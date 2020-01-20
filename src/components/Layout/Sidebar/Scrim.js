@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppScrim = styled.div`
+const Wrapper = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -26,7 +26,7 @@ const AppScrim = styled.div`
 `;
 
 function Scrim(props) {
-  return <AppScrim data-visibility={props.visibility} />;
+  return <Wrapper data-visibility={props.visibility} />;
 }
 
 export default Scrim;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppGuideHeader = styled.div`
+const Wrapper = styled.div`
   background-color: ${props => props.theme.colors.appGuideHeaderBg};
   height: ${props => props.theme.heights.appTopbarHeight};
   padding: ${props => props.theme.space[2]};
@@ -17,7 +17,7 @@ const AppGuideHeader = styled.div`
 `;
 
 function GuideHeader(props) {
-  return <AppGuideHeader>{props.children}</AppGuideHeader>;
+  return <Wrapper>{props.children}</Wrapper>;
 }
 
 export default GuideHeader;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppTopbarAvatarBtn = styled.button`
+const Button = styled.button`
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -16,7 +16,7 @@ const AppTopbarAvatarBtn = styled.button`
 `;
 
 function TopbarAvatarBtn(props) {
-  return <AppTopbarAvatarBtn>{props.children}</AppTopbarAvatarBtn>;
+  return <Button>{props.children}</Button>;
 }
 
 export default TopbarAvatarBtn;

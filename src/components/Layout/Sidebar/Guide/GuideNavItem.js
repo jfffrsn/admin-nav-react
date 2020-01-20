@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components/macro";
 
 const NavItem = styled.div`
-  font-size: 0.625rem;
+  font-size: 0.875rem;
 `;
 
-function MiniGuideNavItem(props) {
+function GuideNavItem(props) {
   return <NavItem>{props.children}</NavItem>;
 }
 
-export default MiniGuideNavItem;
+export default GuideNavItem;

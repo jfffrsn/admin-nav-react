@@ -11,7 +11,7 @@ import { ReactComponent as CollectionIcon } from "../../../../assets/icon-collec
 import { ReactComponent as CourseIcon } from "../../../../assets/icon-course.svg";
 import styled from "styled-components/macro";
 
-const AppMiniGuideNav = styled.nav`
+const Nav = styled.nav`
   display: flex;
   flex-direction: column;
 `;
@@ -19,7 +19,7 @@ const AppMiniGuideNav = styled.nav`
 class MiniGuideNav extends Component {
   render() {
     return (
-      <AppMiniGuideNav role="navigation" aria-label="Navigation">
+      <Nav role="navigation" aria-label="Navigation">
         <MiniGuideNavItem>
           <MiniGuideNavLink href="1">
             <MiniGuideNavIcon>
@@ -55,7 +55,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavTxt text="Courses" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
-      </AppMiniGuideNav>
+      </Nav>
     );
   }
 }

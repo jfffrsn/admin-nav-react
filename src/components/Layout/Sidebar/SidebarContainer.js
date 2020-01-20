@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppSidebarContainer = styled.div`
+const Wrapper = styled.div`
   width: ${props => props.theme.widths.appSidebarWidth};
   position: absolute;
   top: 0;
@@ -19,7 +19,7 @@ const AppSidebarContainer = styled.div`
 `;
 
 function SidebarContainer(props) {
-  return <AppSidebarContainer>{props.children}</AppSidebarContainer>;
+  return <Wrapper>{props.children}</Wrapper>;
 }
 
 export default SidebarContainer;

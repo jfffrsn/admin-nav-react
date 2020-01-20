@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const AppMain = styled.main`
+const Wrapper = styled.main`
   background-color: ${props => props.theme.colors.appMainBg};
   margin-top: ${props => props.theme.heights.appTopbarHeight};
   display: flex;
   flex: 1;
   flex-basis: 0.000000001px;
 `;
-const AppMainContent = styled.div`
+const Content = styled.div`
   flex: 1;
   padding: ${props => props.theme.space[4]};
   display: flex;
@@ -26,8 +26,8 @@ const AppMainContent = styled.div`
 
 function Main(props) {
   return (
-    <AppMain role="main" id="content">
-      <AppMainContent>
+    <Wrapper role="main" id="content">
+      <Content>
         <p>
           <a href="http://google.com">link</a>
           1Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sint?
@@ -44,8 +44,8 @@ function Main(props) {
           aperiam, alias dolore. Mollitia aliquam nihil dolorem aut esse
           inventore.
         </p>
-      </AppMainContent>
-    </AppMain>
+      </Content>
+    </Wrapper>
   );
 }
 
