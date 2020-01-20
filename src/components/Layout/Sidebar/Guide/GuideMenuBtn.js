@@ -39,8 +39,8 @@ const Button = styled.button`
   }
 `;
 
-function GuideIconBtn(props) {
+function GuideMenuBtn(props) {
   return <Button aria-label={props.label}>{props.children}</Button>;
 }
 
-export default GuideIconBtn;
+export default GuideMenuBtn;
