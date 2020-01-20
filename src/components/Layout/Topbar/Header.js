@@ -1,10 +1,18 @@
 import React from "react";
-import { ReactComponent as AppLogo } from "../../../assets/admin-logo.svg";
+
 import { ReactComponent as NavIcon } from "../../../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../../../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../../../assets/icon-alerts.svg";
+
+import TopbarMenu from "./TopbarMenu";
+import TopbarLogoContainer from "./TopbarLogoContainer";
+
+import TopbarNavicon from "./TopbarNavicon";
+import TopbarBtnHolder from "./TopbarBtnHolder";
 import TopbarBtn from "./TopbarBtn";
 import TopbarAvatarBtn from "./TopbarAvatarBtn";
+import TopbarAvatar from "./TopbarAvatar";
+
 import styled from "styled-components/macro";
 
 const AppTopbar = styled.header`
@@ -25,84 +33,38 @@ const AppTopHeader = styled.div`
   padding: ${props => props.theme.space[2]};
 `;
 
-const AppTopbarNavicon = styled.button`
-  background-color: ${props => props.theme.colors.appTopbarBtnBg};
-  height: 2.5rem;
-  width: 2.5rem;
-  padding: ${props => props.theme.space[2]};
-  margin: 0 ${props => props.theme.space[1]} 0 0;
-  border: 0;
-  cursor: pointer;
-  border-radius: 50%;
-  color: ${props => props.theme.colors.appNaviconInactive};
-
-  > svg {
-    fill: currentColor;
-    pointer-events: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  &:hover,
-  &:focus {
-    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
-  }
-`;
-
-const AppTopbarLogoContainer = styled.div`
-  width: 5rem;
-  height: 2.5rem;
-  min-width: 5rem;
-  > svg {
-    pointer-events: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-const AppTopbarMenu = styled.div`
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-`;
-
-const AppTopbarBtnHolder = styled.div`
-  display: inline-flex;
-`;
-
 function Header(props) {
   return (
     <AppTopbar role="banner">
       <AppTopHeader>
-        <AppTopbarNavicon aria-label="Guide" aria-pressed="false">
+        <TopbarNavicon label="Guide">
           <NavIcon />
-        </AppTopbarNavicon>
+        </TopbarNavicon>
 
-        <AppTopbarLogoContainer>
-          <AppLogo title="Admin Name" />
-        </AppTopbarLogoContainer>
+        <TopbarLogoContainer />
 
-        <AppTopbarMenu>
-          <AppTopbarBtnHolder>
-            <TopbarBtn label="Search" aria-pressed="false">
+        <TopbarMenu>
+          <TopbarBtnHolder>
+            <TopbarBtn label="Search">
               <SearchIcon />
             </TopbarBtn>
-          </AppTopbarBtnHolder>
+          </TopbarBtnHolder>
 
-          <AppTopbarBtnHolder>
-            <TopbarBtn label="Notifications" aria-pressed="false">
+          <TopbarBtnHolder>
+            <TopbarBtn label="Notifications">
               <AlertIcon />
             </TopbarBtn>
-          </AppTopbarBtnHolder>
+          </TopbarBtnHolder>
 
-          <AppTopbarBtnHolder>
-            <TopbarAvatarBtn
-              imgsrc="https://i.pravatar.cc/300"
-              imgalt="Username"
-            ></TopbarAvatarBtn>
-          </AppTopbarBtnHolder>
-        </AppTopbarMenu>
+          <TopbarBtnHolder>
+            <TopbarAvatarBtn>
+              <TopbarAvatar
+                imgSrc="https://i.pravatar.cc/300"
+                imgAlt="Username"
+              />
+            </TopbarAvatarBtn>
+          </TopbarBtnHolder>
+        </TopbarMenu>
       </AppTopHeader>
     </AppTopbar>
   );

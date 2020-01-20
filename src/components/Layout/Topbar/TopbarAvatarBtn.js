@@ -15,27 +15,8 @@ const AppTopbarAvatarBtn = styled.button`
   }
 `;
 
-const AppTopbarAvatar = styled.span`
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  overflow: hidden;
-  display: inline-block;
-`;
-
-const AppTopbarAvatarImg = styled.img`
-  width: 100%;
-  height: auto;
-`;
-
 function TopbarAvatarBtn(props) {
-  return (
-    <AppTopbarAvatarBtn>
-      <AppTopbarAvatar>
-        <AppTopbarAvatarImg src={props.imgsrc} alt={props.imgalt} />
-      </AppTopbarAvatar>
-    </AppTopbarAvatarBtn>
-  );
+  return <AppTopbarAvatarBtn>{props.children}</AppTopbarAvatarBtn>;
 }
 
 export default TopbarAvatarBtn;
