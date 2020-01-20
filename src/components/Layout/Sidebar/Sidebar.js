@@ -32,7 +32,7 @@ function Sidebar(props) {
   return (
     <Wrapper>
       <Scrim visibility="visible" />
-      <SidebarContainer>
+      <SidebarContainer opened="opened">
         <Guide />
       </SidebarContainer>
     </Wrapper>

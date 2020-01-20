@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 
 import GuideNavItem from "./GuideNavItem";
 import GuideNavIcon from "./GuideNavIcon";
-import GuideNavTxt from "./GuideNavTxt";
+import GuideNavText from "./GuideNavText";
 import GuideNavLink from "./GuideNavLink";
 
 import { ReactComponent as HomeIcon } from "../../../../assets/icon-home.svg";
@@ -24,7 +24,7 @@ function GuideNav(props) {
           <GuideNavIcon>
             <HomeIcon />
           </GuideNavIcon>
-          <GuideNavTxt text="Home" />
+          <GuideNavText text="Home" />
         </GuideNavLink>
       </GuideNavItem>
 
@@ -33,7 +33,7 @@ function GuideNav(props) {
           <GuideNavIcon>
             <PresentationIcon />
           </GuideNavIcon>
-          <GuideNavTxt text="Presentations" />
+          <GuideNavText text="Presentations" />
         </GuideNavLink>
       </GuideNavItem>
 
@@ -42,7 +42,7 @@ function GuideNav(props) {
           <GuideNavIcon>
             <CollectionIcon />
           </GuideNavIcon>
-          <GuideNavTxt text="Collections" />
+          <GuideNavText text="Collections" />
         </GuideNavLink>
       </GuideNavItem>
 
@@ -51,7 +51,7 @@ function GuideNav(props) {
           <GuideNavIcon>
             <CourseIcon />
           </GuideNavIcon>
-          <GuideNavTxt text="Courses" />
+          <GuideNavText text="Courses" />
         </GuideNavLink>
       </GuideNavItem>
     </Nav>

@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 function GuideHeader(props) {
-  return <Wrapper>{props.children}</Wrapper>;
+  return <Wrapper data-visibility={props.visiblity}>{props.children}</Wrapper>;
 }
 
 export default GuideHeader;

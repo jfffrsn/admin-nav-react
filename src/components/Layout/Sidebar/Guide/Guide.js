@@ -14,9 +14,9 @@ import GuideNav from "./GuideNav";
 function Guide(props) {
   return (
     <GuideContainer>
-      <GuideSpacer />
+      <GuideSpacer visiblity="visible" />
       <GuideContent>
-        <GuideHeader>
+        <GuideHeader visiblity="visible">
           <GuideNavIcon label="Guide">
             <NavIcon />
           </GuideNavIcon>

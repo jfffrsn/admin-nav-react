@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import MiniGuideNavLink from "./MiniGuideNavLink";
 import MiniGuideNavIcon from "./MiniGuideNavIcon";
 import MiniGuideNavItem from "./MiniGuideNavItem";
-import MiniGuideNavTxt from "./MiniGuideNavTxt";
+import MiniGuideNavText from "./MiniGuideNavText";
 
 import { ReactComponent as HomeIcon } from "../../../../assets/icon-home.svg";
 import { ReactComponent as PresentationIcon } from "../../../../assets/icon-presentation.svg";
@@ -25,7 +25,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <HomeIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt text="Home" />
+            <MiniGuideNavText text="Home" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -34,7 +34,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <PresentationIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt text="Presentations" />
+            <MiniGuideNavText text="Presentations" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -43,7 +43,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CollectionIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt text="Collections" />
+            <MiniGuideNavText text="Collections" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
 
@@ -52,7 +52,7 @@ class MiniGuideNav extends Component {
             <MiniGuideNavIcon>
               <CourseIcon />
             </MiniGuideNavIcon>
-            <MiniGuideNavTxt text="Courses" />
+            <MiniGuideNavText text="Courses" />
           </MiniGuideNavLink>
         </MiniGuideNavItem>
       </Nav>

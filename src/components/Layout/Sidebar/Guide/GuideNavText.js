@@ -5,8 +5,8 @@ const Text = styled.span`
   display: block;
 `;
 
-function GuideNavTxt(props) {
+function GuideNavText(props) {
   return <Text>{props.text}</Text>;
 }
 
-export default GuideNavTxt;
+export default GuideNavText;
