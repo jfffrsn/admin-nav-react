@@ -1,11 +1,11 @@
 import React from "react";
 
-import { ReactComponent as NavIcon } from "../../../../assets/icon-menu.svg";
+import { ReactComponent as MenuIcon } from "../../../../assets/icon-menu.svg";
 
 import GuideContainer from "./GuideContainer";
 import GuideContent from "./GuideContent";
 import GuideLogo from "./GuideLogo";
-import GuideNavIcon from "./GuideNavIcon";
+import GuideIconBtn from "./GuideIconBtn";
 import GuideHeader from "./GuideHeader";
 import GuideSpacer from "./GuideSpacer";
 import GuideNavSection from "./GuideNavSection";
@@ -17,9 +17,9 @@ function Guide(props) {
       <GuideSpacer visiblity="visible" />
       <GuideContent>
         <GuideHeader visiblity="visible">
-          <GuideNavIcon label="Guide">
-            <NavIcon />
-          </GuideNavIcon>
+          <GuideIconBtn label="Guide">
+            <MenuIcon />
+          </GuideIconBtn>
           <GuideLogo />
         </GuideHeader>
         <GuideNavSection>

@@ -11,6 +11,12 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 50%;
   color: ${props => props.theme.colors.appNaviconInactive};
+  position: relative;
+
+  &:hover,
+  &:focus {
+    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
+  }
 
   > svg {
     fill: currentColor;
@@ -19,14 +25,22 @@ const Button = styled.button`
     width: 100%;
     height: 100%;
   }
-  &:hover,
-  &:focus {
-    background-color: ${props => props.theme.colors.appTopbarBtnBgHover};
+
+  &.active {
+    color: ${props => props.theme.colors.appNaviconActive};
+
+    > svg {
+      fill: currentColor;
+      pointer-events: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 
-function TopbarNavIcon(props) {
-  return <Button aria-label="{props.label}">{props.children}</Button>;
+function GuideIconBtn(props) {
+  return <Button aria-label={props.label}>{props.children}</Button>;
 }
 
-export default TopbarNavIcon;
+export default GuideIconBtn;

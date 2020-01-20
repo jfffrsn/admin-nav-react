@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 
 function Sidebar(props) {
   return (
-    <Wrapper>
+    <Wrapper data-persistent="persistentx" data-open="opened">
       <Scrim visibility="visible" />
       <SidebarContainer opened="opened">
         <Guide />

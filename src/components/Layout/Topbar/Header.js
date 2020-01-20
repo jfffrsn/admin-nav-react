@@ -1,13 +1,13 @@
 import React from "react";
 
-import { ReactComponent as NavIcon } from "../../../assets/icon-menu.svg";
+import { ReactComponent as MenuIcon } from "../../../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../../../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../../../assets/icon-alerts.svg";
 
 import TopbarMenu from "./TopbarMenu";
 import TopbarLogo from "./TopbarLogo";
 
-import TopbarNavicon from "./TopbarNavicon";
+import TopbarNavIcon from "./TopbarNavIcon";
 import TopbarBtnHolder from "./TopbarBtnHolder";
 import TopbarBtn from "./TopbarBtn";
 import TopbarAvatarBtn from "./TopbarAvatarBtn";
@@ -37,9 +37,9 @@ function Header(props) {
   return (
     <Topbar role="banner">
       <TopHeader>
-        <TopbarNavicon label="Guide">
-          <NavIcon />
-        </TopbarNavicon>
+        <TopbarNavIcon label="Guide">
+          <MenuIcon />
+        </TopbarNavIcon>
 
         <TopbarLogo />
 
