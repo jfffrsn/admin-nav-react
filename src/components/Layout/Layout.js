@@ -54,6 +54,33 @@ function Layout(props) {
   let medium = useMedia("(min-width: 63.25rem)");
   let large = useMedia("(min-width: 80rem)");
 
+  let sbp = "";
+  if (small && !medium) {
+    sbp = "one";
+  } else if (medium && !large) {
+    sbp = "two";
+  } else if (large) {
+    sbp = "persistent";
+  }
+
+  let sbo = "";
+  if (small && !medium) {
+    sbo = "aaa";
+  } else if (medium && !large) {
+    sbo = "bbb";
+  } else if (large) {
+    sbo = "opened";
+  }
+
+  let sbc = "";
+  if (small && !medium) {
+    sbc = "hidden";
+  } else if (medium && !large) {
+    sbc = "hidden";
+  } else if (large) {
+    sbc = "opened";
+  }
+
   return (
     <>
       <SkipNav id="skip-navigation" anchor="#content" />
@@ -88,12 +115,9 @@ function Layout(props) {
         </TopbarMenu>
       </Topbar>
 
-      <Sidebar
-        persistent={small ? "" : "persistent"}
-        open={small ? "" : "opened"}
-      >
+      <Sidebar persistent={sbp} open={sbo}>
         <Scrim visibility={small ? "hidden" : "visible"} />
-        <SidebarContainer open={small ? "" : "opened"}>
+        <SidebarContainer open={sbc}>
           <Guide>
             <GuideSpacer visiblity={small ? "hidden" : "visible"} />
 

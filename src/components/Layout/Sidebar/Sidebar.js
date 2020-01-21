@@ -26,7 +26,11 @@ const Wrapper = styled.div`
 
 function Sidebar(props) {
   return (
-    <Wrapper data-persistent={props.persistent} data-open={props.open}>
+    <Wrapper
+      data-persistent={props.persistent}
+      data-open={props.open}
+      bing={props.bingo}
+    >
       {props.children}
     </Wrapper>
   );
