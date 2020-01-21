@@ -1,33 +1,15 @@
 import React from "react";
+import styled from "styled-components/macro";
 
-import { ReactComponent as MenuIcon } from "../../../../assets/icon-menu.svg";
-
-import GuideContainer from "./GuideContainer";
-import GuideContent from "./GuideContent";
-import GuideLogo from "./GuideLogo";
-import GuideMenuBtn from "./GuideMenuBtn";
-import GuideHeader from "./GuideHeader";
-import GuideSpacer from "./GuideSpacer";
-import GuideNavSection from "./GuideNavSection";
-import GuideNav from "./GuideNav";
+const Wrapper = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: ${props => props.theme.colors.appGuideBg};
+`;
 
 function Guide(props) {
-  return (
-    <GuideContainer>
-      <GuideSpacer visiblity="visible" />
-      <GuideContent>
-        <GuideHeader visiblity="visible">
-          <GuideMenuBtn label="Guide">
-            <MenuIcon />
-          </GuideMenuBtn>
-          <GuideLogo />
-        </GuideHeader>
-        <GuideNavSection>
-          <GuideNav />
-        </GuideNavSection>
-      </GuideContent>
-    </GuideContainer>
-  );
+  return <Wrapper>{props.children}</Wrapper>;
 }
 
 export default Guide;

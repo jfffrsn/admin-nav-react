@@ -1,9 +1,5 @@
 import React from "react";
 
-import Scrim from "./Scrim";
-import Guide from "./Guide/Guide";
-import SidebarContainer from "./SidebarContainer";
-
 import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
@@ -30,11 +26,8 @@ const Wrapper = styled.div`
 
 function Sidebar(props) {
   return (
-    <Wrapper data-persistent="persistentx" data-open="opened">
-      <Scrim visibility="visible" />
-      <SidebarContainer opened="opened">
-        <Guide />
-      </SidebarContainer>
+    <Wrapper data-persistent={props.persistent} data-open={props.open}>
+      {props.children}
     </Wrapper>
   );
 }

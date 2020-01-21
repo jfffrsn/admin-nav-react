@@ -29,9 +29,9 @@ const Wrapper = styled.a`
   }
 `;
 
-function SkipNav() {
+function SkipNav(props) {
   return (
-    <Wrapper id="skip-navigation" href="#content">
+    <Wrapper id={props.id} href={props.anchor}>
       Skip Navigation
     </Wrapper>
   );

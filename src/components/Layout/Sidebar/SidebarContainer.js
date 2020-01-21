@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 `;
 
 function SidebarContainer(props) {
-  return <Wrapper data-open={props.opened}>{props.children}</Wrapper>;
+  return <Wrapper data-open={props.open}>{props.children}</Wrapper>;
 }
 
 export default SidebarContainer;

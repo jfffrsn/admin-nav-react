@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import MiniGuideNavSection from "./MiniGuideNavSection";
-import MiniGuideNav from "./MiniGuideNav";
-
 const Wrapper = styled.div`
   position: fixed;
   left: 0;
@@ -23,13 +20,7 @@ const Wrapper = styled.div`
 `;
 
 function MiniGuide(props) {
-  return (
-    <Wrapper>
-      <MiniGuideNavSection>
-        <MiniGuideNav />
-      </MiniGuideNavSection>
-    </Wrapper>
-  );
+  return <Wrapper data-visibility={props.visibility}>{props.children}</Wrapper>;
 }
 
 export default MiniGuide;
