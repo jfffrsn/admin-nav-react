@@ -23,7 +23,6 @@ import TopbarAvatar from "./Topbar/TopbarAvatar";
 import MiniGuide from "./Sidebar/MiniGuide/MiniGuide";
 import MiniGuideNavSection from "./Sidebar/MiniGuide/MiniGuideNavSection";
 import MiniGuideNav from "./Sidebar/MiniGuide/MiniGuideNav";
-
 import MiniGuideNavLink from "./Sidebar/MiniGuide/MiniGuideNavLink";
 import MiniGuideNavIcon from "./Sidebar/MiniGuide/MiniGuideNavIcon";
 import MiniGuideNavItem from "./Sidebar/MiniGuide/MiniGuideNavItem";
@@ -41,7 +40,6 @@ import GuideHeader from "./Sidebar/Guide/GuideHeader";
 import GuideSpacer from "./Sidebar/Guide/GuideSpacer";
 import GuideNavSection from "./Sidebar/Guide/GuideNavSection";
 import GuideNav from "./Sidebar/Guide/GuideNav";
-
 import GuideNavItem from "./Sidebar/Guide/GuideNavItem";
 import GuideNavIcon from "./Sidebar/Guide/GuideNavIcon";
 import GuideNavText from "./Sidebar/Guide/GuideNavText";
@@ -49,7 +47,13 @@ import GuideNavLink from "./Sidebar/Guide/GuideNavLink";
 
 import Main from "./Main/Main";
 
-function Layout() {
+import useMedia from "../../hooks/useMedia";
+
+function Layout(props) {
+  let small = useMedia("(min-width: 48rem)");
+  let medium = useMedia("(min-width: 63.25rem)");
+  let large = useMedia("(min-width: 80rem)");
+
   return (
     <>
       <SkipNav id="skip-navigation" anchor="#content" />
@@ -84,14 +88,17 @@ function Layout() {
         </TopbarMenu>
       </Topbar>
 
-      <Sidebar persistent="persistent" open="opened">
-        <Scrim visibility="visible" />
-        <SidebarContainer open="opened">
+      <Sidebar
+        persistent={small ? "" : "persistent"}
+        open={small ? "" : "opened"}
+      >
+        <Scrim visibility={small ? "hidden" : "visible"} />
+        <SidebarContainer open={small ? "" : "opened"}>
           <Guide>
-            <GuideSpacer visiblity="visible" />
+            <GuideSpacer visiblity={small ? "hidden" : "visible"} />
 
             <GuideContent>
-              <GuideHeader visiblity="visible">
+              <GuideHeader visiblity={small ? "visible" : "hidden"}>
                 <GuideMenuBtn label="Guide">
                   <MenuIcon />
                 </GuideMenuBtn>
@@ -142,7 +149,7 @@ function Layout() {
         </SidebarContainer>
       </Sidebar>
 
-      <MiniGuide visibility="visible">
+      <MiniGuide visibility={small ? "visible" : "hidden"}>
         <MiniGuideNavSection>
           <MiniGuideNav label="Navigation">
             <MiniGuideNavItem>
@@ -184,7 +191,17 @@ function Layout() {
         </MiniGuideNavSection>
       </MiniGuide>
 
-      <Main guide="guide-persistent-and-visible">
+      <Main
+        guide={small ? "mini-guide-visible" : "guide-persistent-and-visible"}
+      >
+        <div className="Media">
+          <h1>Media</h1>
+          <h2 style={{ color: "darkred" }}>Change this window size</h2>
+          <p>Small? {small ? "Yep" : "Nope"}.</p>
+          <p>Medium? {medium ? "Yep" : "Nope"}.</p>
+          <p>Large? {large ? "Yep" : "Nope"}.</p>
+        </div>
+
         <p>
           <a href="http://google.com">link</a>
           1Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sint?
