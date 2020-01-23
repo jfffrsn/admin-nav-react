@@ -18,6 +18,7 @@ const Button = styled.button`
     display: block;
     width: 100%;
     height: 100%;
+    min-width: ${props => props.theme.sizes.iconWidth};
   }
   &:hover,
   &:focus {

@@ -81,6 +81,42 @@ function Layout(props) {
     sbc = "opened";
   }
 
+  let scrv = "visible";
+  if (small || medium) {
+    scrv = "visible";
+  } else if (large) {
+    scrv = "hidden";
+  }
+
+  let gspc = "visible";
+  if (small || medium) {
+    gspc = "visible";
+  } else if (large) {
+    gspc = "hidden";
+  }
+
+  let ghdr = "hidden";
+  if (small || medium) {
+    ghdr = "hidden";
+  } else if (large) {
+    ghdr = "visible";
+  }
+
+  let minig = "hidden";
+  if (small || medium) {
+    minig = "visible";
+  } else if (large) {
+    minig = "hidden";
+  }
+  let mn = "0000";
+  if (small && !medium && !large) {
+    mn = "";
+  } else if (medium && !large) {
+    mn = "mini-guide-visible";
+  } else if (large) {
+    mn = "guide-persistent-and-visible";
+  }
+
   return (
     <>
       <SkipNav id="skip-navigation" anchor="#content" />
@@ -116,13 +152,13 @@ function Layout(props) {
       </Topbar>
 
       <Sidebar persistent={sbp} open={sbo}>
-        <Scrim visibility={small ? "hidden" : "visible"} />
+        <Scrim visibility={scrv} />
         <SidebarContainer open={sbc}>
           <Guide>
-            <GuideSpacer visiblity={small ? "hidden" : "visible"} />
+            <GuideSpacer visiblity={gspc} />
 
             <GuideContent>
-              <GuideHeader visiblity={small ? "visible" : "hidden"}>
+              <GuideHeader visiblity={ghdr}>
                 <GuideMenuBtn label="Guide">
                   <MenuIcon />
                 </GuideMenuBtn>
@@ -173,7 +209,7 @@ function Layout(props) {
         </SidebarContainer>
       </Sidebar>
 
-      <MiniGuide visibility={small ? "visible" : "hidden"}>
+      <MiniGuide visibility={minig}>
         <MiniGuideNavSection>
           <MiniGuideNav label="Navigation">
             <MiniGuideNavItem>
@@ -215,9 +251,7 @@ function Layout(props) {
         </MiniGuideNavSection>
       </MiniGuide>
 
-      <Main
-        guide={small ? "mini-guide-visible" : "guide-persistent-and-visible"}
-      >
+      <Main guide={mn}>
         <div className="Media">
           <h1>Media</h1>
           <h2 style={{ color: "darkred" }}>Change this window size</h2>

@@ -59,7 +59,9 @@ export const eceAdmin = {
   ],
 
   sizes: {
-    avatar: 48
+    avatar: "3rem",
+    iconWidth: "1.5rem",
+    iconHeight: "1.5rem"
   },
   radii: {
     default: 4,
