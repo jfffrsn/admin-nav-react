@@ -27,7 +27,7 @@ const Button = styled.button`
 `;
 
 function TopbarMenuBtn(props) {
-  return <Button aria-label="{props.label}">{props.children}</Button>;
+  return <Button aria-label={props.label}>{props.children}</Button>;
 }
 
 export default TopbarMenuBtn;
