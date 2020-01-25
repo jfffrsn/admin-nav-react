@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 import { ReactComponent as MenuIcon } from "../../assets/icon-menu.svg";
 
@@ -23,7 +23,7 @@ import GuideMenuBtn from "./Sidebar/Guide/GuideMenuBtn";
 import GuideHeader from "./Sidebar/Guide/GuideHeader";
 
 //media query hook
-import useMedia from "../../hooks/useMedia";
+//import useMedia from "../../hooks/useMedia";
 
 const Layout = props => {
   //
@@ -89,6 +89,25 @@ const Layout = props => {
     };
   })();
 
+  const CloseEsc = props => {
+    const escFunction = useCallback(event => {
+      if (event.keyCode === 27) {
+        if (scrimVis === "visible") {
+          closeGuideMenu();
+          setScrimVis("hidden");
+        }
+      }
+    }, []);
+
+    useEffect(() => {
+      document.addEventListener("keydown", escFunction, false);
+      return () => {
+        document.removeEventListener("keydown", escFunction, false);
+      };
+    }, []);
+    return null;
+  };
+
   //media query
   //let xsmall = useMedia("(min-width: 0rem)");
   //let small = useMedia("(min-width: 48rem)");
@@ -141,6 +160,7 @@ const Layout = props => {
 
       <Sidebar persistent={sidebarPersist} open={sidebarOpen}>
         <Scrim visibility={scrimVis} clicked={clickScrim} />
+        <CloseEsc />
         <SidebarContainer open={sidebarContainerOpen}>
           <Guide>
             <GuideSpacer visiblity={guideSpacer} />
