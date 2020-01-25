@@ -28,7 +28,7 @@ import useMedia from "../../hooks/useMedia";
 const Layout = props => {
   //
   const body = document.querySelector("body");
-  const [main, setMain] = useState("guide-persistent-and-visible");
+  const [main, setMain] = useState("");
   const [miniGuide, setMiniGuide] = useState("hidden");
   const [sidebarPersist, setSidebarPersist] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState("");
