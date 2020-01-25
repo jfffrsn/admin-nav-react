@@ -40,7 +40,11 @@ const Button = styled.button`
 `;
 
 const GuideMenuBtn = props => {
-  return <Button aria-label={props.label}>{props.children}</Button>;
+  return (
+    <Button aria-label={props.label} onClick={props.clicked}>
+      {props.children}
+    </Button>
+  );
 };
 
 export default GuideMenuBtn;

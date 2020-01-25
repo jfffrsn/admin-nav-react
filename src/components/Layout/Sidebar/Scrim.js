@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 `;
 
 const Scrim = props => {
-  return <Wrapper data-visibility={props.visibility} />;
+  return <Wrapper data-visibility={props.visibility} onClick={props.clicked} />;
 };
 
 export default Scrim;
