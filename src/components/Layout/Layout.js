@@ -90,48 +90,46 @@ const Layout = props => {
   })();
 
   //media query
-  let xsmall = useMedia("(min-width: 0rem)");
-  let small = useMedia("(min-width: 48rem)");
-  let medium = useMedia("(min-width: 63.25rem)");
-  let large = useMedia("(min-width: 80rem)");
-
-  const mediaqueryresponse = () => {
-    if (xsmall) {
-      setSidebarPersist("");
-      setSidebarOpen("");
-      setSidebarContainerOpen("");
-      setMiniGuide("hidden");
-      setMain("");
-      setGuideHeader("visible");
-      setGuideSpacer("hidden");
-    }
-    if (small) {
-      setMiniGuide("visible");
-      setSidebarOpen("");
-      setSidebarContainerOpen("");
-      setScrimVis("hidden");
-      body.style.removeProperty("overflow");
-      setMain("mini-guide-visible");
-    }
-    if (medium) {
-    }
-    if (large) {
-      setSidebarPersist("persistent");
-      setSidebarOpen("opened");
-      setSidebarContainerOpen("opened");
-      setMiniGuide("hidden");
-      setMain("guide-persistent-and-visible");
-      setScrimVis("hidden");
-      body.style.removeProperty("overflow");
-      setGuideHeader("hidden");
-      setGuideSpacer("visible");
-    }
-  };
+  //let xsmall = useMedia("(min-width: 0rem)");
+  //let small = useMedia("(min-width: 48rem)");
+  //let medium = useMedia("(min-width: 63.25rem)");
+  //let large = useMedia("(min-width: 80rem)");
+  //
+  //const mediaqueryresponse = () => {
+  //  if (xsmall) {
+  //    setSidebarPersist("");
+  //    setSidebarOpen("");
+  //    setSidebarContainerOpen("");
+  //    setMiniGuide("hidden");
+  //    setMain("");
+  //    setGuideHeader("visible");
+  //    setGuideSpacer("hidden");
+  //  }
+  //  if (small) {
+  //    setMiniGuide("visible");
+  //    setSidebarOpen("");
+  //    setSidebarContainerOpen("");
+  //    setScrimVis("hidden");
+  //    body.style.removeProperty("overflow");
+  //    setMain("mini-guide-visible");
+  //  }
+  //  if (medium) {
+  //  }
+  //  if (large) {
+  //    setSidebarPersist("persistent");
+  //    setSidebarOpen("opened");
+  //    setSidebarContainerOpen("opened");
+  //    setMiniGuide("hidden");
+  //    setMain("guide-persistent-and-visible");
+  //    setScrimVis("hidden");
+  //    body.style.removeProperty("overflow");
+  //    setGuideHeader("hidden");
+  //    setGuideSpacer("visible");
+  //  }
+  //};
 
   return (
     <>
-      {mediaqueryresponse}
-
       <SkipNav id="skip-navigation" anchor="#content" />
       <Topbar>
         <TopbarMenuBtn label="Guide" clicked={toggleMenu}>
