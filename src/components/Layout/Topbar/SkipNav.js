@@ -29,12 +29,12 @@ const Wrapper = styled.a`
   }
 `;
 
-function SkipNav(props) {
+const SkipNav = props => {
   return (
     <Wrapper id={props.id} href={props.anchor}>
       Skip Navigation
     </Wrapper>
   );
-}
+};
 
 export default SkipNav;

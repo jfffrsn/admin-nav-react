@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./theme/AdminTheme";
 import Layout from "./components/Layout/Layout";
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -13,6 +13,6 @@ function App() {
       <Layout />
     </ThemeProvider>
   );
-}
+};
 
 export default App;

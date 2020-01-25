@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Wrapper = styled.span`
+const Span = styled.span`
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -14,12 +14,12 @@ const Image = styled.img`
   height: auto;
 `;
 
-function TopbarAvatar(props) {
+const TopbarAvatar = props => {
   return (
-    <Wrapper>
+    <Span>
       <Image src={props.imgSrc} alt={props.imgAlt} />
-    </Wrapper>
+    </Span>
   );
-}
+};
 
 export default TopbarAvatar;

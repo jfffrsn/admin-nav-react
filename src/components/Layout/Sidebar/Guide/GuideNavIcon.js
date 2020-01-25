@@ -16,8 +16,8 @@ const Icon = styled.span`
   }
 `;
 
-function GuideNavIcon(props) {
+const GuideNavIcon = props => {
   return <Icon aria-label="{props.label}">{props.children}</Icon>;
-}
+};
 
 export default GuideNavIcon;

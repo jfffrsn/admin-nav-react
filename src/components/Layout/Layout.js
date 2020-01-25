@@ -117,11 +117,15 @@ function Layout(props) {
     mn = "guide-persistent-and-visible";
   }
 
+  const toggleMenu = fart => {
+    alert("Hello!");
+  };
+
   return (
     <>
       <SkipNav id="skip-navigation" anchor="#content" />
       <Topbar>
-        <TopbarMenuBtn label="Guide">
+        <TopbarMenuBtn label="Guide" clicked={toggleMenu}>
           <MenuIcon title="menu" />
         </TopbarMenuBtn>
 

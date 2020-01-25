@@ -7,8 +7,8 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-function TopbarMenu(props) {
+const TopbarMenu = props => {
   return <Wrapper>{props.children}</Wrapper>;
-}
+};
 
 export default TopbarMenu;

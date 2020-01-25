@@ -18,8 +18,8 @@ const Wrapper = styled.div`
   }
 `;
 
-function SidebarContainer(props) {
+const SidebarContainer = props => {
   return <Wrapper data-open={props.open}>{props.children}</Wrapper>;
-}
+};
 
 export default SidebarContainer;

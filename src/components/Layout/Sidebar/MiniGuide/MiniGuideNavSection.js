@@ -5,8 +5,8 @@ const Section = styled.div`
   display: block;
 `;
 
-function MiniGuideNavSection(props) {
+const MiniGuideNavSection = props => {
   return <Section>{props.children}</Section>;
-}
+};
 
 export default MiniGuideNavSection;

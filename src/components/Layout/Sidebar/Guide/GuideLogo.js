@@ -8,12 +8,12 @@ const Wrapper = styled.div`
   min-width: 5rem;
 `;
 
-function GuideLogo(props) {
+const GuideLogo = props => {
   return (
     <Wrapper>
       <Logo title="ECE Admin" />
     </Wrapper>
   );
-}
+};
 
 export default GuideLogo;

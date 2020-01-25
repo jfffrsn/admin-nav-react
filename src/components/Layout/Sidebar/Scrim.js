@@ -25,8 +25,8 @@ const Wrapper = styled.div`
   }
 `;
 
-function Scrim(props) {
+const Scrim = props => {
   return <Wrapper data-visibility={props.visibility} />;
-}
+};
 
 export default Scrim;

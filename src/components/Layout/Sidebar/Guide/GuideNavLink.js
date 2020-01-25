@@ -29,8 +29,8 @@ const Link = styled.a`
   }
 `;
 
-function GuideNavLink(props) {
+const GuideNavLink = props => {
   return <Link>{props.children}</Link>;
-}
+};
 
 export default GuideNavLink;

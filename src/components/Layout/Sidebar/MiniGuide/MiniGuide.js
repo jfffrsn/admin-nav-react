@@ -19,8 +19,8 @@ const Wrapper = styled.div`
   }
 `;
 
-function MiniGuide(props) {
+const MiniGuide = props => {
   return <Wrapper data-visibility={props.visibility}>{props.children}</Wrapper>;
-}
+};
 
 export default MiniGuide;

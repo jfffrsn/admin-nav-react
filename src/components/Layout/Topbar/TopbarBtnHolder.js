@@ -5,8 +5,8 @@ const Wrapper = styled.div`
   display: inline-flex;
 `;
 
-function TopbarBtnHolder(props) {
+const TopbarBtnHolder = props => {
   return <Wrapper>{props.children}</Wrapper>;
-}
+};
 
 export default TopbarBtnHolder;

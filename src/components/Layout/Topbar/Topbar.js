@@ -20,12 +20,12 @@ const Content = styled.div`
   padding: ${props => props.theme.space[2]};
 `;
 
-function Topbar(props) {
+const Topbar = props => {
   return (
     <Header role="banner">
       <Content>{props.children}</Content>
     </Header>
   );
-}
+};
 
 export default Topbar;

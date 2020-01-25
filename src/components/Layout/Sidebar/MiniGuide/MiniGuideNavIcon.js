@@ -16,8 +16,8 @@ const Icon = styled.span`
   }
 `;
 
-function MiniGuideNavIcon(props) {
+const MiniGuideNavIcon = props => {
   return <Icon>{props.children}</Icon>;
-}
+};
 
 export default MiniGuideNavIcon;

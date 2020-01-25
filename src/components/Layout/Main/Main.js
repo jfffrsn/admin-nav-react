@@ -24,12 +24,12 @@ const Content = styled.div`
   }
 `;
 
-function Main(props) {
+const Main = props => {
   return (
     <Wrapper role="main" id="content">
       <Content data-guide={props.guide}>{props.children}</Content>
     </Wrapper>
   );
-}
+};
 
 export default Main;

@@ -5,8 +5,8 @@ const NavItem = styled.div`
   font-size: 0.625rem;
 `;
 
-function MiniGuideNavItem(props) {
+const MiniGuideNavItem = props => {
   return <NavItem>{props.children}</NavItem>;
-}
+};
 
 export default MiniGuideNavItem;

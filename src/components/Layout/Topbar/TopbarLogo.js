@@ -14,12 +14,12 @@ const Wrapper = styled.div`
   }
 `;
 
-function TopbarLogo(props) {
+const TopbarLogo = props => {
   return (
     <Wrapper>
       <Logo title="ECE Admin" />
     </Wrapper>
   );
-}
+};
 
 export default TopbarLogo;

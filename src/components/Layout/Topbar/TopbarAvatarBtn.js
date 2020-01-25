@@ -15,8 +15,8 @@ const Button = styled.button`
   }
 `;
 
-function TopbarAvatarBtn(props) {
+const TopbarAvatarBtn = props => {
   return <Button>{props.children}</Button>;
-}
+};
 
 export default TopbarAvatarBtn;

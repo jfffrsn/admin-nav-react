@@ -5,8 +5,8 @@ const Wrapper = styled.div`
   display: block;
 `;
 
-function GuideNavSection(props) {
+const GuideNavSection = props => {
   return <Wrapper>{props.children}</Wrapper>;
-}
+};
 
 export default GuideNavSection;

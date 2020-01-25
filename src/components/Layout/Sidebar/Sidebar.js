@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   }
 `;
 
-function Sidebar(props) {
+const Sidebar = props => {
   return (
     <Wrapper
       data-persistent={props.persistent}
@@ -34,6 +34,6 @@ function Sidebar(props) {
       {props.children}
     </Wrapper>
   );
-}
+};
 
 export default Sidebar;

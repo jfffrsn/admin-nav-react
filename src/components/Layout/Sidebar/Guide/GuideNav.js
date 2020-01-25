@@ -6,12 +6,12 @@ const Nav = styled.nav`
   flex-direction: column;
 `;
 
-function GuideNav(props) {
+const GuideNav = props => {
   return (
     <Nav role="navigation" aria-label={props.label}>
       {props.children}
     </Nav>
   );
-}
+};
 
 export default GuideNav;

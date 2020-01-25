@@ -5,8 +5,8 @@ const Wrapper = styled.div`
   display: block;
 `;
 
-function GuideContent(props) {
+const GuideContent = props => {
   return <Wrapper>{props.children}</Wrapper>;
-}
+};
 
 export default GuideContent;

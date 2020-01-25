@@ -8,8 +8,8 @@ const Wrapper = styled.div`
   background-color: ${props => props.theme.colors.appGuideBg};
 `;
 
-function Guide(props) {
+const Guide = props => {
   return <Wrapper>{props.children}</Wrapper>;
-}
+};
 
 export default Guide;

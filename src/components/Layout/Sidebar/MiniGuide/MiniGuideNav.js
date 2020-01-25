@@ -6,12 +6,12 @@ const Nav = styled.nav`
   flex-direction: column;
 `;
 
-function MiniGuideNav(props) {
+const MiniGuideNav = props => {
   return (
     <Nav role="navigation" aria-label={props.label}>
       {props.children}
     </Nav>
   );
-}
+};
 
 export default MiniGuideNav;

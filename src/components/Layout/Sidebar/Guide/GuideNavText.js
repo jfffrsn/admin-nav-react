@@ -5,8 +5,10 @@ const Text = styled.span`
   display: block;
 `;
 
-function GuideNavText(props) {
+const GuideNavText = props => {
   return <Text>{props.text}</Text>;
-}
+};
+
+GuideNavText.propTypes = {};
 
 export default GuideNavText;

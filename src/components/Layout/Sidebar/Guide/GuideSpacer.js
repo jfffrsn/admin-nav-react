@@ -14,8 +14,8 @@ const Wrapper = styled.div`
   }
 `;
 
-function GuideSpacer(props) {
+const GuideSpacer = props => {
   return <Wrapper data-visibility={props.visiblity}></Wrapper>;
-}
+};
 
 export default GuideSpacer;
