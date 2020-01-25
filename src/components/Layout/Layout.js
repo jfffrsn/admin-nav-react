@@ -4,7 +4,7 @@ import { ReactComponent as MenuIcon } from "../../assets/icon-menu.svg";
 
 import SkipNav from "./Topbar/SkipNav";
 import Topbar from "./Topbar/Topbar";
-
+import TopbarLogo from "./Topbar/TopbarLogo";
 import TopbarMenuBtn from "./Topbar/TopbarMenuBtn";
 
 import Main from "./Main/Main";
@@ -22,7 +22,11 @@ import GuideSpacer from "./Sidebar/Guide/GuideSpacer";
 import GuideMenuBtn from "./Sidebar/Guide/GuideMenuBtn";
 import GuideHeader from "./Sidebar/Guide/GuideHeader";
 
+//media query hook
+import useMedia from "../../hooks/useMedia";
+
 const Layout = props => {
+  //
   const body = document.querySelector("body");
   const [main, setMain] = useState("guide-persistent-and-visible");
   const [miniGuide, setMiniGuide] = useState("hidden");
@@ -31,7 +35,6 @@ const Layout = props => {
   const [sidebarContainerOpen, setSidebarContainerOpen] = useState("");
   const [scrimVis, setScrimVis] = useState("hidden");
   const [guideHeader, setGuideHeader] = useState("hidden");
-
   const [guideSpacer, setGuideSpacer] = useState("hidden");
 
   //toggle menu button
@@ -50,7 +53,7 @@ const Layout = props => {
       setSidebarOpen("opened");
       setSidebarContainerOpen("opened");
       body.style.overflow = "hidden";
-      //appGuideNavicon.focus();
+      //figure out how to set focus to GuideMenuBtn
       setScrimVis("visible");
       setGuideHeader("visible");
     }
@@ -86,13 +89,56 @@ const Layout = props => {
     };
   })();
 
+  //media query
+  let xsmall = useMedia("(min-width: 0rem)");
+  let small = useMedia("(min-width: 48rem)");
+  let medium = useMedia("(min-width: 63.25rem)");
+  let large = useMedia("(min-width: 80rem)");
+
+  const mediaqueryresponse = () => {
+    if (xsmall) {
+      setSidebarPersist("");
+      setSidebarOpen("");
+      setSidebarContainerOpen("");
+      setMiniGuide("hidden");
+      setMain("");
+      setGuideHeader("visible");
+      setGuideSpacer("hidden");
+    }
+    if (small) {
+      setMiniGuide("visible");
+      setSidebarOpen("");
+      setSidebarContainerOpen("");
+      setScrimVis("hidden");
+      body.style.removeProperty("overflow");
+      setMain("mini-guide-visible");
+    }
+    if (medium) {
+    }
+    if (large) {
+      setSidebarPersist("persistent");
+      setSidebarOpen("opened");
+      setSidebarContainerOpen("opened");
+      setMiniGuide("hidden");
+      setMain("guide-persistent-and-visible");
+      setScrimVis("hidden");
+      body.style.removeProperty("overflow");
+      setGuideHeader("hidden");
+      setGuideSpacer("visible");
+    }
+  };
+
   return (
     <>
+      {mediaqueryresponse}
+
       <SkipNav id="skip-navigation" anchor="#content" />
       <Topbar>
         <TopbarMenuBtn label="Guide" clicked={toggleMenu}>
           <MenuIcon title="menu" />
         </TopbarMenuBtn>
+
+        <TopbarLogo />
       </Topbar>
 
       <Sidebar persistent={sidebarPersist} open={sidebarOpen}>
