@@ -16,8 +16,11 @@ import Scrim from "./Sidebar/Scrim";
 import MiniGuide from "./Sidebar/MiniGuide/MiniGuide";
 
 import Guide from "./Sidebar/Guide/Guide";
+import GuideContent from "./Sidebar/Guide/GuideContent";
+import GuideLogo from "./Sidebar/Guide/GuideLogo";
 import GuideSpacer from "./Sidebar/Guide/GuideSpacer";
 import GuideMenuBtn from "./Sidebar/Guide/GuideMenuBtn";
+import GuideHeader from "./Sidebar/Guide/GuideHeader";
 
 const Layout = props => {
   const body = document.querySelector("body");
@@ -27,6 +30,9 @@ const Layout = props => {
   const [sidebarOpen, setSidebarOpen] = useState("");
   const [sidebarContainerOpen, setSidebarContainerOpen] = useState("");
   const [scrimVis, setScrimVis] = useState("hidden");
+  const [guideHeader, setGuideHeader] = useState("hidden");
+
+  const [guideSpacer, setGuideSpacer] = useState("hidden");
 
   //toggle menu button
   const toggleMenu = () => {
@@ -46,7 +52,7 @@ const Layout = props => {
       body.style.overflow = "hidden";
       //appGuideNavicon.focus();
       setScrimVis("visible");
-      //appGuideHeader.setAttribute("visible", "");
+      setGuideHeader("visible");
     }
   };
 
@@ -93,15 +99,21 @@ const Layout = props => {
         <Scrim visibility={scrimVis} clicked={clickScrim} />
         <SidebarContainer open={sidebarContainerOpen}>
           <Guide>
-            <GuideSpacer visiblity="visible" />
-            <GuideMenuBtn label="Guide" clicked={closeGuideMenu}>
-              <MenuIcon />
-            </GuideMenuBtn>
+            <GuideSpacer visiblity={guideSpacer} />
+
+            <GuideContent>
+              <GuideHeader visiblity={guideHeader}>
+                <GuideMenuBtn label="Guide" clicked={closeGuideMenu}>
+                  <MenuIcon />
+                </GuideMenuBtn>
+                <GuideLogo />
+              </GuideHeader>
+            </GuideContent>
           </Guide>
         </SidebarContainer>
       </Sidebar>
 
-      {/* <MiniGuide visibility={miniGuide}>minini</MiniGuide> */}
+      <MiniGuide visibility={miniGuide}>minini</MiniGuide>
 
       <Main guide={main}>
         <p>dddddddddddddddddd</p>
