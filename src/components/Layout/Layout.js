@@ -89,7 +89,8 @@ const Layout = props => {
     };
   })();
 
-  const CloseEsc = props => {
+  //close sidebar on esc
+  const CloseEsc = () => {
     const escFunction = useCallback(event => {
       if (event.keyCode === 27) {
         if (scrimVis === "visible") {
