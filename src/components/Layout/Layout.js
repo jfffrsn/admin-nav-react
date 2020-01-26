@@ -37,10 +37,6 @@ const Layout = props => {
   const [guideHeader, setGuideHeader] = useState("hidden");
   const [guideSpacer, setGuideSpacer] = useState("hidden");
 
-  useEffect(() => {
-    mqResponse();
-  });
-
   //toggle menu button
   const toggleMenu = () => {
     if (sidebarPersist === "persistent" && sidebarOpen === "opened") {
@@ -99,6 +95,9 @@ const Layout = props => {
   let medium = useMedia("(min-width: 63.25rem)");
   let large = useMedia("(min-width: 80rem)");
   //
+  useEffect(() => {
+    mqResponse();
+  }, []);
 
   const mqResponse = () => {
     if (xsmall) {
