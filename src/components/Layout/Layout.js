@@ -113,28 +113,34 @@ const Layout = props => {
   })();
 
   const mqSizing = () => {
-    if (window.innerWidth >= 0 && window.innerWidth < 768) {
+    const xs = 0;
+    const sm = 768;
+    const lg = 1280;
+
+    if (window.innerWidth >= xs && window.innerWidth < sm) {
       setSidebarPersist("");
       setSidebarOpen("");
       setSidebarContainerOpen("");
       setMiniGuide("hidden");
-      setMain("");
+      setMain("foooooooooooooooo");
       setGuideHeader("visible");
       setGuideSpacer("hidden");
       console.log("small");
     }
 
-    if (window.innerWidth >= 768 && window.innerWidth < 1280) {
+    if (window.innerWidth >= sm && window.innerWidth < lg) {
       setMiniGuide("visible");
+      setSidebarPersist("");
       setSidebarOpen("");
       setSidebarContainerOpen("");
       setScrimVis("hidden");
+      setGuideSpacer("hidden");
       document.querySelector("body").style.removeProperty("overflow");
       setMain("mini-guide-visible");
       console.log("medium");
     }
 
-    if (window.innerWidth >= 1280) {
+    if (window.innerWidth >= lg) {
       setSidebarPersist("persistent");
       setSidebarOpen("opened");
       setSidebarContainerOpen("opened");
