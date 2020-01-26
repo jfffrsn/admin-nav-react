@@ -39,7 +39,7 @@ const Button = styled.button`
   }
 `;
 
-const GuideMenuBtn = props => {
+const GuideMenuBtn = (props, ref) => {
   return (
     <Button aria-label={props.label} onClick={props.clicked}>
       {props.children}
@@ -47,4 +47,6 @@ const GuideMenuBtn = props => {
   );
 };
 
-export default GuideMenuBtn;
+const forwardInput = React.forwardRef(GuideMenuBtn);
+
+export default forwardInput;

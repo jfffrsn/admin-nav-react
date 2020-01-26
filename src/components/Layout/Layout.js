@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 
 import { ReactComponent as MenuIcon } from "../../assets/icon-menu.svg";
 
@@ -23,7 +23,7 @@ import GuideMenuBtn from "./Sidebar/Guide/GuideMenuBtn";
 import GuideHeader from "./Sidebar/Guide/GuideHeader";
 
 //media query hook
-//import useMedia from "../../hooks/useMedia";
+import useMedia from "../../hooks/useMedia";
 
 const Layout = props => {
   //
@@ -36,6 +36,10 @@ const Layout = props => {
   const [scrimVis, setScrimVis] = useState("hidden");
   const [guideHeader, setGuideHeader] = useState("hidden");
   const [guideSpacer, setGuideSpacer] = useState("hidden");
+
+  useEffect(() => {
+    mqResponse();
+  });
 
   //toggle menu button
   const toggleMenu = () => {
@@ -89,64 +93,45 @@ const Layout = props => {
     };
   })();
 
-  //close sidebar on esc
-  const CloseEsc = () => {
-    const escFunction = useCallback(event => {
-      if (event.keyCode === 27) {
-        if (scrimVis === "visible") {
-          closeGuideMenu();
-          setScrimVis("hidden");
-        }
-      }
-    }, []);
-
-    useEffect(() => {
-      document.addEventListener("keydown", escFunction, false);
-      return () => {
-        document.removeEventListener("keydown", escFunction, false);
-      };
-    }, []);
-    return null;
-  };
-
   //media query
-  //let xsmall = useMedia("(min-width: 0rem)");
-  //let small = useMedia("(min-width: 48rem)");
-  //let medium = useMedia("(min-width: 63.25rem)");
-  //let large = useMedia("(min-width: 80rem)");
+  let xsmall = useMedia("(min-width: 0rem)");
+  let small = useMedia("(min-width: 48rem)");
+  let medium = useMedia("(min-width: 63.25rem)");
+  let large = useMedia("(min-width: 80rem)");
   //
-  //const mediaqueryresponse = () => {
-  //  if (xsmall) {
-  //    setSidebarPersist("");
-  //    setSidebarOpen("");
-  //    setSidebarContainerOpen("");
-  //    setMiniGuide("hidden");
-  //    setMain("");
-  //    setGuideHeader("visible");
-  //    setGuideSpacer("hidden");
-  //  }
-  //  if (small) {
-  //    setMiniGuide("visible");
-  //    setSidebarOpen("");
-  //    setSidebarContainerOpen("");
-  //    setScrimVis("hidden");
-  //    body.style.removeProperty("overflow");
-  //    setMain("mini-guide-visible");
-  //  }
-  //  if (medium) {
-  //  }
-  //  if (large) {
-  //    setSidebarPersist("persistent");
-  //    setSidebarOpen("opened");
-  //    setSidebarContainerOpen("opened");
-  //    setMiniGuide("hidden");
-  //    setMain("guide-persistent-and-visible");
-  //    setScrimVis("hidden");
-  //    body.style.removeProperty("overflow");
-  //    setGuideHeader("hidden");
-  //    setGuideSpacer("visible");
-  //  }
-  //};
+
+  const mqResponse = () => {
+    if (xsmall) {
+      setSidebarPersist("");
+      setSidebarOpen("");
+      setSidebarContainerOpen("");
+      setMiniGuide("hidden");
+      setMain("");
+      setGuideHeader("visible");
+      setGuideSpacer("hidden");
+    }
+    if (small) {
+      setMiniGuide("visible");
+      setSidebarOpen("");
+      setSidebarContainerOpen("");
+      setScrimVis("hidden");
+      body.style.removeProperty("overflow");
+      setMain("mini-guide-visible");
+    }
+    if (medium) {
+    }
+    if (large) {
+      setSidebarPersist("persistent");
+      setSidebarOpen("opened");
+      setSidebarContainerOpen("opened");
+      setMiniGuide("hidden");
+      setMain("guide-persistent-and-visible");
+      setScrimVis("hidden");
+      body.style.removeProperty("overflow");
+      setGuideHeader("hidden");
+      setGuideSpacer("visible");
+    }
+  };
 
   return (
     <>
@@ -161,7 +146,6 @@ const Layout = props => {
 
       <Sidebar persistent={sidebarPersist} open={sidebarOpen}>
         <Scrim visibility={scrimVis} clicked={clickScrim} />
-        <CloseEsc />
         <SidebarContainer open={sidebarContainerOpen}>
           <Guide>
             <GuideSpacer visiblity={guideSpacer} />
@@ -182,6 +166,7 @@ const Layout = props => {
 
       <Main guide={main}>
         <p>dddddddddddddddddd</p>
+        <p>size is now: </p>
       </Main>
     </>
   );
