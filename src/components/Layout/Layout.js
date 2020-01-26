@@ -48,7 +48,6 @@ import GuideNavLink from "./Sidebar/Guide/GuideNavLink";
 import Main from "./Main/Main";
 
 const Layout = props => {
-  //
   const body = document.querySelector("body");
   const [main, setMain] = useState("");
   const [miniGuide, setMiniGuide] = useState("hidden");
@@ -113,8 +112,7 @@ const Layout = props => {
     };
   })();
 
-  //useEffect initial render
-  useEffect(() => {
+  const mqSizing = () => {
     if (window.innerWidth >= 0 && window.innerWidth < 768) {
       setSidebarPersist("");
       setSidebarOpen("");
@@ -148,46 +146,18 @@ const Layout = props => {
       setGuideSpacer("visible");
       console.log("large");
     }
+    console.log("mqSizing called");
+  };
+
+  //initial mq render
+  useEffect(() => {
+    mqSizing();
   }, []);
 
-  ///
-
+  //mq on resize
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
-      if (window.innerWidth >= 0 && window.innerWidth < 768) {
-        setSidebarPersist("");
-        setSidebarOpen("");
-        setSidebarContainerOpen("");
-        setMiniGuide("hidden");
-        setMain("");
-        setGuideHeader("visible");
-        setGuideSpacer("hidden");
-        console.log("small");
-      }
-
-      if (window.innerWidth >= 768 && window.innerWidth < 1280) {
-        setMiniGuide("visible");
-        setSidebarOpen("");
-        setSidebarContainerOpen("");
-        setScrimVis("hidden");
-        body.style.removeProperty("overflow");
-        setMain("mini-guide-visible");
-        console.log("medium");
-      }
-
-      if (window.innerWidth >= 1280) {
-        setSidebarPersist("persistent");
-        setSidebarOpen("opened");
-        setSidebarContainerOpen("opened");
-        setMiniGuide("hidden");
-        setMain("guide-persistent-and-visible");
-        setScrimVis("hidden");
-        body.style.removeProperty("overflow");
-        setGuideHeader("hidden");
-        setGuideSpacer("visible");
-        console.log("large");
-      }
-
+      mqSizing();
       console.log("resize debounce");
     }, 300);
 
