@@ -22,9 +22,6 @@ import GuideSpacer from "./Sidebar/Guide/GuideSpacer";
 import GuideMenuBtn from "./Sidebar/Guide/GuideMenuBtn";
 import GuideHeader from "./Sidebar/Guide/GuideHeader";
 
-//media query hook
-import useMedia from "../../hooks/useMedia";
-
 const Layout = props => {
   //
   const body = document.querySelector("body");
@@ -57,15 +54,17 @@ const Layout = props => {
       setScrimVis("visible");
       setGuideHeader("visible");
     }
+    console.log("togglemenu clicked");
   };
 
   //close sidebar from the guide button
   const closeGuideMenu = () => {
     setSidebarOpen("");
     setSidebarContainerOpen("");
-    setMain(""); //appMain.removeAttribute("guide-persistent-and-visible", "");
+    //setMain(""); //appMain.removeAttribute("guide-persistent-and-visible", "");
     setScrimVis("hidden");
     body.style.removeProperty("overflow");
+    console.log("close guide menu clicked");
   };
 
   //close guide menu when clicking on scrim
@@ -89,18 +88,9 @@ const Layout = props => {
     };
   })();
 
-  //media query
-  let xsmall = useMedia("(min-width: 0rem)");
-  let small = useMedia("(min-width: 48rem)");
-  let medium = useMedia("(min-width: 63.25rem)");
-  let large = useMedia("(min-width: 80rem)");
-  //
+  //useEffect initial render
   useEffect(() => {
-    mqResponse();
-  }, []);
-
-  const mqResponse = () => {
-    if (xsmall) {
+    if (window.innerWidth >= 0 && window.innerWidth < 768) {
       setSidebarPersist("");
       setSidebarOpen("");
       setSidebarContainerOpen("");
@@ -108,29 +98,92 @@ const Layout = props => {
       setMain("");
       setGuideHeader("visible");
       setGuideSpacer("hidden");
+      console.log("small");
     }
-    if (small) {
+
+    if (window.innerWidth >= 768 && window.innerWidth < 1280) {
       setMiniGuide("visible");
       setSidebarOpen("");
       setSidebarContainerOpen("");
       setScrimVis("hidden");
-      body.style.removeProperty("overflow");
+      document.querySelector("body").style.removeProperty("overflow");
       setMain("mini-guide-visible");
+      console.log("medium");
     }
-    if (medium) {
-    }
-    if (large) {
+
+    if (window.innerWidth >= 1280) {
       setSidebarPersist("persistent");
       setSidebarOpen("opened");
       setSidebarContainerOpen("opened");
       setMiniGuide("hidden");
       setMain("guide-persistent-and-visible");
       setScrimVis("hidden");
-      body.style.removeProperty("overflow");
+      document.querySelector("body").style.removeProperty("overflow");
       setGuideHeader("hidden");
       setGuideSpacer("visible");
+      console.log("large");
     }
-  };
+  }, []);
+
+  ///
+
+  useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      if (window.innerWidth >= 0 && window.innerWidth < 768) {
+        setSidebarPersist("");
+        setSidebarOpen("");
+        setSidebarContainerOpen("");
+        setMiniGuide("hidden");
+        setMain("");
+        setGuideHeader("visible");
+        setGuideSpacer("hidden");
+        console.log("small");
+      }
+
+      if (window.innerWidth >= 768 && window.innerWidth < 1280) {
+        setMiniGuide("visible");
+        setSidebarOpen("");
+        setSidebarContainerOpen("");
+        setScrimVis("hidden");
+        body.style.removeProperty("overflow");
+        setMain("mini-guide-visible");
+        console.log("medium");
+      }
+
+      if (window.innerWidth >= 1280) {
+        setSidebarPersist("persistent");
+        setSidebarOpen("opened");
+        setSidebarContainerOpen("opened");
+        setMiniGuide("hidden");
+        setMain("guide-persistent-and-visible");
+        setScrimVis("hidden");
+        body.style.removeProperty("overflow");
+        setGuideHeader("hidden");
+        setGuideSpacer("visible");
+        console.log("large");
+      }
+
+      console.log("resize debounce");
+    }, 50);
+
+    window.addEventListener("resize", debouncedHandleResize);
+
+    return _ => {
+      window.removeEventListener("resize", debouncedHandleResize);
+    };
+  });
+
+  //debounce
+  function debounce(fn, ms) {
+    let timer;
+    return _ => {
+      clearTimeout(timer);
+      timer = setTimeout(_ => {
+        timer = null;
+        fn.apply(this, arguments);
+      }, ms);
+    };
+  }
 
   return (
     <>
@@ -165,7 +218,6 @@ const Layout = props => {
 
       <Main guide={main}>
         <p>dddddddddddddddddd</p>
-        <p>size is now: </p>
       </Main>
     </>
   );
