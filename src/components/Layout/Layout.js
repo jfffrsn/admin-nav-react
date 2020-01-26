@@ -165,11 +165,11 @@ const Layout = props => {
     const debouncedHandleResize = debounce(function handleResize() {
       mqSizing();
       console.log("resize debounce");
-    }, 300);
+    }, 100);
 
     window.addEventListener("resize", debouncedHandleResize);
 
-    return _ => {
+    return () => {
       window.removeEventListener("resize", debouncedHandleResize);
     };
   });
@@ -321,7 +321,10 @@ const Layout = props => {
       </MiniGuide>
 
       <Main guide={main}>
-        <p>dddddddddddddddddd</p>
+        <p>sssssssss</p>
+        <p>ddddddd</p>
+        <p>xxxxxxxxxxxxxdd</p>
+        <p>dcdcdcdcdd</p>
       </Main>
     </>
   );
