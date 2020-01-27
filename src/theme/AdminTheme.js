@@ -1,7 +1,7 @@
 // default theme eceAdmin
 
 export const eceAdmin = {
-  breakpoints: ["34rem", "48rem", "63.25rem", "80rem"],
+  breakpoints: ["544", "768", "1016", "1280"],
   colors: {
     appTopbarBg: "#1565C0",
     appTopbarBtnBg: "transparent",
