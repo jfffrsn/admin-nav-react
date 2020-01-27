@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   background-color: ${props => props.theme.colors.appGuideHeaderBg};
-  background: red;
   height: ${props => props.theme.heights.appTopbarHeight};
   padding: ${props => props.theme.space[2]};
   display: none;
