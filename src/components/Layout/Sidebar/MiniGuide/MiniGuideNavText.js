@@ -7,7 +7,7 @@ const Text = styled.span`
 `;
 
 const MiniGuideNavText = props => {
-  return <Text>{props.text}</Text>;
+  return <Text as={props.as}>{props.text}</Text>;
 };
 
 export default MiniGuideNavText;

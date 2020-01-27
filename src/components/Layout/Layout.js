@@ -47,6 +47,9 @@ import GuideNavLink from "./Sidebar/Guide/GuideNavLink";
 
 import Main from "./Main/Main";
 
+import Card from "../Card/Card";
+import theme from "../../theme/AdminTheme";
+
 const Layout = props => {
   const body = document.querySelector("body");
   const [main, setMain] = useState("");
@@ -321,10 +324,21 @@ const Layout = props => {
       </MiniGuide>
 
       <Main guide={main}>
+        <Card>this is a card</Card>
         <p>sssssssss</p>
         <p>ddddddd</p>
         <p>xxxxxxxxxxxxxdd</p>
         <p>dcdcdcdcdd</p>
+        <p>
+          <span style={{ fontFamily: theme.fonts.body }}>
+            {theme.fonts.body} this is just for testing
+          </span>
+
+          <MiniGuideNavText
+            as="h1"
+            text="Hello World! as-polymorphic-prop styled-components"
+          />
+        </p>
       </Main>
     </>
   );
