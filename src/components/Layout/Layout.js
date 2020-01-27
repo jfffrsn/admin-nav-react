@@ -116,7 +116,11 @@ const Layout = props => {
   })();
 
   const mqSizing = () => {
-    if (window.innerWidth >= 0 && window.innerWidth < theme.breakpoints[1]) {
+    const xs = 0;
+    const sm = 768;
+    const lg = 1280;
+
+    if (window.innerWidth >= xs && window.innerWidth < sm) {
       setSidebarPersist("");
       setSidebarOpen("");
       setSidebarContainerOpen("");
@@ -127,10 +131,7 @@ const Layout = props => {
       console.log("small");
     }
 
-    if (
-      window.innerWidth >= theme.breakpoints[1] &&
-      window.innerWidth < theme.breakpoints[3]
-    ) {
+    if (window.innerWidth >= sm && window.innerWidth < lg) {
       setMiniGuide("visible");
       setSidebarPersist("");
       setSidebarOpen("");
@@ -142,7 +143,7 @@ const Layout = props => {
       console.log("medium");
     }
 
-    if (window.innerWidth >= theme.breakpoints[3]) {
+    if (window.innerWidth >= lg) {
       setSidebarPersist("persistent");
       setSidebarOpen("opened");
       setSidebarContainerOpen("opened");
