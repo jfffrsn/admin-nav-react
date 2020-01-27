@@ -88,7 +88,6 @@ const Layout = props => {
   const closeGuideMenu = () => {
     setSidebarOpen("");
     setSidebarContainerOpen("");
-    //setMain(""); //appMain.removeAttribute("guide-persistent-and-visible", "");
     setScrimVis("hidden");
     body.style.removeProperty("overflow");
     console.log("close guide menu clicked");
@@ -181,7 +180,7 @@ const Layout = props => {
     let timer;
     return () => {
       clearTimeout(timer);
-      timer = setTimeout(_ => {
+      timer = setTimeout(() => {
         timer = null;
         fn.apply(this, arguments);
       }, ms);
