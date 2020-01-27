@@ -1,0 +1,49 @@
+Display 1
+Display 2
+Display 3
+Display 4
+
+Heading 1
+Heading 2
+Heading 3
+Heading 4
+Heading 5
+Heading 6
+
+HEADING_CATEGORY
+heading_landing
+heading_promo
+
+
+Body
+
+Lead
+
+Blockquote
+
+Lists
+Unstyled
+Inline
+Description list
+
+Code
+
+Responsive image
+
+Image thumbnails
+
+Picture
+
+Figure
+FigCaption
+
+PROPS
+fontWeights
+fontitalic
+Type color
+Scale
+alignment
+padding
+margin
+Line height
+Letterspacing
