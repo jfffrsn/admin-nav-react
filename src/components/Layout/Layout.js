@@ -46,9 +46,13 @@ import GuideNavText from "./Sidebar/Guide/GuideNavText";
 import GuideNavLink from "./Sidebar/Guide/GuideNavLink";
 
 import Main from "./Main/Main";
-
-import Card from "../Card/Card";
 import theme from "../../theme/AdminTheme";
+
+import { Switch, Route, NavLink } from "react-router-dom";
+import Dashboard from "../../containers/Dashboard";
+import Presentations from "../../containers/Presentations";
+import Collections from "../../containers/Collections";
+import Courses from "../../containers/Courses";
 
 const Layout = props => {
   const body = document.querySelector("body");
@@ -81,7 +85,7 @@ const Layout = props => {
       setScrimVis("visible");
       setGuideHeader("visible");
     }
-    console.log("togglemenu clicked");
+    //console.log("togglemenu clicked");
   };
 
   //close sidebar from the guide button
@@ -90,12 +94,12 @@ const Layout = props => {
     setSidebarContainerOpen("");
     setScrimVis("hidden");
     body.style.removeProperty("overflow");
-    console.log("close guide menu clicked");
+    //console.log("close guide menu clicked");
   };
 
   //close guide menu when clicking on scrim
   const clickScrim = () => {
-    console.log("clicked scrim");
+    //console.log("clicked scrim");
     setSidebarOpen("");
     setSidebarContainerOpen("");
     setScrimVis("hidden");
@@ -123,7 +127,7 @@ const Layout = props => {
       setMain("foooooooooooooooo");
       setGuideHeader("visible");
       setGuideSpacer("hidden");
-      console.log("small");
+      // console.log("small");
     }
 
     if (
@@ -138,7 +142,7 @@ const Layout = props => {
       setGuideSpacer("hidden");
       document.querySelector("body").style.removeProperty("overflow");
       setMain("mini-guide-visible");
-      console.log("medium");
+      //console.log("medium");
     }
 
     if (window.innerWidth >= theme.breakpoints[3]) {
@@ -151,9 +155,9 @@ const Layout = props => {
       document.querySelector("body").style.removeProperty("overflow");
       setGuideHeader("hidden");
       setGuideSpacer("visible");
-      console.log("large");
+      //console.log("large");
     }
-    console.log("mqSizing called");
+    //console.log("mqSizing called");
   };
 
   //initial mq render
@@ -238,38 +242,47 @@ const Layout = props => {
               <GuideNavSection>
                 <GuideNav label="Main">
                   <GuideNavItem>
-                    <GuideNavLink href="1">
-                      <GuideNavIcon>
-                        <HomeIcon />
-                      </GuideNavIcon>
-                      <GuideNavText text="Home" />
+                    <GuideNavLink>
+                      <NavLink to="/dash">
+                        <GuideNavIcon>
+                          <HomeIcon />
+                        </GuideNavIcon>
+                        <GuideNavText text="Home" />
+                      </NavLink>
                     </GuideNavLink>
                   </GuideNavItem>
 
                   <GuideNavItem>
-                    <GuideNavLink href="2">
-                      <GuideNavIcon>
-                        <PresentationIcon />
-                      </GuideNavIcon>
-                      <GuideNavText text="Presentations" />
+                    <GuideNavLink>
+                      <NavLink to="/presentations">
+                        <GuideNavIcon>
+                          <PresentationIcon />
+                        </GuideNavIcon>
+
+                        <GuideNavText text="Presentations" />
+                      </NavLink>
                     </GuideNavLink>
                   </GuideNavItem>
 
                   <GuideNavItem>
-                    <GuideNavLink href="3">
-                      <GuideNavIcon>
-                        <CollectionIcon />
-                      </GuideNavIcon>
-                      <GuideNavText text="Collections" />
+                    <GuideNavLink>
+                      <NavLink to="/collections">
+                        <GuideNavIcon>
+                          <CollectionIcon />
+                        </GuideNavIcon>
+                        <GuideNavText text="Collections" />
+                      </NavLink>
                     </GuideNavLink>
                   </GuideNavItem>
 
                   <GuideNavItem>
-                    <GuideNavLink href="4">
-                      <GuideNavIcon>
-                        <CourseIcon />
-                      </GuideNavIcon>
-                      <GuideNavText text="Courses" />
+                    <GuideNavLink>
+                      <NavLink to="/courses">
+                        <GuideNavIcon>
+                          <CourseIcon />
+                        </GuideNavIcon>
+                        <GuideNavText text="Courses" />
+                      </NavLink>
                     </GuideNavLink>
                   </GuideNavItem>
                 </GuideNav>
@@ -283,38 +296,46 @@ const Layout = props => {
         <MiniGuideNavSection>
           <MiniGuideNav label="Navigation">
             <MiniGuideNavItem>
-              <MiniGuideNavLink href="1">
-                <MiniGuideNavIcon>
-                  <HomeIcon />
-                </MiniGuideNavIcon>
-                <MiniGuideNavText text="Home" />
+              <MiniGuideNavLink>
+                <NavLink to="/dash">
+                  <MiniGuideNavIcon>
+                    <HomeIcon />
+                  </MiniGuideNavIcon>
+                  <MiniGuideNavText text="Home" />
+                </NavLink>
               </MiniGuideNavLink>
             </MiniGuideNavItem>
 
             <MiniGuideNavItem>
-              <MiniGuideNavLink href="2">
-                <MiniGuideNavIcon>
-                  <PresentationIcon />
-                </MiniGuideNavIcon>
-                <MiniGuideNavText text="Presentations" />
+              <MiniGuideNavLink>
+                <NavLink to="/presentations">
+                  <MiniGuideNavIcon>
+                    <PresentationIcon />
+                  </MiniGuideNavIcon>
+                  <MiniGuideNavText text="Presentations" />
+                </NavLink>
               </MiniGuideNavLink>
             </MiniGuideNavItem>
 
             <MiniGuideNavItem>
-              <MiniGuideNavLink href="3">
-                <MiniGuideNavIcon>
-                  <CollectionIcon />
-                </MiniGuideNavIcon>
-                <MiniGuideNavText text="Collections" />
+              <MiniGuideNavLink>
+                <NavLink to="/collections">
+                  <MiniGuideNavIcon>
+                    <CollectionIcon />
+                  </MiniGuideNavIcon>
+                  <MiniGuideNavText text="Collections" />
+                </NavLink>
               </MiniGuideNavLink>
             </MiniGuideNavItem>
 
             <MiniGuideNavItem>
-              <MiniGuideNavLink href="4">
-                <MiniGuideNavIcon>
-                  <CourseIcon />
-                </MiniGuideNavIcon>
-                <MiniGuideNavText text="Courses" />
+              <MiniGuideNavLink>
+                <NavLink to="/courses">
+                  <MiniGuideNavIcon>
+                    <CourseIcon />
+                  </MiniGuideNavIcon>
+                  <MiniGuideNavText text="Courses" />
+                </NavLink>
               </MiniGuideNavLink>
             </MiniGuideNavItem>
           </MiniGuideNav>
@@ -322,21 +343,12 @@ const Layout = props => {
       </MiniGuide>
 
       <Main guide={main}>
-        <Card>this is a card</Card>
-        <p>sssssssss</p>
-        <p>ddddddd</p>
-        <p>xxxxxxxxxxxxxdd</p>
-        <p>dcdcdcdcdd</p>
-        <p>
-          <span style={{ fontFamily: theme.fonts.body }}>
-            {theme.fonts.body} this is just for testing
-          </span>
-
-          <MiniGuideNavText
-            as="h1"
-            text="Hello World! as-polymorphic-prop styled-components"
-          />
-        </p>
+        <Switch>
+          <Route path="/dash" exact strict component={Dashboard} />
+          <Route path="/presentations" exact component={Presentations} />
+          <Route path="/collections" exact component={Collections} />
+          <Route path="/courses" exact component={Courses} />
+        </Switch>
       </Main>
     </>
   );
