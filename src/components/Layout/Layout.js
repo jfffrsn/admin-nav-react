@@ -111,7 +111,7 @@ const Layout = props => {
       setSidebarOpen("");
       setSidebarContainerOpen("");
       setMiniGuide("hidden");
-      setMain("foooooooooooooooo");
+      setMain("");
       setGuideHeader("visible");
       setGuideSpacer("hidden");
       // console.log("small");
