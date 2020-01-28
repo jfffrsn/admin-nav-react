@@ -37,14 +37,18 @@ export const eceAdmin = {
     monospace: "Menlo, monospace"
   },
   fontSizes: [
+    ".625rem",
     ".75rem",
     ".875rem",
     "1rem",
     "1.25rem",
     "1.5rem",
+    "1.75rem",
     "2rem",
-    "3rem",
-    "4rem",
+    "2.5rem",
+    "3.5rem",
+    "4.5rem",
+    "5.5rem",
     "6rem"
   ],
   fontWeights: {

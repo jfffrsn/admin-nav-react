@@ -76,7 +76,7 @@ export function Heading4(props) {
 //Heading 5
 const Text5 = styled.p`
   font-size: ${props => props.theme.fontSizes[3]};
-  font-weight: ${props => props.theme.fontWeights.semibold};
+  font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
   padding: ;
   margin: ;
@@ -94,7 +94,7 @@ export function Heading5(props) {
 //Heading 6
 const Text6 = styled.p`
   font-size: ${props => props.theme.fontSizes[2]};
-  font-weight: ${props => props.theme.fontWeights.semibold};
+  font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
   padding: ;
   margin: ;

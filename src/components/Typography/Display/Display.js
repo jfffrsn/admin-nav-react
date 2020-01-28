@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 
 //Display 1
 const Text1 = styled.p`
-  font-size: ${props => props.theme.fontSizes[8]};
+  font-size: ${props => props.theme.fontSizes[11]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
   padding: ;
@@ -21,7 +21,7 @@ export function Display1(props) {
 
 //Display 2
 const Text2 = styled.p`
-  font-size: ${props => props.theme.fontSizes[7]};
+  font-size: ${props => props.theme.fontSizes[10]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
   padding: ;
@@ -39,7 +39,7 @@ export function Display2(props) {
 
 //Display 3
 const Text3 = styled.p`
-  font-size: ${props => props.theme.fontSizes[6]};
+  font-size: ${props => props.theme.fontSizes[9]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
   padding: ;
@@ -57,7 +57,7 @@ export function Display3(props) {
 
 //Display 4
 const Text4 = styled.p`
-  font-size: ${props => props.theme.fontSizes[5]};
+  font-size: ${props => props.theme.fontSizes[8]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
   padding: ;
