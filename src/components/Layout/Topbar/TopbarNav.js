@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const TopbarMenu = props => {
+const TopbarNav = props => {
   return (
     <Wrapper>
       <TopbarBtnHolder>
@@ -36,4 +36,4 @@ const TopbarMenu = props => {
   );
 };
 
-export default TopbarMenu;
+export default TopbarNav;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import SkipNav from "./Topbar/SkipNav";
 import Topbar from "./Topbar/Topbar";
-import TopbarMenu from "./Topbar/TopbarMenu";
+import TopbarNav from "./Topbar/TopbarNav";
 import TopbarLogo from "./Topbar/TopbarLogo";
 
 import TopbarMenuBtn from "./Topbar/TopbarMenuBtn";
@@ -176,7 +176,7 @@ const Layout = props => {
       <Topbar>
         <TopbarMenuBtn label="Guide" clicked={toggleMenu} />
         <TopbarLogo />
-        <TopbarMenu />
+        <TopbarNav />
       </Topbar>
 
       <Sidebar persistent={sidebarPersist} open={sidebarOpen}>
