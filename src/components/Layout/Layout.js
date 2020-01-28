@@ -4,11 +4,6 @@ import { ReactComponent as MenuIcon } from "../../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../../assets/icon-alerts.svg";
 
-import { ReactComponent as HomeIcon } from "../../assets/icon-home.svg";
-import { ReactComponent as PresentationIcon } from "../../assets/icon-presentation.svg";
-import { ReactComponent as CollectionIcon } from "../../assets/icon-collection.svg";
-import { ReactComponent as CourseIcon } from "../../assets/icon-course.svg";
-
 import SkipNav from "./Topbar/SkipNav";
 import Topbar from "./Topbar/Topbar";
 import TopbarMenu from "./Topbar/TopbarMenu";
@@ -23,10 +18,6 @@ import TopbarAvatar from "./Topbar/TopbarAvatar";
 import MiniGuide from "./Sidebar/MiniGuide/MiniGuide";
 import MiniGuideNavSection from "./Sidebar/MiniGuide/MiniGuideNavSection";
 import MiniGuideNav from "./Sidebar/MiniGuide/MiniGuideNav";
-import MiniGuideNavLink from "./Sidebar/MiniGuide/MiniGuideNavLink";
-import MiniGuideNavIcon from "./Sidebar/MiniGuide/MiniGuideNavIcon";
-import MiniGuideNavItem from "./Sidebar/MiniGuide/MiniGuideNavItem";
-import MiniGuideNavText from "./Sidebar/MiniGuide/MiniGuideNavText";
 
 import Sidebar from "./Sidebar/Sidebar";
 import SidebarContainer from "./Sidebar/SidebarContainer";
@@ -40,15 +31,11 @@ import GuideHeader from "./Sidebar/Guide/GuideHeader";
 import GuideSpacer from "./Sidebar/Guide/GuideSpacer";
 import GuideNavSection from "./Sidebar/Guide/GuideNavSection";
 import GuideNav from "./Sidebar/Guide/GuideNav";
-import GuideNavItem from "./Sidebar/Guide/GuideNavItem";
-import GuideNavIcon from "./Sidebar/Guide/GuideNavIcon";
-import GuideNavText from "./Sidebar/Guide/GuideNavText";
-import GuideNavLink from "./Sidebar/Guide/GuideNavLink";
 
 import Main from "./Main/Main";
 import theme from "../../theme/AdminTheme";
 
-import { Switch, Route, NavLink } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Dashboard from "../../containers/Dashboard";
 import Presentations from "../../containers/Presentations";
 import Collections from "../../containers/Collections";
@@ -240,52 +227,7 @@ const Layout = props => {
               </GuideHeader>
 
               <GuideNavSection>
-                <GuideNav label="Main">
-                  <GuideNavItem>
-                    <GuideNavLink>
-                      <NavLink to="/dash">
-                        <GuideNavIcon>
-                          <HomeIcon />
-                        </GuideNavIcon>
-                        <GuideNavText text="Home" />
-                      </NavLink>
-                    </GuideNavLink>
-                  </GuideNavItem>
-
-                  <GuideNavItem>
-                    <GuideNavLink>
-                      <NavLink to="/presentations">
-                        <GuideNavIcon>
-                          <PresentationIcon />
-                        </GuideNavIcon>
-
-                        <GuideNavText text="Presentations" />
-                      </NavLink>
-                    </GuideNavLink>
-                  </GuideNavItem>
-
-                  <GuideNavItem>
-                    <GuideNavLink>
-                      <NavLink to="/collections">
-                        <GuideNavIcon>
-                          <CollectionIcon />
-                        </GuideNavIcon>
-                        <GuideNavText text="Collections" />
-                      </NavLink>
-                    </GuideNavLink>
-                  </GuideNavItem>
-
-                  <GuideNavItem>
-                    <GuideNavLink>
-                      <NavLink to="/courses">
-                        <GuideNavIcon>
-                          <CourseIcon />
-                        </GuideNavIcon>
-                        <GuideNavText text="Courses" />
-                      </NavLink>
-                    </GuideNavLink>
-                  </GuideNavItem>
-                </GuideNav>
+                <GuideNav label="Main" />
               </GuideNavSection>
             </GuideContent>
           </Guide>
@@ -294,51 +236,7 @@ const Layout = props => {
 
       <MiniGuide visibility={miniGuide}>
         <MiniGuideNavSection>
-          <MiniGuideNav label="Navigation">
-            <MiniGuideNavItem>
-              <MiniGuideNavLink>
-                <NavLink to="/dash">
-                  <MiniGuideNavIcon>
-                    <HomeIcon />
-                  </MiniGuideNavIcon>
-                  <MiniGuideNavText text="Home" />
-                </NavLink>
-              </MiniGuideNavLink>
-            </MiniGuideNavItem>
-
-            <MiniGuideNavItem>
-              <MiniGuideNavLink>
-                <NavLink to="/presentations">
-                  <MiniGuideNavIcon>
-                    <PresentationIcon />
-                  </MiniGuideNavIcon>
-                  <MiniGuideNavText text="Presentations" />
-                </NavLink>
-              </MiniGuideNavLink>
-            </MiniGuideNavItem>
-
-            <MiniGuideNavItem>
-              <MiniGuideNavLink>
-                <NavLink to="/collections">
-                  <MiniGuideNavIcon>
-                    <CollectionIcon />
-                  </MiniGuideNavIcon>
-                  <MiniGuideNavText text="Collections" />
-                </NavLink>
-              </MiniGuideNavLink>
-            </MiniGuideNavItem>
-
-            <MiniGuideNavItem>
-              <MiniGuideNavLink>
-                <NavLink to="/courses">
-                  <MiniGuideNavIcon>
-                    <CourseIcon />
-                  </MiniGuideNavIcon>
-                  <MiniGuideNavText text="Courses" />
-                </NavLink>
-              </MiniGuideNavLink>
-            </MiniGuideNavItem>
-          </MiniGuideNav>
+          <MiniGuideNav label="Navigation" />
         </MiniGuideNavSection>
       </MiniGuide>
 
