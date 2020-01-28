@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import TopbarAvatar from "./TopbarAvatar";
+
 const Button = styled.button`
   background-color: transparent;
   border: 0;
@@ -16,7 +18,11 @@ const Button = styled.button`
 `;
 
 const TopbarAvatarBtn = props => {
-  return <Button>{props.children}</Button>;
+  return (
+    <Button>
+      <TopbarAvatar imgSrc="https://i.pravatar.cc/300" imgAlt="Username" />
+    </Button>
+  );
 };
 
 export default TopbarAvatarBtn;

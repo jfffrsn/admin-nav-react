@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import { ReactComponent as SearchIcon } from "../../assets/icon-search.svg";
-import { ReactComponent as AlertIcon } from "../../assets/icon-alerts.svg";
-
 import SkipNav from "./Topbar/SkipNav";
 import Topbar from "./Topbar/Topbar";
 import TopbarMenu from "./Topbar/TopbarMenu";
 import TopbarLogo from "./Topbar/TopbarLogo";
 
 import TopbarMenuBtn from "./Topbar/TopbarMenuBtn";
-import TopbarBtnHolder from "./Topbar/TopbarBtnHolder";
-import TopbarBtn from "./Topbar/TopbarBtn";
-import TopbarAvatarBtn from "./Topbar/TopbarAvatarBtn";
-import TopbarAvatar from "./Topbar/TopbarAvatar";
 
 import MiniGuide from "./Sidebar/MiniGuide/MiniGuide";
 import MiniGuideNavSection from "./Sidebar/MiniGuide/MiniGuideNavSection";
@@ -182,31 +175,8 @@ const Layout = props => {
       <SkipNav id="skip-navigation" anchor="#content" />
       <Topbar>
         <TopbarMenuBtn label="Guide" clicked={toggleMenu} />
-
         <TopbarLogo />
-
-        <TopbarMenu>
-          <TopbarBtnHolder>
-            <TopbarBtn label="Search">
-              <SearchIcon title="search" />
-            </TopbarBtn>
-          </TopbarBtnHolder>
-
-          <TopbarBtnHolder>
-            <TopbarBtn label="Notifications">
-              <AlertIcon title="alert" />
-            </TopbarBtn>
-          </TopbarBtnHolder>
-
-          <TopbarBtnHolder>
-            <TopbarAvatarBtn>
-              <TopbarAvatar
-                imgSrc="https://i.pravatar.cc/300"
-                imgAlt="Username"
-              />
-            </TopbarAvatarBtn>
-          </TopbarBtnHolder>
-        </TopbarMenu>
+        <TopbarMenu />
       </Topbar>
 
       <Sidebar persistent={sidebarPersist} open={sidebarOpen}>
@@ -214,13 +184,11 @@ const Layout = props => {
         <SidebarContainer open={sidebarContainerOpen}>
           <Guide>
             <GuideSpacer visiblity={guideSpacer} />
-
             <GuideContent>
               <GuideHeader visiblity={guideHeader}>
                 <GuideMenuBtn label="Guide" clicked={closeGuideMenu} />
                 <GuideLogo />
               </GuideHeader>
-
               <GuideNavSection>
                 <GuideNav label="Main" />
               </GuideNavSection>
