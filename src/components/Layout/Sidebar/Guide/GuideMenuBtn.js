@@ -49,6 +49,4 @@ const GuideMenuBtn = (props, ref) => {
   );
 };
 
-const forwardInput = React.forwardRef(GuideMenuBtn);
-
-export default forwardInput;
+export default GuideMenuBtn;
