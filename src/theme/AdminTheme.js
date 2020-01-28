@@ -18,7 +18,8 @@ export const eceAdmin = {
     appNavLinkBgHover: "#dee2e6",
     appNavLinkColor: "#757575",
     appNavLinkColorHover: "#000",
-    appNavLinkColorActive: "#0d47a1"
+    appNavLinkColorActive: "#0d47a1",
+    bodyColor: "#002640"
   },
 
   heights: {
@@ -35,11 +36,21 @@ export const eceAdmin = {
     heading: "inherit",
     monospace: "Menlo, monospace"
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [
+    ".75rem",
+    ".875rem",
+    "1rem",
+    "1.25rem",
+    "1.5rem",
+    "2rem",
+    "3rem",
+    "4rem",
+    "6rem"
+  ],
   fontWeights: {
     body: 400,
-    heading: 700,
-    bold: 700
+    semibold: 500,
+    bold: 600
   },
   lineHeights: {
     body: 1.5,
