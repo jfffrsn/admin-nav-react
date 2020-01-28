@@ -8,8 +8,15 @@
 # testing
 /coverage
 
+# local
+/build-local
+
+# staging
+/build-staging
+
 # production
 /build
+/build-production
 
 # misc
 .DS_Store
@@ -21,3 +28,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.npmrc
