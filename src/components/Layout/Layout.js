@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { ReactComponent as MenuIcon } from "../../assets/icon-menu.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icon-search.svg";
 import { ReactComponent as AlertIcon } from "../../assets/icon-alerts.svg";
 
@@ -182,9 +181,7 @@ const Layout = props => {
     <>
       <SkipNav id="skip-navigation" anchor="#content" />
       <Topbar>
-        <TopbarMenuBtn label="Guide" clicked={toggleMenu}>
-          <MenuIcon title="menu" />
-        </TopbarMenuBtn>
+        <TopbarMenuBtn label="Guide" clicked={toggleMenu} />
 
         <TopbarLogo />
 
@@ -220,9 +217,7 @@ const Layout = props => {
 
             <GuideContent>
               <GuideHeader visiblity={guideHeader}>
-                <GuideMenuBtn label="Guide" clicked={closeGuideMenu}>
-                  <MenuIcon />
-                </GuideMenuBtn>
+                <GuideMenuBtn label="Guide" clicked={closeGuideMenu} />
                 <GuideLogo />
               </GuideHeader>
 

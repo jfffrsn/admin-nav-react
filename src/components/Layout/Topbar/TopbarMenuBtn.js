@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import { ReactComponent as MenuIcon } from "../../../assets/icon-menu.svg";
+
 const Button = styled.button`
   background-color: ${props => props.theme.colors.appTopbarBtnBg};
   height: 2.5rem;
@@ -29,7 +31,7 @@ const Button = styled.button`
 const TopbarMenuBtn = props => {
   return (
     <Button aria-label={props.label} onClick={props.clicked}>
-      {props.children}
+      <MenuIcon title="menu" />
     </Button>
   );
 };
