@@ -6,8 +6,8 @@ const Text1 = styled.p`
   font-size: ${props => props.theme.fontSizes[7]};
   font-weight: ${props => props.theme.fontWeights.semibold};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -24,8 +24,8 @@ const Text2 = styled.p`
   font-size: ${props => props.theme.fontSizes[6]};
   font-weight: ${props => props.theme.fontWeights.semibold};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -42,8 +42,8 @@ const Text3 = styled.p`
   font-size: ${props => props.theme.fontSizes[5]};
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -60,8 +60,8 @@ const Text4 = styled.p`
   font-size: ${props => props.theme.fontSizes[4]};
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -78,8 +78,8 @@ const Text5 = styled.p`
   font-size: ${props => props.theme.fontSizes[3]};
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -93,11 +93,11 @@ export function Heading5(props) {
 
 //Heading 6
 const Text6 = styled.p`
-  font-size: ${props => props.theme.fontSizes[2]};
+  font-size: ${props => props.theme.fontSizes[3]};
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 

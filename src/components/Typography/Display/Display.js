@@ -6,8 +6,8 @@ const Text1 = styled.p`
   font-size: ${props => props.theme.fontSizes[11]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -24,8 +24,8 @@ const Text2 = styled.p`
   font-size: ${props => props.theme.fontSizes[10]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -42,8 +42,8 @@ const Text3 = styled.p`
   font-size: ${props => props.theme.fontSizes[9]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -60,8 +60,8 @@ const Text4 = styled.p`
   font-size: ${props => props.theme.fontSizes[8]};
   font-weight: ${props => props.theme.fontWeights.light};
   line-height: ;
-  padding: ;
-  margin: ;
+  padding: 0;
+  margin: ${props => props.theme.space[3]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 

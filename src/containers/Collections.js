@@ -1,10 +1,11 @@
 import React from "react";
+import { Heading1 } from "../components/Typography/Headlines/Headings";
 
 const Collections = () => {
   return (
-    <div>
-      <h1>Collections</h1>
-    </div>
+    <section>
+      <Heading1 as="h1" text="Collections" />
+    </section>
   );
 };
 
