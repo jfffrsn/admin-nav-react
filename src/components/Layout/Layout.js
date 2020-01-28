@@ -31,6 +31,7 @@ import Dashboard from "../../containers/Dashboard";
 import Presentations from "../../containers/Presentations";
 import Collections from "../../containers/Collections";
 import Courses from "../../containers/Courses";
+import NotFound from "../../containers/NotFound";
 
 const Layout = () => {
   const body = document.querySelector("body");
@@ -208,6 +209,7 @@ const Layout = () => {
           <Route path="/presentations" exact component={Presentations} />
           <Route path="/collections" exact component={Collections} />
           <Route path="/courses" exact component={Courses} />
+          <Route component={NotFound} />
         </Switch>
       </Main>
     </>
