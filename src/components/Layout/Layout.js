@@ -32,7 +32,7 @@ import Presentations from "../../containers/Presentations";
 import Collections from "../../containers/Collections";
 import Courses from "../../containers/Courses";
 
-const Layout = props => {
+const Layout = () => {
   const body = document.querySelector("body");
   const [main, setMain] = useState("");
   const [miniGuide, setMiniGuide] = useState("hidden");
