@@ -48,6 +48,8 @@ export const eceAdmin = {
     "6rem"
   ],
   fontWeights: {
+    thin: 100,
+    light: 300,
     body: 400,
     semibold: 500,
     bold: 600
@@ -68,6 +70,8 @@ export const eceAdmin = {
     "16rem",
     "32rem"
   ],
+
+  letterSpacing: [-1.5, -0.5, 0, 0.1, 0.15, 0.25, 0.4, 0.5, 1.25, 1.5],
 
   sizes: {
     avatar: "3rem",
