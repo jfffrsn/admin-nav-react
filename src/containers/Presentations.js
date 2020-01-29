@@ -1,6 +1,6 @@
 import React from "react";
 
-import PresentationTable from "./PresentationTable";
+import PresentationTable from "../components/PresentationTable/PresentationTable";
 
 const Presentations = () => {
   return <PresentationTable />;
