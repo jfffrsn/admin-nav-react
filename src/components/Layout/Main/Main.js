@@ -10,7 +10,7 @@ const Wrapper = styled.main`
 `;
 const Content = styled.div`
   flex: 1;
-  padding: ${props => props.theme.space[4]};
+  padding: ${props => props.theme.space[5]};
   display: flex;
   flex-direction: column;
   justify-content: center;

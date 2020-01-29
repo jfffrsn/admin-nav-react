@@ -3,8 +3,8 @@ import styled from "styled-components/macro";
 
 const Icon = styled.span`
   display: flex;
-  height: ${props => props.theme.space[4]};
-  width: ${props => props.theme.space[4]};
+  height: ${props => props.theme.space[5]};
+  width: ${props => props.theme.space[5]};
   margin-bottom: ${props => props.theme.space[2]};
 
   > svg {

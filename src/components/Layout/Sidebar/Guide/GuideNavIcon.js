@@ -4,8 +4,8 @@ import styled from "styled-components/macro";
 const Icon = styled.span`
   margin-right: ${props => props.theme.space[3]};
   display: flex;
-  height: ${props => props.theme.space[4]};
-  width: ${props => props.theme.space[4]};
+  height: ${props => props.theme.space[5]};
+  width: ${props => props.theme.space[5]};
 
   > svg {
     pointer-events: none;

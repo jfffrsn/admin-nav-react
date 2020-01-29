@@ -8,7 +8,7 @@ const Courses = () => {
     <section>
       <Heading1 as="h1" text="Courses" />
       <Box p="10px">Box test</Box>
-      <Box pb="100px">Box test222</Box>
+      <Box mb="100px">Box test222</Box>
       <Box m="20px" p="20px">
         Box test margin
       </Box>

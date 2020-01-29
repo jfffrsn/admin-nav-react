@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding: ${props => (props.p ? props.p : props.theme.space[4])};
+  padding: ${props => (props.p ? props.p : props.theme.space[5])};
   padding-left: ${props => props.pl};
   padding-right:${props => props.pr};
   padding-top:${props => props.pt};
