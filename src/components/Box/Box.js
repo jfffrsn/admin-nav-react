@@ -18,6 +18,7 @@ const Wrapper = styled.div`
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
   text-align: ${props => (props.textAlign ? props.textAlign : "")};
+  border: ${props => props.border};
 }
 `;
 
@@ -34,6 +35,7 @@ const Box = props => {
       mr={props.mr}
       mb={props.mb}
       ml={props.ml}
+      border={props.border}
       textAlign={props.textAlign}
       color={props.color}
       bgColor={props.bgColor}

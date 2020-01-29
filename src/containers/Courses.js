@@ -12,7 +12,7 @@ const Courses = () => {
       <Box m="20px" p="20px">
         Box test margin
       </Box>
-      <Box color="red" bgColor="navy">
+      <Box color="red" bgColor="navy" border="red 2px solid">
         Box test222
       </Box>
     </section>
