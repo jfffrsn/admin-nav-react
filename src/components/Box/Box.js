@@ -5,20 +5,21 @@ const Wrapper = styled.div`
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding: ${props => (props.p ? props.p : props.theme.space[3])};
-  padding-left: ${props => (props.pl ? props.pl : "")};
-  padding-right:${props => (props.pr ? props.pr : "")};
-  padding-top:${props => (props.pt ? props.pt : "")};
-  padding-bottom:${props => (props.pb ? props.pb : "")};
+  padding: ${props => (props.p ? props.p : props.theme.space[4])};
+  padding-left: ${props => props.pl};
+  padding-right:${props => props.pr};
+  padding-top:${props => props.pt};
+  padding-bottom:${props => props.pb};
   margin: ${props => (props.m ? props.m : "0 0 1rem 0")};
-  margin-left: ${props => (props.ml ? props.ml : "")};
-  margin-right:${props => (props.mr ? props.mr : "")};
-  margin-top:${props => (props.mt ? props.mt : "")};
-  margin-bottom:${props => (props.mb ? props.mb : "")};
+  margin-left: ${props => props.ml};
+  margin-right:${props => props.mr};
+  margin-top:${props => props.mt};
+  margin-bottom:${props => props.mb};
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
-  text-align: ${props => (props.textAlign ? props.textAlign : "")};
+  text-align: ${props => props.textAlign};
   border: ${props => props.border};
+  box-shadow: ${props => props.boxShadow};
 }
 `;
 
@@ -39,6 +40,7 @@ const Box = props => {
       textAlign={props.textAlign}
       color={props.color}
       bgColor={props.bgColor}
+      boxShadow={props.boxShadow}
     >
       {props.children}
     </Wrapper>
