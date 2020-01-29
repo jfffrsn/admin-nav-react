@@ -54,15 +54,15 @@ class PresentationTable extends React.Component{
     generateRowData(presentations) {
         if (presentations == null) return presentations;
         const sortedPresentations = presentations.sort(PresentationTable.sortPresentations(this.state.sortBy.field, this.state.sortBy.order));
-        return sortedPresentations.map( presentation => {
+        return sortedPresentations.slice(0,20).map( presentation => {
                 const numRows = presentation.Speakers.length; 
                 return {    ...presentation,
-                            ThumbnailURLElement: <img src={presentation.ThumbnailURL} alt={"Thumbnail"} />,
+                            ThumbnailURLElement: <img src={presentation.ThumbnailURL} alt={"Thumbnail"} width="100"/>,
                             id: presentation.ID,
                             paddedID: PresentationTable.zeroPad(presentation.ID, 8),
                             SpeakerList: presentation.Speakers.map( (speaker, i) => { return speaker.FullName + ' (' + speaker.RoleText + ')' + ((i < numRows - 1) ? ', ' : '') } )
                        };
-        }).slice(0,20) ;  // TODO: calculate pagination
+        }) ;  // TODO: calculate pagination
     }
 
     /**
