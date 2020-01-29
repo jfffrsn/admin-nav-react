@@ -1,12 +1,9 @@
 import React from "react";
-import { Heading1 } from "../components/Typography/Headlines/Headings";
+
+import PresentationTable from "./PresentationTable";
 
 const Presentations = () => {
-  return (
-    <section>
-      <Heading1 as="h1" text="Presentations" />
-    </section>
-  );
+  return <PresentationTable />;
 };
 
 export default Presentations;
