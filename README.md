@@ -4,7 +4,8 @@ It import @echo360@ui-lib
 Since @echo360 is not in a public registry but in artifactory, you need to 
 
 Artifactory npm
-To fetch the component set, you will need to configure your local .npmrc to work with our private Artifactory store.
+To fetch the component set, you will need to configure your local .npmrc to work with our private Artifactory store.  The .npmrc file needs to be placed in your home directory.
+E.g. on Windows in c:\users\{username}\.npmrc
 
 Open a terminal and enter the following command, substituting your Artifactory username and password (without the angle brackets, no space between -u and the username)
 
