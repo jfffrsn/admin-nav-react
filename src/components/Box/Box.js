@@ -18,8 +18,6 @@ const Wrapper = styled.div`
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
   text-align: ${props => (props.textAlign ? props.textAlign : "")};
- 
-
 }
 `;
 
