@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^8.0.3",
+    "env-cmd": "^10.0.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "i18next": "^19.0.3",
@@ -23,7 +24,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && move build build-production",
+    "build:local": "env-cmd -f .env.local react-scripts build && move build build-local",
+    "build:staging": "env-cmd -f .env.staging react-scripts build && move build build-staging",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
