@@ -7,7 +7,7 @@ const Courses = () => {
   return (
     <section>
       <Heading1 as="h1" text="Courses" />
-      <Box p="10px">Box test</Box>
+      <Box p={theme.space[2]}>Box test</Box>
       <Box mb="100px">Box test222</Box>
       <Box mr="202px" p="20px">
         Box test margin

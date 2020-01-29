@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
   text-align: ${props => props.textAlign};
-  border: ${props => props.border};
+  border: lighten(0.2, '#CCCD64');
   box-shadow: ${props => props.boxShadow};
 }
 `;
