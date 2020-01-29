@@ -9,7 +9,7 @@ const Courses = () => {
       <Heading1 as="h1" text="Courses" />
       <Box p="10px">Box test</Box>
       <Box mb="100px">Box test222</Box>
-      <Box m="20px" p="20px">
+      <Box mr="202px" p="20px">
         Box test margin
       </Box>
       <Box color="red" bgColor="navy" border="red 2px solid">
