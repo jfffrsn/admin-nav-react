@@ -15,7 +15,7 @@ const Courses = () => {
       <Box color="red" bgColor="navy" border="red 2px solid">
         Box test222
       </Box>
-      <Box boxShadow={theme.boxShadows[1]}>testing shadow depths</Box>
+      <Box boxShadow={theme.boxShadows[4]}>testing shadow depths</Box>
     </section>
   );
 };
