@@ -1,11 +1,17 @@
 import React from "react";
-import { Heading1 } from "../components/Typography/Headlines/Headings";
-import Box from "../components/Box/Box";
-import theme from "../theme/AdminTheme";
+import { Helmet } from "react-helmet";
 import PresentationTableWithHooks from "../components/PresentationTable/PresentationTableWithHooks";
 
 const Courses = () => {
-  return ( <PresentationTableWithHooks/>  );
+  return (
+    <>
+      <Helmet>
+        <title>Courses</title>
+        <meta name="description" content="Nested component" />
+      </Helmet>
+      <PresentationTableWithHooks />
+    </>
+  );
 };
 
 export default Courses;
