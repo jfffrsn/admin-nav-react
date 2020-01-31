@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import PageHeader from "../components/PageHeader/PageHeader";
 
-import { Heading1 } from "../components/Typography/Headlines/Headings";
+import { Heading5 } from "../components/Typography/Headlines/Headings";
 import Box from "../components/Box/Box";
 
 const Collections = () => {
@@ -16,8 +16,9 @@ const Collections = () => {
 
       <section>
         <PageHeader></PageHeader>
-        <Box border="rgba(0,0,0,.12) 1px solid">
-          <Heading1 as="h1" text="Collections" />
+        <Box>
+          <Heading5 as="h2" text="Collections" />
+          <p>sddfsddsdsdf</p>
         </Box>
       </section>
     </>
