@@ -10,7 +10,7 @@ export const eceAdmin = {
     appGuideBg: "#fff",
     appGuideHeaderBg: "#1565C0",
     appMiniGuideBg: "#fff",
-    appMainBg: "#f1f3f5",
+    appMainBg: "#f2f3f5",
     appIconInactive: "#424242",
     appIconActive: "#1565C0",
     appNavLinkBg: "transparent",

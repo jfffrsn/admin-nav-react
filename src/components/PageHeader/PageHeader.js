@@ -11,17 +11,14 @@ import { Button } from "@echo360/ui-lib";
 const PageHeader = () => {
   return (
     <PageHeaderContainer>
-      <PageHeaderTitle as="h1" title="Page title" />
+      <PageHeaderTitle as="h1" title="Page Title" />
       <PageHeaderBtnContainer>
         <PageHeaderBtnList>
           <PageHeaderBtnListItem>
-            <Button primary label="button text" onClick={() => {}} />
+            <Button secondary label="button" onClick={() => {}} />
           </PageHeaderBtnListItem>
           <PageHeaderBtnListItem>
-            <Button secondary label="button text" onClick={() => {}} />
-          </PageHeaderBtnListItem>
-          <PageHeaderBtnListItem>
-            <Button primary label="button text" onClick={() => {}} />
+            <Button primary label="button" onClick={() => {}} />
           </PageHeaderBtnListItem>
         </PageHeaderBtnList>
       </PageHeaderBtnContainer>
