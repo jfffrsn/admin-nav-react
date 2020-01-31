@@ -9,6 +9,7 @@ const PresentationTableWithHooks = () => {
    * @type {[Presentation[], Function]} Loading
    */
   const [presentations, setPresentations] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [columnDefs, setColumnDefs] = useState([
     {
       headerText: "id",
