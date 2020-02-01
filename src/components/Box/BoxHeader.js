@@ -4,9 +4,9 @@ import styled from "styled-components/macro";
 import BoxHeaderTitle from "../Box/BoxHeaderTitle";
 
 const Wrapper = styled.div`
-  xxbackground-color: red;
   display: flex;
   align-items: center;
+  margin: 0 0 ${props => props.theme.space[3]} 0;
 `;
 
 const BoxHeader = ({ title, buttons }) => {

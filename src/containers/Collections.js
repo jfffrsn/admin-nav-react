@@ -61,7 +61,7 @@ const Collections = () => {
                     <BoxHeaderBtnContainer>
                       <BoxHeaderBtnList>
                         <BoxHeaderBtnListItem>
-                          <Button secondary label="button" onClick={() => {}} />
+                          <Button secondary label="Edit" onClick={() => {}} />
                         </BoxHeaderBtnListItem>
                       </BoxHeaderBtnList>
                     </BoxHeaderBtnContainer>
