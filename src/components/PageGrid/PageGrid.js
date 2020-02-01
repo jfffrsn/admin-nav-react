@@ -16,7 +16,7 @@ const Container = styled.div`
 const Main = styled.div`
   flex: 1 100%;
   width: 100%;
-  @media ${props => props.theme.mediaQueries.sm} {
+  @media ${props => props.theme.mediaQueries.md} {
     flex: 1 auto;
     width: auto;
     margin-right: ${props => props.theme.space[3]};
@@ -25,9 +25,14 @@ const Main = styled.div`
 
 const Sidebar = styled.div`
   width: 100%;
-  @media ${props => props.theme.mediaQueries.sm} {
+
+  @media ${props => props.theme.mediaQueries.md} {
     width: auto;
     margin-left: ${props => props.theme.space[3]};
+    flex: 0 0 16rem;
+  }
+
+  @media ${props => props.theme.mediaQueries.lg} {
     flex: 0 0 20rem;
   }
 `;

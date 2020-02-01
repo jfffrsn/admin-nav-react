@@ -7,7 +7,6 @@ import PageHeaderBtnList from "../components/PageHeader/PageHeaderBtnList";
 import PageHeaderBtnListItem from "../components/PageHeader/PageHeaderBtnListItem";
 import { Button } from "@echo360/ui-lib";
 
-import { Heading5 } from "../components/Typography/Headlines/Headings";
 import Box from "../components/Box/Box";
 import BoxHeader from "../components/Box/BoxHeader";
 import BoxHeaderBtnContainer from "../components/Box/BoxHeaderBtnContainer";
@@ -48,7 +47,7 @@ const Collections = () => {
           main={
             <>
               <Box>
-                <Heading5 as="h2" text="main" />
+                <BoxHeader title="Main" />
                 <p>sddfsddsdsdf</p>
               </Box>
               <Box>second box</Box>
@@ -76,7 +75,6 @@ const Collections = () => {
                     alt="placeholder"
                   />
                 </p>
-                <BoxDivider />
               </Box>
 
               <Box>
