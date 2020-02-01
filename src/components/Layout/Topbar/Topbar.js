@@ -7,9 +7,10 @@ const Header = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   transform: translateY(0);
   transition: transform 0.3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
 `;
 
 const Content = styled.div`
