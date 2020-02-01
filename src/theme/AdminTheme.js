@@ -67,6 +67,7 @@ export const eceAdmin = {
     "0",
     ".25rem",
     ".5rem",
+    ".75rem",
     "1rem",
     "1.25rem",
     "1.5rem",

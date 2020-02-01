@@ -10,6 +10,8 @@ import { Button } from "@echo360/ui-lib";
 import { Heading5 } from "../components/Typography/Headlines/Headings";
 import Box from "../components/Box/Box";
 
+import PageGrid from "../components/PageGrid/PageGrid";
+
 const Collections = () => {
   return (
     <>
@@ -33,11 +35,21 @@ const Collections = () => {
               </PageHeaderBtnList>
             </PageHeaderBtnContainer>
           }
+        />{" "}
+        <PageGrid
+          main={
+            <Box>
+              <Heading5 as="h2" text="main" />
+              <p>sddfsddsdsdf</p>
+            </Box>
+          }
+          sidebar={
+            <Box>
+              <Heading5 as="h2" text="side" />
+              <p>sidebar</p>
+            </Box>
+          }
         />
-        <Box>
-          <Heading5 as="h2" text="Collections" />
-          <p>sddfsddsdsdf</p>
-        </Box>
       </section>
     </>
   );
