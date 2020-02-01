@@ -6,6 +6,7 @@ import PageHeaderBtnList from "../components/PageHeader/PageHeaderBtnList";
 import PageHeaderBtnListItem from "../components/PageHeader/PageHeaderBtnListItem";
 import { Button } from "@echo360/ui-lib";
 
+import Box from "../components/Box/Box";
 import PresentationTableWithHooks from "../components/PresentationTable/PresentationTableWithHooks";
 
 const Courses = () => {
@@ -31,8 +32,9 @@ const Courses = () => {
           </PageHeaderBtnContainer>
         }
       />
-
-      <PresentationTableWithHooks />
+      <Box>
+        <PresentationTableWithHooks />
+      </Box>
     </>
   );
 };
