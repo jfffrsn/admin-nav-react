@@ -1,4 +1,7 @@
 import React from "react";
+
+import PageHeader from "../components/PageHeader/PageHeader";
+
 import {
   Heading1,
   Heading2,
@@ -25,7 +28,7 @@ const Dashboard = () => {
       </Helmet>
 
       <section>
-        <Heading1 as="h1" text="Dashboard" />
+        <PageHeader title="Dashboard" />
 
         <Display1 as="h1" text="display1" />
         <p>
