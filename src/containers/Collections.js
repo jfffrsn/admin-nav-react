@@ -15,7 +15,7 @@ const Collections = () => {
       </Helmet>
 
       <section>
-        <PageHeader></PageHeader>
+        <PageHeader title="Collections"></PageHeader>
         <Box>
           <Heading5 as="h2" text="Collections" />
           <p>sddfsddsdsdf</p>

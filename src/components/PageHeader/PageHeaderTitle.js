@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Title = styled.p`
+const Title = styled.h1`
   margin: 0 ${props => props.theme.space[3]} 0 0;
   padding: 0;
   font-size: ${props => props.theme.fontSizes[5]};
@@ -9,8 +9,8 @@ const Title = styled.p`
   flex: 1;
 `;
 
-const PageHeaderTitle = props => {
-  return <Title as={props.as}>{props.title}</Title>;
+const PageHeaderTitle = ({ title }) => {
+  return <Title>{title}</Title>;
 };
 
 export default PageHeaderTitle;

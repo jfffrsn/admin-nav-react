@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 
 const Item = styled.li`
-  margin: 0 ${props => props.theme.space[2]};
+  margin: 0 ${props => props.theme.space[1]};
   padding: 0;
 
   &:first-of-type {

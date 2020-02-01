@@ -8,10 +8,10 @@ import PageHeaderBtnListItem from "./PageHeaderBtnListItem";
 
 import { Button } from "@echo360/ui-lib";
 
-const PageHeader = () => {
+const PageHeader = ({ title }) => {
   return (
     <PageHeaderContainer>
-      <PageHeaderTitle as="h1" title="Page Title" />
+      <PageHeaderTitle title={title} />
       <PageHeaderBtnContainer>
         <PageHeaderBtnList>
           <PageHeaderBtnListItem>
