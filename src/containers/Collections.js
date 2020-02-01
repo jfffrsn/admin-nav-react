@@ -9,6 +9,7 @@ import { Button } from "@echo360/ui-lib";
 
 import { Heading5 } from "../components/Typography/Headlines/Headings";
 import Box from "../components/Box/Box";
+import BoxHeader from "../components/Box/BoxHeader";
 
 import PageGrid from "../components/PageGrid/PageGrid";
 
@@ -40,27 +41,34 @@ const Collections = () => {
         />{" "}
         <PageGrid
           main={
-            <Box>
-              <Heading5 as="h2" text="main" />
-              <p>sddfsddsdsdf</p>
-            </Box>
+            <>
+              <Box>
+                <Heading5 as="h2" text="main" />
+                <p>sddfsddsdsdf</p>
+              </Box>
+              <Box>second box</Box>
+            </>
           }
           sidebar={
-            <Box>
-              <Heading5 as="h2" text="side" />
-              <p>sidebar</p>
-              <p>
-                <ResponsiveImage
-                  src="https://placeimg.com/800/450/tech"
-                  alt="placeholder"
-                />
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-                dolorum. Voluptatibus expedita beatae, esse voluptatum mollitia
-                magni ipsum quam id.
-              </p>
-            </Box>
+            <>
+              <Box>
+                <BoxHeader title="Thumbnail" />
+
+                <p>
+                  <ResponsiveImage
+                    src="https://placeimg.com/800/450/tech"
+                    alt="placeholder"
+                  />
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, dolorum. Voluptatibus expedita beatae, esse voluptatum
+                  mollitia magni ipsum quam id.
+                </p>
+              </Box>
+
+              <Box>second box</Box>
+            </>
           }
         />
       </section>
