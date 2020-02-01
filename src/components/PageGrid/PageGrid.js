@@ -28,7 +28,7 @@ const Sidebar = styled.div`
   @media ${props => props.theme.mediaQueries.sm} {
     width: auto;
     margin-left: ${props => props.theme.space[3]};
-    flex: 0 0 18rem;
+    flex: 0 0 20rem;
   }
 `;
 

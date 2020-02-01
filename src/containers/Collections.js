@@ -12,6 +12,8 @@ import Box from "../components/Box/Box";
 
 import PageGrid from "../components/PageGrid/PageGrid";
 
+import ResponsiveImage from "../components/Helpers/ResponsiveImage";
+
 const Collections = () => {
   return (
     <>
@@ -47,6 +49,17 @@ const Collections = () => {
             <Box>
               <Heading5 as="h2" text="side" />
               <p>sidebar</p>
+              <p>
+                <ResponsiveImage
+                  src="https://placeimg.com/800/450/tech"
+                  alt="placeholder"
+                />
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                dolorum. Voluptatibus expedita beatae, esse voluptatum mollitia
+                magni ipsum quam id.
+              </p>
             </Box>
           }
         />
