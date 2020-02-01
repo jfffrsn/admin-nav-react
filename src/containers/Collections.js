@@ -10,6 +10,9 @@ import { Button } from "@echo360/ui-lib";
 import { Heading5 } from "../components/Typography/Headlines/Headings";
 import Box from "../components/Box/Box";
 import BoxHeader from "../components/Box/BoxHeader";
+import BoxHeaderBtnContainer from "../components/Box/BoxHeaderBtnContainer";
+import BoxHeaderBtnList from "../components/Box/BoxHeaderBtnList";
+import BoxHeaderBtnListItem from "../components/Box/BoxHeaderBtnListItem";
 
 import PageGrid from "../components/PageGrid/PageGrid";
 
@@ -38,7 +41,7 @@ const Collections = () => {
               </PageHeaderBtnList>
             </PageHeaderBtnContainer>
           }
-        />{" "}
+        />
         <PageGrid
           main={
             <>
@@ -52,7 +55,18 @@ const Collections = () => {
           sidebar={
             <>
               <Box>
-                <BoxHeader title="Thumbnail" />
+                <BoxHeader
+                  title="Thumbnail"
+                  buttons={
+                    <BoxHeaderBtnContainer>
+                      <BoxHeaderBtnList>
+                        <BoxHeaderBtnListItem>
+                          <Button secondary label="button" onClick={() => {}} />
+                        </BoxHeaderBtnListItem>
+                      </BoxHeaderBtnList>
+                    </BoxHeaderBtnContainer>
+                  }
+                />
 
                 <p>
                   <ResponsiveImage

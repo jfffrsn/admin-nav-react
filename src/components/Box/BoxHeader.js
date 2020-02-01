@@ -9,11 +9,11 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const BoxHeader = ({ title, btns }) => {
+const BoxHeader = ({ title, buttons }) => {
   return (
     <Wrapper>
       <BoxHeaderTitle title={title}></BoxHeaderTitle>
-      {btns}
+      {buttons}
     </Wrapper>
   );
 };
