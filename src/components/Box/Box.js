@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   text-align: ${props => props.textAlign};
   border: ${props => (props.border ? props.border : "")};
   box-shadow: ${props =>
-    props.boxShadow ? props.boxShadow : props.theme.boxShadows[1]};
+    props.boxShadow ? props.boxShadow : "0px 2px 8px rgba(0,0,0,0.05)"};
 }
 `;
 
