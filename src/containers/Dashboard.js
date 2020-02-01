@@ -1,6 +1,7 @@
 import React from "react";
 
 import PageHeader from "../components/PageHeader/PageHeader";
+import Box from "../components/Box/Box";
 
 import {
   Heading1,
@@ -29,76 +30,27 @@ const Dashboard = () => {
 
       <section>
         <PageHeader title="Dashboard" />
+        <Box>
+          <Display1 as="h1" text="display1" />
 
-        <Display1 as="h1" text="display1" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Display2 as="h1" text="display2" />
 
-        <Display2 as="h1" text="display2" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Display3 as="h1" text="display3" />
 
-        <Display3 as="h1" text="display3" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Display4 as="h1" text="display4" />
 
-        <Display4 as="h1" text="display4" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Heading1 as="h1" text="heading1" />
 
-        <Heading1 as="h1" text="heading1" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Heading2 as="h2" text="heading2" />
 
-        <Heading2 as="h2" text="heading2" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Heading3 as="h3" text="heading3" />
 
-        <Heading3 as="h3" text="heading3" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Heading4 as="h4" text="heading4" />
 
-        <Heading4 as="h4" text="heading4" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Heading5 as="h5" text="heading5" />
 
-        <Heading5 as="h5" text="heading5" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
-
-        <Heading6 as="h6" text="heading6" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
-          cum? Incidunt ipsam necessitatibus quisquam repellendus quibusdam ad
-          voluptatibus saepe cumque.
-        </p>
+          <Heading6 as="h6" text="heading6" />
+        </Box>
       </section>
     </>
   );
