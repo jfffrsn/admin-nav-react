@@ -2,6 +2,15 @@
 
 export const eceAdmin = {
   breakpoints: ["544", "768", "1016", "1280"],
+
+  mediaQueries: {
+    xs: "(min-width: 0rem)",
+    sm: "(min-width: 34rem)",
+    md: "(min-width: 48rem)",
+    lg: "(min-width: 63.5rem)",
+    xl: "(min-width: 80rem)"
+  },
+
   colors: {
     appTopbarBg: "#1565C0",
     appTopbarBtnBg: "transparent",
