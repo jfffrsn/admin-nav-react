@@ -14,6 +14,8 @@ import BoxHeaderBtnContainer from "../components/Box/BoxHeaderBtnContainer";
 import BoxHeaderBtnList from "../components/Box/BoxHeaderBtnList";
 import BoxHeaderBtnListItem from "../components/Box/BoxHeaderBtnListItem";
 
+import BoxDivider from "../components/Box/BoxDivider";
+
 import PageGrid from "../components/PageGrid/PageGrid";
 
 import ResponsiveImage from "../components/Helpers/ResponsiveImage";
@@ -74,14 +76,15 @@ const Collections = () => {
                     alt="placeholder"
                   />
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat, dolorum. Voluptatibus expedita beatae, esse voluptatum
-                  mollitia magni ipsum quam id.
-                </p>
+                <BoxDivider />
               </Box>
 
-              <Box>second box</Box>
+              <Box>
+                <BoxHeader title="Visibility" />
+                second box
+                <BoxDivider />
+                sd
+              </Box>
             </>
           }
         />
