@@ -10,12 +10,12 @@ const Button = styled.button`
   border: 0;
   cursor: pointer;
   border-radius: 50%;
-  color: ${props => props.theme.colors.grayOne};
+  color: ${props => props.theme.colors.grayTwo};
   position: relative;
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.colors.grayTwo};
+    color: ${props => props.theme.colors.grayThree};
   }
 
   > svg {

@@ -29,8 +29,9 @@ export const eceAdmin = {
     appNavLinkColorHover: "#000",
     appNavLinkColorActive: "#0d47a1",
     bodyColor: "#002640",
-    grayOne: "rgba(0,0,0,.1)",
-    grayTwo: "rgba(96,96,96)"
+    grayOne: "rgb(224,224,224)",
+    grayTwo: "rgb(189,189,189)",
+    grayThree: "rgb(96,96,96)"
   },
 
   heights: {
@@ -74,7 +75,7 @@ export const eceAdmin = {
     heading: 1.25
   },
   space: [
-    "0",
+    ".125rem",
     ".25rem",
     ".5rem",
     ".75rem",

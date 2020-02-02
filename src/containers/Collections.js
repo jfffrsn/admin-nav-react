@@ -30,6 +30,7 @@ import MediaListBtnListItem from "../components/MediaList/MediaListBtnListItem";
 
 import IconBtn from "../components/Buttons/IconBtn";
 import { ReactComponent as DeleteIcon } from "../assets/icon-delete.svg";
+import { ReactComponent as EditIcon } from "../assets/icon-edit.svg";
 
 const Collections = () => {
   return (
@@ -113,7 +114,13 @@ const Collections = () => {
                         <MediaListBtnList>
                           <MediaListBtnListItem>
                             <IconBtn label="button" onClick={() => {}}>
-                              <DeleteIcon />
+                              <EditIcon title="Edit" />
+                            </IconBtn>
+                          </MediaListBtnListItem>
+
+                          <MediaListBtnListItem>
+                            <IconBtn label="button" onClick={() => {}}>
+                              <DeleteIcon title="Delete" />
                             </IconBtn>
                           </MediaListBtnListItem>
                         </MediaListBtnList>
