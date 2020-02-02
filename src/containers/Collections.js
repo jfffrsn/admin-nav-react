@@ -27,9 +27,11 @@ import MediaListBtnContainer from "../components/MediaList/MediaListBtnContainer
 import MediaListBtnList from "../components/MediaList/MediaListBtnList";
 import MediaListBtnListItem from "../components/MediaList/MediaListBtnListItem";
 
+import TextBtn from "../components/Buttons/TextBtn";
 import IconBtn from "../components/Buttons/IconBtn";
 import { ReactComponent as DeleteIcon } from "../assets/icon-delete.svg";
 import { ReactComponent as EditIcon } from "../assets/icon-edit.svg";
+import BtnContainer from "../components/Buttons/BtnContainer";
 
 const Collections = () => {
   return (
@@ -89,6 +91,10 @@ const Collections = () => {
               </Box>
               <Box>
                 <BoxHeader title="Faculty" />
+
+                <BtnContainer>
+                  <TextBtn text="Add Faculty" />
+                </BtnContainer>
 
                 <MediaList>
                   <MediaListItem
