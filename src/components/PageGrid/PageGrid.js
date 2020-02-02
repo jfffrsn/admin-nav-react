@@ -17,7 +17,7 @@ const Main = styled.div`
   flex: 1 100%;
   width: 100%;
   @media ${props => props.theme.mediaQueries.md} {
-    flex: 1 auto;
+    flex: 1;
     width: auto;
     margin-right: ${props => props.theme.space[3]};
   }

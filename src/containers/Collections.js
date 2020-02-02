@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import theme from "../theme/AdminTheme";
 
 import PageHeader from "../components/PageHeader/PageHeader";
 import PageHeaderBtnContainer from "../components/PageHeader/PageHeaderBtnContainer";
@@ -60,10 +59,11 @@ const Collections = () => {
           main={
             <>
               <Box>
+                <BoxHeader title="Details" />
                 <FormGroup>
                   <TextInput
                     noMaxWidth
-                    style={{ fontWeight: 600, fontSize: theme.fontSizes[3] }}
+                    noMinWidth
                     id="textInput1"
                     label="Title"
                     //onChange={v => {
@@ -76,7 +76,7 @@ const Collections = () => {
                 <FormGroup>
                   <TextInput
                     noMaxWidth
-                    style={{ fontWeight: 600, fontSize: theme.fontSizes[3] }}
+                    noMinWidth
                     id="textInput2"
                     label="Description"
                     //onChange={v => {
