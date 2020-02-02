@@ -28,6 +28,9 @@ import MediaListBtnContainer from "../components/MediaList/MediaListBtnContainer
 import MediaListBtnList from "../components/MediaList/MediaListBtnList";
 import MediaListBtnListItem from "../components/MediaList/MediaListBtnListItem";
 
+import IconBtn from "../components/Buttons/IconBtn";
+import { ReactComponent as DeleteIcon } from "../assets/icon-delete.svg";
+
 const Collections = () => {
   return (
     <>
@@ -109,11 +112,9 @@ const Collections = () => {
                       <MediaListBtnContainer>
                         <MediaListBtnList>
                           <MediaListBtnListItem>
-                            <Button
-                              secondary
-                              label="button"
-                              onClick={() => {}}
-                            />
+                            <IconBtn label="button" onClick={() => {}}>
+                              <DeleteIcon />
+                            </IconBtn>
                           </MediaListBtnListItem>
                         </MediaListBtnList>
                       </MediaListBtnContainer>
