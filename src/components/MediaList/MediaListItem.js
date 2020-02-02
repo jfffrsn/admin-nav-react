@@ -16,7 +16,7 @@ const Image = styled.img`
   height: auto;
 `;
 const ImageWrapper = styled.span`
-  flex: ${e => (e.isFaculty ? `0 0 2.5rem` : `0 0 7.5rem`)};
+  flex: ${e => (e.isFaculty ? `0 0 3rem` : `0 0 6.25rem`)};
   margin: 0 ${props => props.theme.space[4]} 0 0;
   border-radius: ${e => (e.isFaculty ? `50%` : ``)};
   overflow: hidden;
