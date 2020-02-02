@@ -157,7 +157,6 @@ const Collections = () => {
 
               <Box>
                 <BoxHeader title="Visibility" />
-                second box
                 <BoxDivider />
                 sd
               </Box>
