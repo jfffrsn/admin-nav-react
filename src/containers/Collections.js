@@ -81,7 +81,7 @@ const Collections = () => {
               </Box>
               <Box>
                 <BoxHeader title="Faculty" />
-                second box
+
                 <MediaList>
                   <MediaListItem
                     title="foo"
