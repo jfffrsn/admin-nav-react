@@ -33,7 +33,7 @@ const Description = styled.span`
   display: block;
 `;
 
-const MediaListItem = ({ src, alt, title, description, ...props }) => {
+const MediaListItem = ({ src, alt, title, description, buttons, ...props }) => {
   return (
     <Item>
       <ImageWrapper isFaculty={props.isFaculty}>
@@ -43,6 +43,7 @@ const MediaListItem = ({ src, alt, title, description, ...props }) => {
         <Title>{title}</Title>
         <Description>{description}</Description>
       </Text>
+      {buttons}
     </Item>
   );
 };

@@ -24,6 +24,10 @@ import FormGroup from "../components/Forms/FormGroup";
 import MediaList from "../components/MediaList/MediaList";
 import MediaListItem from "../components/MediaList/MediaListItem";
 
+import MediaListBtnContainer from "../components/MediaList/MediaListBtnContainer";
+import MediaListBtnList from "../components/MediaList/MediaListBtnList";
+import MediaListBtnListItem from "../components/MediaList/MediaListBtnListItem";
+
 const Collections = () => {
   return (
     <>
@@ -96,11 +100,24 @@ const Collections = () => {
                     alt="thumbnail"
                   />
                   <MediaListItem
+                    isFaculty
                     title="foo"
                     description="mmmmmm"
                     src="https://placeimg.com/300/300/people"
                     alt="person"
-                    isFaculty
+                    buttons={
+                      <MediaListBtnContainer>
+                        <MediaListBtnList>
+                          <MediaListBtnListItem>
+                            <Button
+                              secondary
+                              label="button"
+                              onClick={() => {}}
+                            />
+                          </MediaListBtnListItem>
+                        </MediaListBtnList>
+                      </MediaListBtnContainer>
+                    }
                   />
                 </MediaList>
               </Box>
