@@ -5,19 +5,22 @@ import PageHeader from "../components/PageHeader/PageHeader";
 import PageHeaderBtnContainer from "../components/PageHeader/PageHeaderBtnContainer";
 import PageHeaderBtnList from "../components/PageHeader/PageHeaderBtnList";
 import PageHeaderBtnListItem from "../components/PageHeader/PageHeaderBtnListItem";
-import { Button } from "@echo360/ui-lib";
+import { Button, TextInput } from "@echo360/ui-lib";
 
 import Box from "../components/Box/Box";
 import BoxHeader from "../components/Box/BoxHeader";
 import BoxHeaderBtnContainer from "../components/Box/BoxHeaderBtnContainer";
 import BoxHeaderBtnList from "../components/Box/BoxHeaderBtnList";
 import BoxHeaderBtnListItem from "../components/Box/BoxHeaderBtnListItem";
-
 import BoxDivider from "../components/Box/BoxDivider";
 
 import PageGrid from "../components/PageGrid/PageGrid";
 
 import ResponsiveImage from "../components/Helpers/ResponsiveImage";
+
+import FormGroup from "../components/Forms/FormGroup";
+
+import theme from "../theme/AdminTheme";
 
 const Collections = () => {
   return (
@@ -47,10 +50,37 @@ const Collections = () => {
           main={
             <>
               <Box>
-                <BoxHeader title="Main" />
-                <p>sddfsddsdsdf</p>
+                <FormGroup>
+                  <TextInput
+                    noMaxWidth
+                    style={{ fontWeight: 600, fontSize: theme.fontSizes[3] }}
+                    id="textInput1"
+                    label="Title"
+                    //onChange={v => {
+                    //  setState({ val: v });
+                    // }}
+                    placeholder="placeholder"
+                    //value={state.val}
+                  />
+                </FormGroup>
+                <FormGroup>
+                  <TextInput
+                    noMaxWidth
+                    style={{ fontWeight: 600, fontSize: theme.fontSizes[3] }}
+                    id="textInput2"
+                    label="Description"
+                    //onChange={v => {
+                    //  setState({ val: v });
+                    // }}
+                    placeholder="placeholder"
+                    //value={state.val}
+                  />
+                </FormGroup>
               </Box>
-              <Box>second box</Box>
+              <Box>
+                <BoxHeader title="Faculty" />
+                second box
+              </Box>
             </>
           }
           sidebar={
