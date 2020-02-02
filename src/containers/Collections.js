@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import theme from "../theme/AdminTheme";
 
 import PageHeader from "../components/PageHeader/PageHeader";
 import PageHeaderBtnContainer from "../components/PageHeader/PageHeaderBtnContainer";
@@ -20,7 +21,8 @@ import ResponsiveImage from "../components/Helpers/ResponsiveImage";
 
 import FormGroup from "../components/Forms/FormGroup";
 
-import theme from "../theme/AdminTheme";
+import MediaList from "../components/MediaList/MediaList";
+import MediaListItem from "../components/MediaList/MediaListItem";
 
 const Collections = () => {
   return (
@@ -80,6 +82,27 @@ const Collections = () => {
               <Box>
                 <BoxHeader title="Faculty" />
                 second box
+                <MediaList>
+                  <MediaListItem
+                    title="foo"
+                    description="mmmmmm"
+                    src="https://placeimg.com/400/225/tech"
+                    alt="thumbnail"
+                  />
+                  <MediaListItem
+                    title="foo"
+                    description="mmmmmm"
+                    src="https://placeimg.com/400/225/arch"
+                    alt="thumbnail"
+                  />
+                  <MediaListItem
+                    title="foo"
+                    description="mmmmmm"
+                    src="https://placeimg.com/300/300/people"
+                    alt="person"
+                    isFaculty
+                  />
+                </MediaList>
               </Box>
             </>
           }
