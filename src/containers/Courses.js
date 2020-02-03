@@ -8,25 +8,26 @@ import { Button } from "@echo360/ui-lib";
 
 import Box from "../components/Box/Box";
 import PresentationTableWithHooks from "../components/PresentationTable/PresentationTableWithHooks";
+import { i18nX } from "../i18n";
 
 const Courses = () => {
   return (
     <>
       <Helmet>
-        <title>Courses</title>
+        <title>{i18nX.t("Courses.title")}</title>
         <meta name="description" content="Nested component" />
       </Helmet>
 
       <PageHeader
-        title="Courses"
+        title={i18nX.t("Courses.title")}
         buttons={
           <PageHeaderBtnContainer>
             <PageHeaderBtnList>
               <PageHeaderBtnListItem>
-                <Button secondary label="button" onClick={() => {}} />
+                <Button secondary label="button" onClick={() => { }} />
               </PageHeaderBtnListItem>
               <PageHeaderBtnListItem>
-                <Button primary label="button" onClick={() => {}} />
+                <Button primary label="button" onClick={() => { }} />
               </PageHeaderBtnListItem>
             </PageHeaderBtnList>
           </PageHeaderBtnContainer>

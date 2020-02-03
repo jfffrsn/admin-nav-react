@@ -1,17 +1,26 @@
 {
-    "Collections": "Die Kollektionen",
+    "Collections": {
+        "title": "Container"
+    },
+    "Courses": {
+        "title": "Kurse"
+    },
+    "Dashboard": {
+        "title": "Dashboard"
+    },
     "loadingData": "Daten werden geladen...",
     "noData": "Keine Daten verfügbar.",
-    "Paginator": 
-    {
+    "Paginator": {
         "goToFirstPage": "Zur ersten Seite",
         "goToLastPage": "Zur letzten Seite",
         "goToPage": "Zu Seite {0}",
         "page": "Seite {0}",
         "showingItems": "{0} bis {1} von {2} Einträgen"
     },
-    "PresentationTableHeader":
-    {
+    "Presentations": {
+        "title": "Presentationen"
+    },
+    "PresentationTableHeader": {
         "conferenceTitle": "Konferenz Titel",
         "id": "#",
         "sessionTitle": "Session Titel",
@@ -19,15 +28,13 @@
         "speakers": "Vortragende(r)",
         "thumbnail": "Miniaturansicht"
     },
-    "SideNav":
-    {
+    "SideNav": {
         "Home": "Startseite",
         "Presentations": "Presentationen",
         "Collections": "Container",
         "Courses": "Kurse"
-    },    
-    "TableHeader":
-    {
+    },
+    "TableHeader": {
         "showHeaders": "Titel anzeigen "
     }
 }

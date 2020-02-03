@@ -38,13 +38,13 @@ const Collections = () => {
   return (
     <>
       <Helmet>
-        <title>{i18nX.t("Collections")}</title>
+        <title>{i18nX.t("Collections.title")}</title>
         <meta name="description" content="Nested component" />
       </Helmet>
 
       <section>
         <PageHeader
-          title="Collections"
+          title={i18nX.t("Collections.title")}
           buttons={
             <PageHeaderBtnContainer>
               <PageHeaderBtnList>
