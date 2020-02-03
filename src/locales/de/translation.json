@@ -1,0 +1,33 @@
+{
+    "Collections": "Die Kollektionen",
+    "loadingData": "Daten werden geladen...",
+    "noData": "Keine Daten verfügbar.",
+    "Paginator": 
+    {
+        "goToFirstPage": "Zur ersten Seite",
+        "goToLastPage": "Zur letzten Seite",
+        "goToPage": "Zu Seite {0}",
+        "page": "Seite {0}",
+        "showingItems": "{0} bis {1} von {2} Einträgen"
+    },
+    "PresentationTableHeader":
+    {
+        "conferenceTitle": "Konferenz Titel",
+        "id": "#",
+        "sessionTitle": "Session Titel",
+        "presentationTitle": "Presentations Titel",
+        "speakers": "Vortragende(r)",
+        "thumbnail": "Miniaturansicht"
+    },
+    "SideNav":
+    {
+        "Home": "Startseite",
+        "Presentations": "Presentationen",
+        "Collections": "Container",
+        "Courses": "Kurse"
+    },    
+    "TableHeader":
+    {
+        "showHeaders": "Titel anzeigen "
+    }
+}

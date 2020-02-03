@@ -12,6 +12,7 @@ import GuideNavText from "./GuideNavText";
 import GuideNavLink from "./GuideNavLink";
 
 import { NavLink } from "react-router-dom";
+import { i18nX } from '../../../../i18n';
 
 const Nav = styled.nav`
   display: flex;
@@ -27,7 +28,7 @@ const GuideNav = props => {
             <GuideNavIcon>
               <HomeIcon />
             </GuideNavIcon>
-            <GuideNavText text="Home" />
+            <GuideNavText text={i18nX.t("SideNav.Home")} />
           </NavLink>
         </GuideNavLink>
       </GuideNavItem>
@@ -39,7 +40,7 @@ const GuideNav = props => {
               <PresentationIcon />
             </GuideNavIcon>
 
-            <GuideNavText text="Presentations" />
+            <GuideNavText text={i18nX.t("SideNav.Presentations")} />
           </NavLink>
         </GuideNavLink>
       </GuideNavItem>
@@ -50,7 +51,7 @@ const GuideNav = props => {
             <GuideNavIcon>
               <CollectionIcon />
             </GuideNavIcon>
-            <GuideNavText text="Collections" />
+            <GuideNavText text={i18nX.t("SideNav.Collections")} />
           </NavLink>
         </GuideNavLink>
       </GuideNavItem>
@@ -61,7 +62,7 @@ const GuideNav = props => {
             <GuideNavIcon>
               <CourseIcon />
             </GuideNavIcon>
-            <GuideNavText text="Courses" />
+            <GuideNavText text={i18nX.t("SideNav.Courses")} />
           </NavLink>
         </GuideNavLink>
       </GuideNavItem>
