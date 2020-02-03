@@ -2,6 +2,15 @@
 
 export const eceAdmin = {
   breakpoints: ["544", "768", "1016", "1280"],
+
+  mediaQueries: {
+    xs: "(min-width: 0rem)",
+    sm: "(min-width: 34rem)",
+    md: "(min-width: 48rem)",
+    lg: "(min-width: 63.5rem)",
+    xl: "(min-width: 80rem)"
+  },
+
   colors: {
     appTopbarBg: "#1565C0",
     appTopbarBtnBg: "transparent",
@@ -10,7 +19,7 @@ export const eceAdmin = {
     appGuideBg: "#fff",
     appGuideHeaderBg: "#1565C0",
     appMiniGuideBg: "#fff",
-    appMainBg: "#f1f3f5",
+    appMainBg: "#f2f3f5",
     appIconInactive: "#424242",
     appIconActive: "#1565C0",
     appNavLinkBg: "transparent",
@@ -19,7 +28,10 @@ export const eceAdmin = {
     appNavLinkColor: "#757575",
     appNavLinkColorHover: "#000",
     appNavLinkColorActive: "#0d47a1",
-    bodyColor: "#002640"
+    bodyColor: "#002640",
+    grayOne: "rgb(224,224,224)",
+    grayTwo: "rgb(189,189,189)",
+    grayThree: "rgb(96,96,96)"
   },
 
   heights: {
@@ -63,9 +75,10 @@ export const eceAdmin = {
     heading: 1.25
   },
   space: [
-    "0",
+    ".125rem",
     ".25rem",
     ".5rem",
+    ".75rem",
     "1rem",
     "1.25rem",
     "1.5rem",

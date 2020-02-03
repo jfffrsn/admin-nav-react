@@ -207,7 +207,12 @@ const Layout = () => {
         <Switch>
           <Route path="/dash" exact strict component={Dashboard} />
           <Route path="/presentations" exact component={Presentations} />
-          <Route path="/collections" exact component={Collections} />
+          <Route
+            path="/collections"
+            exact
+            component={Collections}
+            title="Collections"
+          />
           <Route path="/courses" exact component={Courses} />
           <Route component={NotFound} />
         </Switch>

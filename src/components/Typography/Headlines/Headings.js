@@ -7,7 +7,7 @@ const Text1 = styled.p`
   font-weight: ${props => props.theme.fontWeights.semibold};
   line-height: ;
   padding: 0;
-  margin: ${props => props.theme.space[3]} 0;
+  margin: ${props => props.theme.space[4]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -25,7 +25,7 @@ const Text2 = styled.p`
   font-weight: ${props => props.theme.fontWeights.semibold};
   line-height: ;
   padding: 0;
-  margin: ${props => props.theme.space[3]} 0;
+  margin: ${props => props.theme.space[4]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -43,7 +43,7 @@ const Text3 = styled.p`
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
   padding: 0;
-  margin: ${props => props.theme.space[3]} 0;
+  margin: ${props => props.theme.space[4]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -61,7 +61,7 @@ const Text4 = styled.p`
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
   padding: 0;
-  margin: ${props => props.theme.space[3]} 0;
+  margin: ${props => props.theme.space[4]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -79,7 +79,7 @@ const Text5 = styled.p`
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
   padding: 0;
-  margin: ${props => props.theme.space[3]} 0;
+  margin: ${props => props.theme.space[4]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 
@@ -97,7 +97,7 @@ const Text6 = styled.p`
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ;
   padding: 0;
-  margin: ${props => props.theme.space[3]} 0;
+  margin: ${props => props.theme.space[4]} 0;
   color: ${props => (props.isDark ? `white` : ``)};
 `;
 

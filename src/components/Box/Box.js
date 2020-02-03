@@ -3,8 +3,6 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   background-color: #fff;
-  display: flex;
-  align-items: center;
   padding: ${props => (props.p ? props.p : props.theme.space[5])};
   padding-left: ${props => props.pl};
   padding-right:${props => props.pr};
@@ -18,8 +16,9 @@ const Wrapper = styled.div`
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
   text-align: ${props => props.textAlign};
-  border: lighten(0.2, '#CCCD64');
-  box-shadow: ${props => props.boxShadow};
+  border: ${props => (props.border ? props.border : "")};
+  box-shadow: ${props =>
+    props.boxShadow ? props.boxShadow : "0px 2px 8px rgba(0,0,0,0.05)"};
 }
 `;
 

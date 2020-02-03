@@ -23,7 +23,7 @@ const Wrapper = styled.a`
     height: auto;
     left: ${props => props.theme.space[2]};
     top: ${props => props.theme.space[2]};
-    padding: ${props => props.theme.space[2]} ${props => props.theme.space[3]};
+    padding: ${props => props.theme.space[2]} ${props => props.theme.space[4]};
     text-decoration: none;
     width: auto;
   }
