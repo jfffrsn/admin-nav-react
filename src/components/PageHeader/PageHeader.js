@@ -3,9 +3,9 @@ import React from "react";
 import PageHeaderContainer from "./PageHeaderContainer";
 import PageHeaderTitle from "./PageHeaderTitle";
 
-const PageHeader = ({ title, buttons }) => {
+const PageHeader = ({ title, buttons, isSticky }) => {
   return (
-    <PageHeaderContainer>
+    <PageHeaderContainer isSticky={isSticky}>
       <PageHeaderTitle title={title}></PageHeaderTitle>
       {buttons}
     </PageHeaderContainer>

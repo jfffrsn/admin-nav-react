@@ -43,6 +43,7 @@ const Collections = () => {
 
       <section>
         <PageHeader
+          isSticky
           title="Collections"
           buttons={
             <PageHeaderBtnContainer>
