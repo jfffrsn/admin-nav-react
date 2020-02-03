@@ -10,14 +10,14 @@ const Wrapper = styled.div`
   border-bottom: ${props => props.theme.colors.grayOne} 1px solid;
 
   position: ${e => (e.isSticky ? `sticky` : ``)};
-  top: ${e => (e.isSticky ? `3.5rem` : ``)};
+  top: ${e => (e.isSticky ? props => props.theme.heights.appTopbarHeight : ``)};
   z-index: ${e => (e.isSticky ? `1` : ``)};
-  margin-top: ${e => (e.isSticky ? `-1.25rem` : ``)};
-  margin-right: ${e => (e.isSticky ? `-1.25rem` : ``)};
-  margin-left: ${e => (e.isSticky ? `-1.25rem` : ``)};
-  padding-top: ${e => (e.isSticky ? `1.25rem` : ``)};
-  padding-right: ${e => (e.isSticky ? `1.25rem` : ``)};
-  padding-left: ${e => (e.isSticky ? `1.25rem` : ``)};
+  margin-top: ${e => (e.isSticky ? props => props.theme.negSpace[5] : ``)};
+  margin-right: ${e => (e.isSticky ? props => props.theme.negSpace[5] : ``)};
+  margin-left: ${e => (e.isSticky ? props => props.theme.negSpace[5] : ``)};
+  padding-top: ${e => (e.isSticky ? props => props.theme.space[5] : ``)};
+  padding-right: ${e => (e.isSticky ? props => props.theme.space[5] : ``)};
+  padding-left: ${e => (e.isSticky ? props => props.theme.space[5] : ``)};
   background-color: ${e =>
     e.isSticky ? props => props.theme.colors.appMainBg : ``};
 `;

@@ -88,6 +88,20 @@ export const eceAdmin = {
     "16rem",
     "32rem"
   ],
+  negSpace: [
+    "-.125rem",
+    "-.25rem",
+    "-.5rem",
+    "-.75rem",
+    "-1rem",
+    "-1.25rem",
+    "-1.5rem",
+    "-2rem",
+    "-4rem",
+    "-8rem",
+    "-16rem",
+    "-32rem"
+  ],
 
   letterSpacing: [-1.5, -0.5, 0, 0.1, 0.15, 0.25, 0.4, 0.5, 1.25, 1.5],
 
