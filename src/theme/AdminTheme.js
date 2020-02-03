@@ -107,6 +107,7 @@ export const eceAdmin = {
 
   sizes: {
     avatar: "3rem",
+    thumb: "6.25rem",
     iconWidth: "1.5rem",
     iconHeight: "1.5rem"
   },
