@@ -19,17 +19,18 @@ import {
 } from "../components/Typography/Display/Display";
 
 import { Helmet } from "react-helmet";
+import { i18nX } from "../i18n";
 
 const Dashboard = () => {
   return (
     <>
       <Helmet>
-        <title>Dashboard</title>
+        <title>{i18nX.t("Dashboard.title")}</title>
         <meta name="description" content="Nested component" />
       </Helmet>
 
       <section>
-        <PageHeader title="Dashboard" />
+        <PageHeader title={i18nX.t("Dashboard.title")} />
         <Box>
           <Display1 as="h1" text="display1" />
 

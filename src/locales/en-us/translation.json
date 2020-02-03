@@ -1,0 +1,40 @@
+{
+    "Collections": {
+        "title": "Collections"
+    },
+    "Courses": {
+        "title": "Courses"
+    },
+    "Dashboard": {
+        "title": "Dashboard"
+    },
+    "loadingData": "loading data...",
+    "noData": "No records available.",
+    "Paginator": {
+        "goToPage": "Jump to page {0}",
+        "goToFirstPage": "Go to first page",
+        "showingItems": "Showing {0} - {1} of {2} items",
+        "page": "Page {0}",
+        "goToLastPage": "Go to last page"
+    },
+    "Presentations": {
+        "title": "Presentations"
+    },
+    "PresentationTableHeader": {
+        "conferenceTitle": "Conference Title",
+        "id": "ID",
+        "sessionTitle": "Session Title",
+        "presentationTitle": "Presentation Title",
+        "speakers": "Speaker(s)",
+        "thumbnail": "Thumbnail"
+    },
+    "SideNav": {
+        "Home": "Home",
+        "Presentations": "Presentations",
+        "Collections": "Collections",
+        "Courses": "Courses"
+    },
+    "TableHeader": {
+        "showHeaders": "Show Headers"
+    }
+}

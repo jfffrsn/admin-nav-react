@@ -32,27 +32,31 @@ import IconBtn from "../components/Buttons/IconBtn";
 import { ReactComponent as DeleteIcon } from "../assets/icon-delete.svg";
 import { ReactComponent as EditIcon } from "../assets/icon-edit.svg";
 import BtnContainer from "../components/Buttons/BtnContainer";
+import { i18nX } from "../i18n";
 
 const Collections = () => {
   return (
     <>
       <Helmet>
-        <title>Collections</title>
+        <title>{i18nX.t("Collections.title")}</title>
         <meta name="description" content="Nested component" />
       </Helmet>
 
       <section>
         <PageHeader
+ tk-pagination-intl-services
+          title={i18nX.t("Collections.title")}
+
           isSticky
           title="Collections"
           buttons={
             <PageHeaderBtnContainer>
               <PageHeaderBtnList>
                 <PageHeaderBtnListItem>
-                  <Button secondary label="button" onClick={() => {}} />
+                  <Button secondary label="button" onClick={() => { }} />
                 </PageHeaderBtnListItem>
                 <PageHeaderBtnListItem>
-                  <Button primary label="button" onClick={() => {}} />
+                  <Button primary label="button" onClick={() => { }} />
                 </PageHeaderBtnListItem>
               </PageHeaderBtnList>
             </PageHeaderBtnContainer>
@@ -73,7 +77,7 @@ const Collections = () => {
                     //  setState({ val: v });
                     // }}
                     placeholder="placeholder"
-                    //value={state.val}
+                  //value={state.val}
                   />
                 </FormGroup>
                 <FormGroup>
@@ -86,7 +90,7 @@ const Collections = () => {
                     //  setState({ val: v });
                     // }}
                     placeholder="placeholder"
-                    //value={state.val}
+                  //value={state.val}
                   />
                 </FormGroup>
               </Box>
@@ -120,13 +124,13 @@ const Collections = () => {
                       <MediaListBtnContainer>
                         <MediaListBtnList>
                           <MediaListBtnListItem>
-                            <IconBtn label="button" onClick={() => {}}>
+                            <IconBtn label="button" onClick={() => { }}>
                               <EditIcon title="Edit" />
                             </IconBtn>
                           </MediaListBtnListItem>
 
                           <MediaListBtnListItem>
-                            <IconBtn label="button" onClick={() => {}}>
+                            <IconBtn label="button" onClick={() => { }}>
                               <DeleteIcon title="Delete" />
                             </IconBtn>
                           </MediaListBtnListItem>
@@ -147,7 +151,7 @@ const Collections = () => {
                     <BoxHeaderBtnContainer>
                       <BoxHeaderBtnList>
                         <BoxHeaderBtnListItem>
-                          <Button secondary label="Edit" onClick={() => {}} />
+                          <Button secondary label="Edit" onClick={() => { }} />
                         </BoxHeaderBtnListItem>
                       </BoxHeaderBtnList>
                     </BoxHeaderBtnContainer>
