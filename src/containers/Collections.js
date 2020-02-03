@@ -44,7 +44,11 @@ const Collections = () => {
 
       <section>
         <PageHeader
+ tk-pagination-intl-services
           title={i18nX.t("Collections.title")}
+
+          isSticky
+          title="Collections"
           buttons={
             <PageHeaderBtnContainer>
               <PageHeaderBtnList>
