@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   bottom: 0;
   display: block;
   background-color: ${props => props.theme.colors.appMiniGuideBg};
-  z-index: 1;
+  z-index: 3;
   width: ${props => props.theme.widths.appMiniGuideWidth};
 
   &[data-visibility="hidden"] {

@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   bottom: 0;
   left: 0;
   width: 0;
+  z-index: 3;
   box-shadow: rgba(0, 0, 0, 0.05) 0 0 10px -2px;
 
   &[data-open="opened"]:not([data-persistent="persistent"]) {
